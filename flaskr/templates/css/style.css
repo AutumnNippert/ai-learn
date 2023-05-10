@@ -1,0 +1,196 @@
+:root {
+    --white: #FFFFFF;
+    --grey1: #EBEBEB;
+    --grey2: #e4e4e4;
+    --grey3: #C7C7C7;
+    --black: #000000;
+    --blue: #94EAFF;
+}
+
+html {
+    width:100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+button {
+    cursor: pointer;
+
+}
+
+#topbar {
+    position: absolute;
+    background-color: var(--grey1);
+    width: 100%;
+    height: 5vh;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;    
+    margin-top: 0;
+    align-items: center;
+}
+
+#topbar h1 {
+    color: var(--black);
+    position: absolute;
+    top:0.1vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#topbar button {
+    position: absolute;
+    left: 1vh;
+    height: 5vh;
+    border:none;
+    transition: all 100ms ease;
+    background-color: var(--grey1);
+    cursor: pointer;
+}
+
+/* .topbar button:hover {
+    background-color:var(--blue);
+} */
+
+
+#sidebar {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    background-color: var(--white);
+    left:0vh;
+    top: 5vh;
+    width: 25%;
+    transform: translateX(-105%);
+    transition: transform 600ms ease;
+    z-index: 1;
+}
+
+#sidebar[data-status="open"] {
+    transform: translateX(0%);
+}
+
+#sidebar::after {
+    content:'';
+    position: absolute;
+    top: 0;
+    right: -2px;
+    width: 3px;
+    height: 100%;
+    background-color: var(--black);
+}
+
+#sidebar button {
+    background-color: var(--white);
+
+    height: 50px;
+    font-size: 1.75rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+
+    border:none;
+
+    transition: background-color 200ms ease;
+}
+
+#sidebar button:hover {
+    background-color: var(--grey2);
+}
+
+#sidebar button[data-selected="true"] {
+    background-color: var(--blue);
+}
+
+
+#content {
+    margin-top: 6vh;
+    overflow: hidden;
+}
+
+#content h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#addCourseButton {
+    position: absolute;
+    right: 2.5vh;
+    width: 18vh;
+    height: 4vh;
+
+    background-color: var(--grey2);
+    border: none;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+#courseItems {
+    display: flex;
+    justify-content: space-around;
+}
+
+.courseElement {
+    position: relative;
+    background-color: var(--grey2);
+    width: 250px;
+    height: 350px;
+    text-align: center;
+
+}
+
+.courseElement h1 {
+    top: 0;
+    margin-top: 0;
+    background-color: var(--grey2);
+    border-top: 5px solid var(--grey3);
+    border-bottom: 5px solid var(--grey3);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.favoriteButton {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    margin: 0;
+    color: var(--black);
+    font-size: 1rem;
+    border:none;
+    background-color: transparent;
+    transition: color 400ms;
+}
+
+.favoriteButton[data-favorited="true"] {
+    color: gold;
+}
+
+.courseElementImg {
+    height: 100px;
+    width: 100%;
+    background-size: cover;
+}
+
+#course_softwareEngineering .courseElementImg {
+    background-image: url(../images/clement-helardot-95YRwf6CNw8-unsplash.jpg);
+}
+
+#course_graphicDesign .courseElementImg {
+    background-image: url(../images/photo-1561070791-36c11767b26a.avif);
+}
