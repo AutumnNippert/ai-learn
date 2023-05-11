@@ -13,9 +13,9 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-body {
+/* body {
     overflow: hidden;
-}
+} */
 
 button {
     cursor: pointer;
