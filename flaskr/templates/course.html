@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
-    <script src="{{ url_for('static',filename='home.js') }}"></script>
+    <!-- <script src="{{ url_for('static',filename='home.js') }}"></script> -->
     <!-- External Fonts from Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,29 +18,46 @@
     <div id="topbar">
         <button class="fa-solid fa-bars fa-xl" id="sidebarButton">
         </button>
-        <h1>Name / Logo</h1>
+        <h1>AI Learn</h1>
         
     </div>
     <div id="sidebar" data-status="closed">
         <button data-selected="true">Courses</button>
         <button>About</button>
     </div>
+
+    <div class="container">
+        {%set module = course.modules[0]%}
+        {%set lesson = module.lessons[0]%}
+        <div id="table_of_contents">
+            <!--
+                This will be a list of all the modules and sub modules, each having their own link to the lesson.
+                The list will be collapsible, and will be able to be expanded to show the sub modules.
     
-    <div id="content">
-        <h2>{{course.title}}</h2>
-        <div>
-            <!--For each module in the course, print the name-->
-            {% for module in course.modules %}
-                <h3>{{module.title}}</h3>
-                <!--For each lesson in the module, print the name-->
-                {% for lesson in module.lessons %}
-                    <h4>{{lesson.title}}</h4>
-                    {% set lines = lesson.lesson_info.split('\n') %}
-                    {% for line in lines %}
-                        <p>{{line}}</p>
+            -->
+            <h2>Table of Contents</h2>
+            <div>
+                <!--For each module in the course, print the name-->
+                {% for module in course.modules %}
+                    <h3>{{module.title}}</h3>
+                    <!--For each lesson in the module, print the name-->
+                    {% for lesson in module.lessons %}
+                        <h4>{{lesson.title}}</h4>
                     {% endfor %}
                 {% endfor %}
-            {% endfor %}
+            </div>
+        </div>
+        
+        <div id="content">
+            <h2>{{course.title}}</h2>
+            <div>
+                <h3>{{module.title}}</h3>
+                <h4>{{lesson.title}}</h4>
+                {% set lines = lesson.info.split('\n') %}
+                {% for line in lines %}
+                    <p>{{line}}</p>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </body>

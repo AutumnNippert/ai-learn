@@ -1,7 +1,7 @@
 import openai
 import os
 from dotenv import load_dotenv
-import const as const
+import bin.const as const
 
 # Set your API key
 load_dotenv()

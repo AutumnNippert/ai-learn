@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const sidebarButton = document.getElementById('sidebarButton');
     const sidebar = document.getElementById('sidebar');
 
     // Sidebar Handler
-    sidebarButton.addEventListener('click', function() {
+    sidebarButton.addEventListener('click', function () {
         // alert("OPEN SIDEBAR");
 
         if (sidebar.getAttribute("data-status") == "open") {
@@ -21,10 +21,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Sidebar Selection Handler
     const sidebarInnerButtons = sidebar.querySelectorAll('button');
-    
-    sidebarInnerButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            sidebarInnerButtons.forEach(function(button2) {
+
+    sidebarInnerButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            sidebarInnerButtons.forEach(function (button2) {
                 button2.setAttribute("data-selected", "false")
             });
             button.setAttribute("data-selected", "true");
@@ -35,8 +35,29 @@ document.addEventListener('DOMContentLoaded', function() {
     // Courses Page-----------
     const addCourseButton = document.getElementById('addCourseButton');
 
-    addCourseButton.addEventListener('click', function() {
-        alert("ADD A COURSE FUNCTIONALITY");
+    addCourseButton.addEventListener('click', function () {
+        // Get the modal
+        var modal = document.getElementById("addCourseModal");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        addCourseButton.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
     });
 });
 
@@ -58,5 +79,5 @@ function favorite(courseID) {
         course.classList.remove("favorite");
 
     }
-    
+
 }

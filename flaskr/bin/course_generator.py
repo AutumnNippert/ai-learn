@@ -1,5 +1,6 @@
-from api_interaction import generate_response, generate_image
-from course import Course, Module, Lesson
+from bin.logger import log
+from bin.api_interaction import generate_response, generate_image
+from bin.course import Course, Module, Lesson
 
 def generate_course(topic:str):
     # Create a course
@@ -20,13 +21,13 @@ def generate_course(topic:str):
     eta = len(module_headers) * 100 / 60.0
     from datetime import datetime, timedelta
     eta_date_time = datetime.now() + timedelta(minutes=eta)
-    print(f"Estimated time to complete: {eta} minutes | {eta_date_time.strftime('%I:%M %p')}")
+    log(f"Estimated time to complete: {eta} minutes | {eta_date_time.strftime('%I:%M %p')}")
 
     percent_complete = 0
     
     # for each lesson header, create a sub lesson
     for header in module_headers:
-        print(f"Generating module: {header}")
+        log(f"Generating module: {header}")
         m = Module(header)
         lessons_str = generate_lessons(lesson_plan, header)
 
@@ -38,14 +39,14 @@ def generate_course(topic:str):
         # how big is each lesson in terms of percent of the total course?
         lesson_size = 1.0 / len(module_headers) / len(lessons)
         for lesson in lessons:
-            print(f"{percent_complete*100:.1f}% complete. Generating Lesson: {lesson}")
+            log(f"{percent_complete*100:.1f}% complete. Generating Lesson: {lesson}")
             info = create_lesson_info(lesson_plan, lesson)
             l = Lesson(lesson, info)
             m.add_lesson(l)
             percent_complete += lesson_size
         c.add_module(m)
 
-    print(f"100.0% complete. Course generated!")
+    log(f"100.0% complete. Course generated!")
     return c
 
 def generate_brief_description(topic:str):
@@ -86,8 +87,7 @@ def generate_course_image(topic:str):
     image_url = generate_image(prompt=topic)
     return image_url
 
-if __name__ == "__main__":
-    topic = "Wireless Networks"
+def test(topic:str):
     course = generate_course(topic)
     course.write_to_file(topic + ".json")
     

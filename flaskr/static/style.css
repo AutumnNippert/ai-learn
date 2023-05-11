@@ -8,14 +8,14 @@
 }
 
 html {
-    width:100%;
+    width: 100%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
-/* body {
-    overflow: hidden;
-} */
+body {
+    margin: 0;
+}
 
 button {
     cursor: pointer;
@@ -32,7 +32,7 @@ button {
     left: 0;
     right: 0;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     margin-top: 0;
     align-items: center;
 }
@@ -40,7 +40,7 @@ button {
 #topbar h1 {
     color: var(--black);
     position: absolute;
-    top:0.1vh;
+    top: 0.1vh;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -49,7 +49,7 @@ button {
     position: absolute;
     left: 1vh;
     height: 5vh;
-    border:none;
+    border: none;
     transition: all 100ms ease;
     background-color: var(--grey1);
     cursor: pointer;
@@ -66,9 +66,9 @@ button {
     height: 100%;
     flex-direction: column;
     background-color: var(--white);
-    left:0vh;
+    left: 0vh;
     top: 5vh;
-    width: 25%;
+    width: 15%;
     transform: translateX(-105%);
     transition: transform 600ms ease;
     z-index: 1;
@@ -79,7 +79,7 @@ button {
 }
 
 #sidebar::after {
-    content:'';
+    content: '';
     position: absolute;
     top: 0;
     right: -2px;
@@ -96,7 +96,7 @@ button {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
 
-    border:none;
+    border: none;
 
     transition: background-color 200ms ease;
 }
@@ -113,6 +113,10 @@ button {
 #content {
     margin-top: 6vh;
     overflow: hidden;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 5vh;
+    padding-top: 2.5vh;
 }
 
 #content h2 {
@@ -134,6 +138,12 @@ button {
     font-weight: 600;
 
     cursor: pointer;
+
+    transition: background-color 0.2s ease-in-out;
+}
+
+#addCourseButton:hover {
+    background-color: var(--grey3);
 }
 
 #courseItems {
@@ -172,9 +182,13 @@ button {
     margin: 0;
     color: var(--black);
     font-size: 1rem;
-    border:none;
+    border: none;
     background-color: transparent;
     transition: color 400ms;
+}
+
+.favoriteButton:hover {
+    color: gold;
 }
 
 .favoriteButton[data-favorited="true"] {
@@ -193,4 +207,88 @@ button {
 
 #course_graphicDesign .courseElementImg {
     background-image: url(../images/photo-1561070791-36c11767b26a.avif);
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#table_of_contents{
+    background-color: var(--grey1);
+    width: 100%;
+    padding-top: 3vh;
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#table_of_contents h3{
+    background-color: var(--grey2);
+    width: 100%;
+    padding: 1vh;
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#table_of_contents h4{
+    background-color: var(--grey3);
+    width: 100%;
+    padding: 1vh;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.container{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 1fr 4fr;
 }
