@@ -2,10 +2,18 @@ from bin.logger import log
 from bin.api_interaction import generate_response, generate_image
 from bin.course import Course, Module, Lesson
 
+def get_new_id():
+    with open("out/id.txt", "r") as f:
+        id = int(f.read())
+        id += 1
+        with open("out/id.txt", "w") as f:
+            f.write(str(id))
+            return id
+
 def generate_course(topic:str):
     # Create a course
     description = generate_brief_description(topic)
-    c = Course(topic, description)
+    c = Course(topic, description, get_new_id())
     
     lessons = []
     # Generate a lesson plan
@@ -89,5 +97,5 @@ def generate_course_image(topic:str):
 
 def test(topic:str):
     course = generate_course(topic)
-    course.write_to_file(topic + ".json")
+    course.write_to_file(str(course.id) + ".json")
     

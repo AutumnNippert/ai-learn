@@ -7,20 +7,22 @@ import json
 app = Flask(__name__)
 
 # Path: flaskr\app.py
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
     return render_template('index.html')
 
-@app.route('/course', methods=['GET', 'POST'])
-def course():
+@app.route('/course/<course_id>', methods=['GET', 'POST'])
+def course(course_id:str):
     # get course from out/Wireless Networks.json
-    c = Course.from_file("out/Strategies for teaching people who need to learn english in a classroom.json")
+    c = Course.from_file(f"{course_id}.json")
     return render_template('course.html', course=c)
 
-@app.route(f'/add_course/<course_title>', methods=['POST'])
-def add_course(course_title:str):
+@app.route(f'/add_course', methods=['POST'])
+def add_course():
+    course_title:str = request.form['courseName']
     log(f"Generating course: {course_title}")
-    generate_course(course_title)
-    return json.dumps(True) # Succeeded
+    course = generate_course(course_title)
+    course.to_file(f"{course.id}.json")
+    return redirect(url_for('course', course_id=course.id))
 
 app.run(debug=True)

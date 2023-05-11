@@ -249,8 +249,7 @@ button {
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close:hover {
     color: black;
     text-decoration: none;
     cursor: pointer;

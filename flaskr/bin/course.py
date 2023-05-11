@@ -23,21 +23,22 @@ class Module:
         return self.title
 
 class Course:
-    def __init__(self, title:str, description:str):
+    def __init__(self, title:str, description:str, id:int):
         self.title = title
         self.description = description
+        self.id = id
         self.modules = []
 
     def add_module(self, module:Module):
         self.modules.append(module)
 
-    def write_to_file(self, file_name:str):
+    def to_file(self, file_name:str):
         courseJson = json.dumps(self, indent=4, cls=CourseEncoder)
         with open("out/"+file_name, "w") as f:
             f.write(courseJson)
 
     def from_file(file_name:str):
-        with open(file_name, "r") as f:
+        with open("out/" + file_name, "r") as f:
             courseJson = f.read()
             course = json.loads(courseJson)
             return course
@@ -66,4 +67,4 @@ if __name__ == "__main__":
     m.add_lesson(l)
     c.add_module(m)
 
-    c.write_to_file("test.json")
+    c.to_file("test.json")
