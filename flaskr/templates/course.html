@@ -27,35 +27,22 @@
     </div>
 
     <div class="container">
-        <!-- Setting up some vars for possible use later? -->
-        {%set module = course.modules[0]%}
-        {%set lesson = module.lessons[0]%}
-        <div id="table_of_contents">
-            <!--
-                This will be a list of all the modules and sub modules, each having their own link to the lesson.
-                The list will be collapsible, and will be able to be expanded to show the sub modules.
-            -->
-            <h2>Table of Contents</h2>
-            <div>
-                <!--For each module in the course, print the name-->
-                {% for module in course.modules %}
-                    <h3>{{module.title}}</h3>
-                    <!--For each lesson in the module, print the name-->
-                    {% for lesson in module.lessons %}
-                        <h4>{{lesson.title}}</h4>
-                    {% endfor %}
-                {% endfor %}
-            </div>
-        </div>
-        
         <div id="content">
             <h2>{{course.title}}</h2>
             <div>
-                <h3>{{module.title}}</h3>
-                <h4>{{lesson.title}}</h4>
-                {% set lines = lesson.info.split('\n') %}
-                {% for line in lines %}
-                    <p>{{line}}</p>
+                <h3>Course Description</h3>
+                <p>{{course.description}}</p>
+            <div>
+                {% for module in course.modules %}
+                    <h3>{{module.title}}</h3>
+                    <div>
+                        {% for lesson in module.lessons %}
+                            <h4>{{lesson.title}}</h4>
+                            {% for line in lesson.info.split('\n') %}
+                                <p>{{line}}</p>
+                            {% endfor %}
+                        {% endfor %}
+                    </div>
                 {% endfor %}
             </div>
         </div>

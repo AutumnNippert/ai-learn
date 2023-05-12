@@ -10,14 +10,14 @@ def get_new_id():
             f.write(str(id))
             return id
 
-def generate_course(topic:str):
+def generate_course(topic:str, module_count:int=3):
     # Create a course
     description = generate_brief_description(topic)
     c = Course(topic, description, get_new_id())
     
     lessons = []
     # Generate a lesson plan
-    lesson_plan = generate_course_plan(topic)
+    lesson_plan = generate_course_plan(topic, module_count)
 
     module_headers = []
 
@@ -44,6 +44,8 @@ def generate_course(topic:str):
         for line in lines:
             lessons += line.split(". ")[1:]
 
+        lesson_plan += "\n Lessons: " + lessons_str
+
         # how big is each lesson in terms of percent of the total course?
         lesson_size = 1.0 / len(module_headers) / len(lessons)
         for lesson in lessons:
@@ -63,8 +65,8 @@ def generate_brief_description(topic:str):
     return description
 
 
-def generate_course_plan(topic:str):
-    prompt = "Create a less than 2 list of modules for a class on " + topic + ". Respond with only the list of modules, numbered as '1. ', '2. ', etc...."
+def generate_course_plan(topic:str, module_count:int):
+    prompt = "Create a list of " + str(module_count) + " modules for a class on " + topic + ". Respond with only the list of modules, numbered as '1. ', '2. ', etc..."
 
     # Generate a lesson plan
     history = []
@@ -83,7 +85,7 @@ def generate_lessons(lesson_plan:str, module_header:str):
 
 def create_lesson_info(lesson_plan:str, lesson_header:str):
     # Create lesson info
-    prompt = "Create lesson content about " + lesson_header + " as if it were for a class. You can add things Questions with answers and other quiz like things. Make it 2 to 3 paragraphs long. Respond with only the lesson content."
+    prompt = "Create lesson content about " + lesson_header + " as if it were for a class. Be sure to include examples for things you may cover. Feel free to add in helpful images as links. You can add Questions with answers and other quiz like things. Make it 2 to 3 paragraphs long. Respond with only the lesson content."
     history = []
     history.append({"role": "system", "content": "Current Lesson Plan" + lesson_plan})
     history.append({"role": "user", "content": prompt})

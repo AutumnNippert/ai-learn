@@ -13,15 +13,15 @@ def index():
 
 @app.route('/course/<course_id>', methods=['GET', 'POST'])
 def course(course_id:str):
-    # get course from out/Wireless Networks.json
     c = Course.from_file(f"{course_id}.json")
     return render_template('course.html', course=c)
 
 @app.route(f'/add_course', methods=['POST'])
 def add_course():
     course_title:str = request.form['courseName']
-    log(f"Generating course: {course_title}")
-    course = generate_course(course_title)
+    module_count = int(request.form['moduleCount'])
+    log(f"Generating course: {course_title} | with {module_count} modules")
+    course = generate_course(course_title, module_count)
     course.to_file(f"{course.id}.json")
     return redirect(url_for('course', course_id=course.id))
 
