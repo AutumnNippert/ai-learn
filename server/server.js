@@ -19,11 +19,11 @@ app.get('/course/:course_id', (req, res) => {
   res.render('course', { course });
 });
 
-app.post('/add_course', (req, res) => {
+app.post('/add_course', async (req, res) => {
   const courseTitle = req.body.courseName;
   const moduleCount = parseInt(req.body.moduleCount);
   log(`Generating course: ${courseTitle} | with ${moduleCount} modules`);
-  const course = generateCourse(courseTitle, moduleCount);
+  const course = await generateCourse(courseTitle, moduleCount);
   course.toFile(`${course.id}.json`);
   res.redirect(`course/${course.id}`);
 });

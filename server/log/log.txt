@@ -1,0 +1,57 @@
+Generating course: Goats | with 2 modules
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Estimated time to complete: 0 minutes | 4:00 PM
+100.0% complete. Course generated!
+Generating course: Angular Development | with 2 modules
+Estimated time to complete: 0 minutes | 4:07 PM
+100.0% complete. Course generated!
+Generating course: Angular Development | with 2 modules
+Estimated time to complete: 0 minutes | 4:09 PM
+100.0% complete. Course generated!
+Generating course: Angular Development | with 2 modules
+100.0% complete. Course generated!
+Estimated time to complete: 0 minutes | 4:10 PM
+Generating course: Angular Development | with 2 modules
+Estimated time to complete: 0 minutes | 4:10 PM
+100.0% complete. Course generated!
+Generating course: Angular Development | with 2 modules
+Estimated time to complete: 0 minutes | 4:12 PM
+100.0% complete. Course generated!
+Generating course: Angular Development | with 2 modules
+Estimated time to complete: 5 minutes | 4:18 PM
+Generating module: Introduction to Angular: Angular ecosystem, architecture, and core features, creating an Angular application, and understanding TypeScript and its features.
+Generating course: Angular Development | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 4:17 PM
+Generating module: Introduction to Angular
+0% complete. Generating Lesson: undefined
+7.142857142857142% complete. Generating Lesson: undefined
+14.285714285714285% complete. Generating Lesson: Understanding the basics of Angular
+21.428571428571427% complete. Generating Lesson: Setting up the development environment for Angular
+28.57142857142857% complete. Generating Lesson: Creating your first Angular component
+35.71428571428571% complete. Generating Lesson: Understanding Angular directives and pipes
+42.85714285714285% complete. Generating Lesson: Using Angular services and HTTP for data retrieval.
+Generating module: Building Dynamic Web Applications with Angular
+49.999999999999986% complete. Generating Lesson: undefined
+57.14285714285713% complete. Generating Lesson: undefined
+64.28571428571426% complete. Generating Lesson: Understanding the data binding mechanism in Angular
+71.4285714285714% complete. Generating Lesson: Implementing and debugging Angular forms
+78.57142857142854% complete. Generating Lesson: Routing and navigation in Angular
+85.7142857142857% complete. Generating Lesson: Authentication and authorization with Angular
+92.85714285714283% complete. Generating Lesson: Implementing real-time features in your Angular application.
+100.0% complete. Course generated!
+Generating course: Georgia History | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 4:29 PM
+Generating module: The Native American Communities of Georgia
+0% complete. Generating Lesson: Pre-European Contact: The Mississippian Culture
+12.5% complete. Generating Lesson: Early European Contact and the De Soto Expedition
+25% complete. Generating Lesson: The Impact of Contact: Disease, Warfare, and Displacement
+37.5% complete. Generating Lesson: Contemporary Native American Communities in Georgia
+Generating module: Colonial Georgia and the American Revolution
+50% complete. Generating Lesson: Establishment of Georgia Colony and Founding of Savannah 
+60% complete. Generating Lesson: Early Settlement and Life in Colonial Georgia 
+70% complete. Generating Lesson: Georgia's Role in the American Revolution 
+80% complete. Generating Lesson: Key Revolutionary War Battles in Georgia 
+89.99999999999999% complete. Generating Lesson: Legacy of the American Revolution in Georgia
+100.0% complete. Course generated!
