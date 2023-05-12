@@ -1,4 +1,4 @@
 .env
-.venv
-__pycache__/
-out/
+node_modules/
+res/
+package-lock.json

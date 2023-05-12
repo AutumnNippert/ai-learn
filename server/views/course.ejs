@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
-    <!-- <script src="{{ url_for('static',filename='home.js') }}"></script> -->
+    <title><%= course.title %></title>
+    <link rel="stylesheet" href="/css/style.css">
     <!-- External Fonts from Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,22 +27,22 @@
 
     <div class="container">
         <div id="content">
-            <h2>{{course.title}}</h2>
+            <h2><%= course.title %></h2>
             <div>
                 <h3>Course Description</h3>
-                <p>{{course.description}}</p>
+                <p><%= course.description %></p>
             <div>
-                {% for module in course.modules %}
-                    <h3>{{module.title}}</h3>
+                <% for (let module of course.modules) { %>
+                    <h3><%= module.title %></h3>
                     <div>
-                        {% for lesson in module.lessons %}
-                            <h4>{{lesson.title}}</h4>
-                            {% for line in lesson.info.split('\n') %}
-                                <p>{{line}}</p>
-                            {% endfor %}
-                        {% endfor %}
+                        <% for (let lesson of module.lessons) { %>
+                            <h4><%= lesson.title %></h4>
+                            <% for (let line of lesson.info.split('\n')) { %>
+                                <p><%= line %></p>
+                            <% } %>
+                        <% } %>
                     </div>
-                {% endfor %}
+                <% } %>
             </div>
         </div>
     </div>

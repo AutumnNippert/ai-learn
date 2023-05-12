@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
-    <script src="{{ url_for('static',filename='home.js') }}"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="js/home.js"></script>
     <!-- External Fonts from Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,18 +15,19 @@
     <!-- External Font Awesome Packages script gives us custom classes which provide the symbols for the buttons. -->
     <script src="https://kit.fontawesome.com/0bade4009c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div id="topbar">
         <button class="fa-solid fa-bars fa-xl" id="sidebarButton">
         </button>
         <h1>AI Learn</h1>
-        
+
     </div>
     <div id="sidebar" data-status="closed">
         <button data-selected="true">Courses</button>
         <button>About</button>
     </div>
-    
+
     <div id="content">
         <button id="addCourseButton">+ Add a Course</button>
 
@@ -35,9 +37,11 @@
             <div id="courseItems">
                 <div class="courseElement" id="course_softwareEngineering">
                     <div class="courseElementImg">
-                        <img src="{{url_for('static',filename='img/softwareEngineering.avif')}}" alt="Software Engineering" width="100%" height="100%">
+                        <img src="img/softwareEngineering.avif" alt="Software Engineering" width="100%"
+                            height="100%">
                     </div>
-                    <button class="favoriteButton fa-regular fa-star" onclick="favorite('course_softwareEngineering')" data-favorited="false"></button>
+                    <button class="favoriteButton fa-regular fa-star" onclick="favorite('course_softwareEngineering')"
+                        data-favorited="false"></button>
 
                     <h1>Software Engineering</h1>
                     <div class="courseElementDesc">
@@ -47,9 +51,10 @@
 
                 <div class="courseElement" id="course_graphicDesign">
                     <div class="courseElementImg">
-                        <img src="{{url_for('static',filename='img/other.jpg')}}" alt="Graphic Design" width="100%" height="100%">
+                        <img src="img/other.jpg" alt="Graphic Design" width="100%" height="100%">
                     </div>
-                    <button class="favoriteButton fa-regular fa-star" onclick="favorite('course_graphicDesign')" data-favorited="false"></button>
+                    <button class="favoriteButton fa-regular fa-star" onclick="favorite('course_graphicDesign')"
+                        data-favorited="false"></button>
 
                     <h1>Graphic Design</h1>
                     <div class="courseElementDesc">
@@ -65,7 +70,7 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <h1>Add a Course</h1>
-            <form action="{{url_for('add_course')}}" method="POST">
+            <form action="/add_course" method="POST">
                 <label for="courseName">Course Name</label>
                 <br>
                 <input type="text" name="courseName" id="courseName" required>
@@ -80,4 +85,5 @@
         </div>
     </div>
 </body>
+
 </html>
