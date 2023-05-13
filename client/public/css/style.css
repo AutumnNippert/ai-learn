@@ -46,6 +46,11 @@ button {
     transform: translate(-50%, -50%);
 }
 
+#topbar a {
+    text-decoration: none;
+    color: var(--black);
+}
+
 #topbar button {
     position: absolute;
     left: 1vh;
