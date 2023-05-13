@@ -11,7 +11,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 async function generateResponse(messages) {
-    messages.unshift({ role: "system", content: config.BOT_PERSONALITY})
+    messages.unshift({ role: "system", content: config.BOT_PERSONALITY })
     try {
         let completion = await openai.createChatCompletion({
             model: "gpt-3.5-turbo",
