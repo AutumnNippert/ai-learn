@@ -30,9 +30,9 @@ app.get('/course/:course_id', async (req, res) => {
         res.render('course', { course });
     } catch (error) {
         if (error.response.status === 404) {
-            res.status(404).send('Course Not Found');
+            res.render('error', { error: '404: Course Not Found' });
         } else {
-            res.status(500).send('Error fetching course data');
+            res.render('error', { error: '500: Internal Server Error' });
         }
     }
 });
