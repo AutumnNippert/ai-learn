@@ -46,6 +46,10 @@ class Course {
         const courses = JSON.parse(coursesJson);
         courses.push(toAdd);
         fs.writeFileSync("res/courses.json", JSON.stringify(courses, null, 4));
+
+        // add to courses.txt
+        const meta = new CourseMeta(this.title, this.description, this.id);
+        meta.toFile();
     }
 
     static fromFile(file_name) {
@@ -65,6 +69,42 @@ class CourseEncoder {
         return o.dict;
     }
 }
+
+class CourseMeta {
+    constructor(title, description, id) {
+        this.title = title;
+        this.description = description;
+        this.id = id;
+        this.image = "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg";
+    }
+
+    toFile() {
+        // add to courses.json
+        const fs = require('fs');
+        const coursesJson = fs.readFileSync("res/courses.json", 'utf8');
+        const courses = JSON.parse(coursesJson);
+        if (courses == null) {
+            courses = {};
+        }
+        const toAdd = { title: this.title, description: this.description, id: this.id, image: this.image};
+
+        courses.push(toAdd);
+        fs.writeFileSync("res/courses.json", JSON.stringify(courses, null, 4));
+    }
+
+    static getAll() {
+        const fs = require('fs');
+        const courseJson = fs.readFileSync("res/courses.json", 'utf8');
+        const course = JSON.parse(courseJson);
+        return course;
+    }
+
+    toString() {
+        return this.title + "\n" + this.description;
+    }
+}
+
+
 
 // Tests
 if (require.main === module) {

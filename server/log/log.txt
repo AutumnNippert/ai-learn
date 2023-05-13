@@ -58,3 +58,108 @@ Generating module: Colonial Georgia and the American Revolution
 Generating course: test | with 2 modules
 Estimated time to complete: 0 minutes | 2:03 PM
 100.0% complete. Course generated!
+Generating course: Banana Bread | with 2 modules
+Estimated time to complete: 0 minutes | 2:11 PM
+100.0% complete. Course generated!
+Generating course: Banana Bread | with 2 modules
+Estimated time to complete: 0 minutes | 2:13 PM
+100.0% complete. Course generated!
+Generating course: Banana Bread | with 2 modules
+Estimated time to complete: 0 minutes | 2:18 PM
+100.0% complete. Course generated!
+Generating course: Banana Bread | with 2 modules
+Estimated time to complete: 0 minutes | 2:19 PM
+100.0% complete. Course generated!
+Generating course: Banana Bread | with 2 modules
+Estimated time to complete: 0 minutes | 2:20 PM
+100.0% complete. Course generated!
+Generating course: Banana Bread Making | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 2:26 PM
+Generating module: Understanding the Ingredients and Equipment for Banana Bread Making
+0% complete. Generating Lesson: Introduction to Ingredients Needed in Banana Bread Making
+Generating course: Banana Bread Making | with 2 modules
+Generating module: The Science Behind Banana Bread Making
+Estimated time to complete: 3.3333333333333335 minutes | 2:28 PM
+0% complete. Generating Lesson: The role of baking powder and baking soda in banana bread
+Generating course: Banana Bread Making | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 2:29 PM
+Generating module: Understanding Ingredients and Their Roles in Banana Bread
+0% complete. Generating Lesson: Understanding the Function of Flour in Banana Bread
+10% complete. Generating Lesson: The Importance of Ripe Bananas in Banana Bread
+20% complete. Generating Lesson: The Role of Sugar in the Texture and Flavor of Banana Bread
+30.000000000000004% complete. Generating Lesson: Baking Powder and Baking Soda: Their Functions and Differences in Banana Bread
+40% complete. Generating Lesson: The Significance of Fats and Liquids in Banana Bread
+Generating module: Step-by-Step Process of Making Delicious Banana Bread
+50% complete. Generating Lesson: Preparing the Ingredients and Kitchen Tools
+60% complete. Generating Lesson: Mixing Wet and Dry Ingredients Together
+70% complete. Generating Lesson: Incorporating the Mashed Bananas
+80% complete. Generating Lesson: Baking and Testing for Doneness
+89.99999999999999% complete. Generating Lesson: Cooling and Serving the Banana Bread
+100.0% complete. Course generated!
+Generating course: Agile Development | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 2:39 PM
+Generating module: Introduction to Agile Development
+0% complete. Generating Lesson: What is Agile Development?
+10% complete. Generating Lesson: History and Origins of Agile Development
+20% complete. Generating Lesson: Key Principles of Agile Development
+30.000000000000004% complete. Generating Lesson: Benefits and Advantages of Agile Development
+40% complete. Generating Lesson: Introduction to Agile Development Frameworks (Scrum, Kanban, etc.)
+Generating module: Agile Development Process and Methodologies
+50% complete. Generating Lesson: Agile Development Methodologies
+60% complete. Generating Lesson: The Agile Manifesto
+70% complete. Generating Lesson: Scrum Methodology
+80% complete. Generating Lesson: Kanban Methodology
+89.99999999999999% complete. Generating Lesson: Agile Development Best Practices
+100.0% complete. Course generated!
+Generating course: Kanban Development | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 2:45 PM
+Generating module: Introduction to Kanban methodology
+0% complete. Generating Lesson: Understanding the basics of Kanban: origins, principles, and concepts 
+10% complete. Generating Lesson: Overview of Kanban boards and their components
+20% complete. Generating Lesson: Limiting work in progress (WIP) and visualizing workflow 
+30.000000000000004% complete. Generating Lesson: Roles and responsibilities in Kanban teams 
+40% complete. Generating Lesson: Advantages and challenges of implementing Kanban
+Generating module: Implementing and managing Kanban boards and workflows
+50% complete. Generating Lesson: Designing Kanban boards: key elements and considerations 
+60% complete. Generating Lesson: Creating and tracking work items in Kanban boards 
+70% complete. Generating Lesson: Monitoring and improving workflow with Kanban metrics 
+80% complete. Generating Lesson: Fine-tuning Kanban boards for maximum efficiency 
+89.99999999999999% complete. Generating Lesson: Managing and communicating progress within Kanban teams
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Software Engineering | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 2:54 PM
+Generating module: Introduction to Software Engineering
+0% complete. Generating Lesson: Understanding the basics of software engineering
+10% complete. Generating Lesson: Overview of system development life cycle
+20% complete. Generating Lesson: Requirements gathering and analysis 
+30.000000000000004% complete. Generating Lesson: Software testing fundamentals 
+40% complete. Generating Lesson: Introduction to coding and software development tools
+Generating module: Software Design and Architecture
+50% complete. Generating Lesson: Overview of software design and architecture
+60% complete. Generating Lesson: Principles of software design
+70% complete. Generating Lesson: Object-oriented design and modeling
+80% complete. Generating Lesson: Design patterns 
+89.99999999999999% complete. Generating Lesson: Software architecture styles and patterns
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Software Engineering 2 | with 2 modules
+100.0% complete. Finishing up...
+Estimated time to complete: 0 minutes | 2:59 PM
+Course generated successfully.
+Generating course: Software Engineering 2 | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 3:04 PM
+Generating module: Software Design Principles 
+0% complete. Generating Lesson: Introduction to Software Design Principles
+10% complete. Generating Lesson: SOLID Principles of Object-Oriented Design
+20% complete. Generating Lesson: Design Patterns and Anti-patterns
+30.000000000000004% complete. Generating Lesson: Cohesion and Coupling in Software Design
+40% complete. Generating Lesson: Architectural Patterns and Styles
+Generating module: Software Testing and Quality Assurance
+50% complete. Generating Lesson: Introduction to Software Testing and Quality Assurance
+60% complete. Generating Lesson: Types of Software Testing Methods
+70% complete. Generating Lesson: Test Planning and Execution
+80% complete. Generating Lesson: Defect Management 
+89.99999999999999% complete. Generating Lesson: Continuous Integration, Delivery, and Deployment
+100.0% complete. Finishing up...
+Course generated successfully.

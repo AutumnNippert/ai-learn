@@ -12,12 +12,12 @@ const openai = new OpenAIApi(configuration);
 
 async function generateResponse(messages) {
     messages.unshift({ role: "system", content: config.BOT_PERSONALITY })
+    //console.log(messages);
     try {
         let completion = await openai.createChatCompletion({
             model: "gpt-3.5-turbo",
             messages: messages,
         });
-        console.log(completion.data.choices);
         return String(completion.data.choices[0].message.content);
     } catch (error) {
         console.error(error);
@@ -34,7 +34,7 @@ async function generateImage(prompt) {
         });
         return String(response.data[0].url);
     } catch (error) {
-        console.error(error);
+        console.error(error.message);
         return null;
     }
 }

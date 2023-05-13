@@ -1,7 +1,10 @@
 const fs = require("fs");
 const { log } = require("./logger");
 const { generateResponse, generateImage } = require("./api_interaction");
-const { Course, Module, Lesson } = require("./course");
+const { Course, Module, Lesson } = require("../class/course");
+
+let config = fs.readFileSync("res/config.json");
+config = JSON.parse(config);
 
 function get_new_id() {
 	const id = parseInt(fs.readFileSync("res/id.txt", "utf8"));
@@ -62,17 +65,19 @@ async function generateCourse(topic, moduleCount = 4) {
 
 		course.addModule(module);
 	}
-	
-	const description = await generateBriefDescription(topic);
-	course.description = description;
+	log("100.0% complete. Finishing up...");
 
-	log("100.0% complete. Course generated!");
+	const description = await generateBriefDescription(topic, lessonPlan);
+	course.description = description;
+	log("Course generated successfully.")
 	return course;
 }
 
 async function generateBriefDescription(topic, lessonPlan) {
 	const prompt = "Create a short, one sentence description for this class:\n" + topic + "\n" + lessonPlan + ". Respond with only the description.";
-	const description = await generateResponse([{ role: "user", content: prompt }]);
+	let history = [{ role: "user", content: prompt }];
+	console.log(history);
+	const description = await generateResponse(history);
 	return description;
 }
 
@@ -101,6 +106,7 @@ async function createLessonInfo(lessonPlan, lessonHeader) {
 	const history = [];
 	history.push({ "role": "system", "content": "Current Lesson Plan" + lessonPlan });
 	history.push({ "role": "user", "content": prompt });
+    history.push({ role: "system", content: "An example lesson:\n" + config.EXAMPLE_CONTENT })
 	const lessonInfo = await generateResponse(history);
 	return lessonInfo;
 }
