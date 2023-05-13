@@ -95,8 +95,8 @@ class CourseMeta {
     static getAll() {
         const fs = require('fs');
         const courseJson = fs.readFileSync("res/courses.json", 'utf8');
-        const course = JSON.parse(courseJson);
-        return course;
+        const courses = JSON.parse(courseJson);
+        return courses;
     }
 
     toString() {
@@ -122,4 +122,4 @@ if (require.main === module) {
     c.toFile("test.json");
 }
 
-module.exports = { Course, Module, Lesson };
+module.exports = { Course, Module, Lesson, CourseMeta };

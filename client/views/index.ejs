@@ -36,21 +36,8 @@
         <div>
             <!-- <h2>Favorites</h2> -->
             <div id="courseItems">
-                <div class="courseElement" id="course_softwareEngineering">
-                    <div class="courseElementImg">
-                        <img src="img/softwareEngineering.avif" alt="Software Engineering" width="100%"
-                            height="100%">
-                    </div>
-                    <button class="favoriteButton fa-regular fa-star" onclick="favorite('course_softwareEngineering')"
-                        data-favorited="false"></button>
 
-                    <h1>Software Engineering</h1>
-                    <div class="courseElementDesc">
-                        Lorem Ipsum dolor sit amet
-                    </div>
-                </div>
-
-                <div class="courseElement" id="course_graphicDesign">
+                <!-- <div class="courseElement" id="course_graphicDesign">
                     <div class="courseElementImg">
                         <img src="img/other.jpg" alt="Graphic Design" width="100%" height="100%">
                     </div>
@@ -61,7 +48,24 @@
                     <div class="courseElementDesc">
                         Lorem Ipsum dolor sit amet
                     </div>
-                </div>
+                </div> -->
+                <% for (let i=0; i < courses.length; i++) { %>
+                    <% const course=courses[i]; %>
+                    <div class="courseElement" id="course_<%= course.title.replace(/\s+/g, '') %>">
+                        <div class="courseElementImg">
+                            <img src="<%= course.image %>" alt="<%= course.title %>" width="100%" height="100%">
+                        </div>
+                        <button class="favoriteButton fa-regular fa-star"
+                            onclick="favorite('course_<%= course.title.replace(/\s+/g, '') %>')"
+                            data-favorited="false"></button>
+                        <h1>
+                            <%= course.title %>
+                        </h1>
+                        <div class="courseElementDesc">
+                            <%= course.description %>
+                        </div>
+                    </div>
+                <% } %>
             </div>
         </div>
     </div>

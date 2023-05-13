@@ -163,3 +163,19 @@ Generating module: Software Testing and Quality Assurance
 89.99999999999999% complete. Generating Lesson: Continuous Integration, Delivery, and Deployment
 100.0% complete. Finishing up...
 Course generated successfully.
+Generating course: How to get my life together | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 3:39 PM
+Generating module: Goal setting and time management
+0% complete. Generating Lesson: Understanding the importance of goal setting 
+10% complete. Generating Lesson: Identifying long-term and short-term goals 
+20% complete. Generating Lesson: Creating SMART goals 
+30.000000000000004% complete. Generating Lesson: Developing a plan to achieve your goals 
+40% complete. Generating Lesson: Prioritizing tasks and managing time effectively
+Generating module: Organization and productivity techniques
+50% complete. Generating Lesson: The Importance of Organization and Productivity
+60% complete. Generating Lesson: Strategies for Organizing Your Space and Digital Files
+70% complete. Generating Lesson: Techniques to Boost Concentration and Minimize Distractions
+80% complete. Generating Lesson: Streamlining Your Schedule with Time Management Strategies
+89.99999999999999% complete. Generating Lesson: Overcoming Procrastination: Tips and Tricks for Productive Work
+100.0% complete. Finishing up...
+Course generated successfully.
