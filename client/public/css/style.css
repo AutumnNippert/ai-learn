@@ -11,6 +11,7 @@ html {
     width: 100%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    /* overflow-y: hidden; */
 }
 
 body {
@@ -45,6 +46,11 @@ button {
     transform: translate(-50%, -50%);
 }
 
+#topbar a {
+    text-decoration: none;
+    color: var(--black);
+}
+
 #topbar button {
     position: absolute;
     left: 1vh;
@@ -68,7 +74,7 @@ button {
     background-color: var(--white);
     left: 0vh;
     top: 5vh;
-    width: 15%;
+    width: 300px;
     transform: translateX(-105%);
     transition: transform 600ms ease;
     z-index: 1;
@@ -76,6 +82,10 @@ button {
 
 #sidebar[data-status="open"] {
     transform: translateX(0%);
+}
+
+#sidebar[data-status="closed"] {
+    visibility: hidden;
 }
 
 #sidebar::after {
@@ -148,7 +158,14 @@ button {
 
 #courseItems {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    gap: 40px;
 }
 
 .courseElement {
@@ -157,7 +174,14 @@ button {
     width: 250px;
     height: 350px;
     text-align: center;
+    cursor: pointer;
+}
 
+@media (max-width: 900px) {
+    #courseItems {
+        /* flex-direction: column; */
+        align-items: center;
+    }
 }
 
 .courseElement h1 {
@@ -198,16 +222,27 @@ button {
 .courseElementImg {
     height: 100px;
     width: 100%;
-    background-size: cover;
+    position: relative;
+    overflow: hidden;
+
 }
 
-#course_softwareEngineering .courseElementImg {
+.courseElementImg img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    object-fit: cover;
+}
+
+/* #course_softwareEngineering .courseElementImg {
     background-image: url(../images/clement-helardot-95YRwf6CNw8-unsplash.jpg);
 }
 
 #course_graphicDesign .courseElementImg {
     background-image: url(../images/photo-1561070791-36c11767b26a.avif);
-}
+} */
 
 .modal {
     display: none;
@@ -289,5 +324,10 @@ button {
     display: grid;
     margin: 0;
     padding: 0;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr;
 }
+
+/* .content {
+    height: 100%;
+    overflow-y: scroll !important; 
+} */

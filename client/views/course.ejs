@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= course.title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/general.js"></script>
+    <!-- External Fonts from Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- External Font Awesome Packages script gives us custom classes which provide the symbols for the buttons. -->
+    <script src="https://kit.fontawesome.com/0bade4009c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="topbar">
+        <button class="fa-solid fa-bars fa-xl" id="sidebarButton">
+        </button>
+        <h1><a href="/">AI Learn</a></h1>
+        
+    </div>
+    <div id="sidebar" data-status="closed">
+        <button data-selected="true">Courses</button>
+        <button>About</button>
+    </div>
+
+    <div class="container">
+        <div id="content">
+            <h2><%= course.title %></h2>
+            <div>
+                <h3>Course Description</h3>
+                <p><%= course.description %></p>
+            <div>
+                <% for (let module of course.modules) { %>
+                    <h3><%= module.title %></h3>
+                    <div>
+                        <% for (let lesson of module.lessons) { %>
+                            <h4><%= lesson.title %></h4>
+                            <% for (let line of lesson.info.split('\n')) { %>
+                                <p><%= line %></p>
+                            <% } %>
+                        <% } %>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
