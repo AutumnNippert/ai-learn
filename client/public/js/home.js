@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Courses Page-----------
     const addCourseButton = document.getElementById('addCourseButton');
 
@@ -26,14 +26,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Submit Button when the modal is viewed. This is displayed as "Add Course" on the page.
-    
+
     const submitButton = document.getElementById('submitCourse');
     var courseNameInput = document.getElementById('courseName');
     var moduleCountInput = document.getElementById('moduleCount');
 
-    submitButton.addEventListener('click', async function() {
+    submitButton.addEventListener('click', async function () {
 
-       
+
 
         var courseName = courseNameInput.value;
         var moduleCount = moduleCountInput.value;
@@ -48,26 +48,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
         console.log("submitting add course request with items: " + courseName + ": " + moduleCount);
         console.log(input);
-        fetch(`http://localhost/API/add_course/${courseName}/${moduleCount}`, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(input)
+        console.log(JSON.stringify(input));
+        fetch(`/add_course/${courseName}/${moduleCount}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(input)
         })
-        .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.text();
-        })
-        .then(data => {
-        console.log(data);
-        })
-        .catch(error => {
-        console.error('Error:', error);
-        });
-        console.log("over");
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                // do something like pop up a modal that says "Course Added" or something.
+                return
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
 
     });
 

@@ -11,8 +11,7 @@ function get_new_id() {
 }
 
 async function generateCourse(topic, moduleCount = 4) {
-	const description = await generateBriefDescription(topic);
-	const course = new Course(topic, description, get_new_id());
+	const course = new Course(topic, 'none', get_new_id());
 	let lessonPlan = await generateCoursePlan(topic, moduleCount);
 	let moduleHeaders = [];
 
@@ -63,13 +62,16 @@ async function generateCourse(topic, moduleCount = 4) {
 
 		course.addModule(module);
 	}
+	
+	const description = await generateBriefDescription(topic);
+	course.description = description;
 
 	log("100.0% complete. Course generated!");
 	return course;
 }
 
-async function generateBriefDescription(topic) {
-	const prompt = "Create a brief description of a class on " + topic + ". Respond with only the description.";
+async function generateBriefDescription(topic, lessonPlan) {
+	const prompt = "Create a short, one sentence description for this class:\n" + topic + "\n" + lessonPlan + ". Respond with only the description.";
 	const description = await generateResponse([{ role: "user", content: prompt }]);
 	return description;
 }

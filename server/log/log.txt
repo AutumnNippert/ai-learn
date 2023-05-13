@@ -55,3 +55,6 @@ Generating module: Colonial Georgia and the American Revolution
 80% complete. Generating Lesson: Key Revolutionary War Battles in Georgia 
 89.99999999999999% complete. Generating Lesson: Legacy of the American Revolution in Georgia
 100.0% complete. Course generated!
+Generating course: test | with 2 modules
+Estimated time to complete: 0 minutes | 2:03 PM
+100.0% complete. Course generated!

@@ -20,11 +20,11 @@ app.get('/', (req, res) => {
     res.json({ message: `API Running on port ${port}` })
 });
 
-app.post('/API/add_course', async (req, res) => {
-    console.log(`API/add_course/${req.body.courseName}/${req.body.moduleCount}`);
+app.post('/API/add_course/:courseName/:moduleCount', async (req, res) => {
     try {
-        const courseTitle = req.body.courseName;
-        const moduleCount = parseInt(req.body.moduleCount);
+        console.log(req.body);
+        const courseTitle = req.params.courseName;
+        const moduleCount = parseInt(req.params.moduleCount, 10);
         log(`Generating course: ${courseTitle} | with ${moduleCount} modules`);
         const course = await generateCourse(courseTitle, moduleCount);
         course.toFile(`${course.id}.json`);
