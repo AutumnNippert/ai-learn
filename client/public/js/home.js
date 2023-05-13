@@ -24,7 +24,53 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.style.display = "none";
         }
     }
+
+    // Submit Button when the modal is viewed. This is displayed as "Add Course" on the page.
     
+    const submitButton = document.getElementById('submitCourse');
+    var courseNameInput = document.getElementById('courseName');
+    var moduleCountInput = document.getElementById('moduleCount');
+
+    submitButton.addEventListener('click', async function() {
+
+       
+
+        var courseName = courseNameInput.value;
+        var moduleCount = moduleCountInput.value;
+
+        console.log(courseName); // logs the value of the courseName input
+        console.log(moduleCount); // logs the value of the moduleCount input
+
+        const input = {
+            courseName: `${courseName}`,
+            moduleCount: `${moduleCount}`,
+        }
+
+        console.log("submitting add course request with items: " + courseName + ": " + moduleCount);
+        console.log(input);
+        fetch(`http://localhost/API/add_course/${courseName}/${moduleCount}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(input)
+        })
+        .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.text();
+        })
+        .then(data => {
+        console.log(data);
+        })
+        .catch(error => {
+        console.error('Error:', error);
+        });
+        console.log("over");
+
+    });
+
 });
 
 
@@ -46,6 +92,5 @@ function favorite(courseID) {
         course.classList.remove("favorite");
 
     }
-
 }
 
