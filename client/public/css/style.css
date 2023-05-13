@@ -102,7 +102,7 @@ button {
     background-color: var(--white);
 
     height: 50px;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
 
@@ -119,6 +119,12 @@ button {
     background-color: var(--blue);
 }
 
+#sidebar .module-lessons {
+    display: block;
+    padding-left: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+}
 
 #content {
     margin-top: 6vh;
@@ -290,7 +296,7 @@ button {
     cursor: pointer;
 }
 
-#table_of_contents{
+#table_of_contents {
     background-color: var(--grey1);
     width: 100%;
     padding-top: 3vh;
@@ -300,7 +306,7 @@ button {
     cursor: pointer;
 }
 
-#table_of_contents h3{
+#table_of_contents h3 {
     background-color: var(--grey2);
     width: 100%;
     padding: 1vh;
@@ -310,7 +316,7 @@ button {
     cursor: pointer;
 }
 
-#table_of_contents h4{
+#table_of_contents h4 {
     background-color: var(--grey3);
     width: 100%;
     padding: 1vh;
@@ -320,7 +326,7 @@ button {
     cursor: pointer;
 }
 
-.container{
+.container {
     display: grid;
     margin: 0;
     padding: 0;

@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= course.title %></title>
+    <title>
+        <%= course.title %>
+    </title>
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/general.js"></script>
     <!-- External Fonts from Google -->
@@ -14,38 +17,101 @@
     <!-- External Font Awesome Packages script gives us custom classes which provide the symbols for the buttons. -->
     <script src="https://kit.fontawesome.com/0bade4009c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div id="topbar">
         <button class="fa-solid fa-bars fa-xl" id="sidebarButton">
         </button>
         <h1><a href="/">AI Learn</a></h1>
-        
+
     </div>
     <div id="sidebar" data-status="closed">
-        <button data-selected="true">Courses</button>
-        <button>About</button>
+        <% for (let module of course.modules) { %>
+            <button class="module-button" data-default-text="<%= module.title %>">
+                <%= module.title %>
+            </button>
+            <div class="module-lessons">
+                <% for (let lesson of module.lessons) { %>
+                    <button class="lesson-button" data-default-text="<%= lesson.title %>">
+                        <%= lesson.title %>
+                    </button>
+                    <% } %>
+            </div>
+            <% } %>
     </div>
 
     <div class="container">
         <div id="content">
-            <h2><%= course.title %></h2>
+            <h2>
+                <%= course.title %>
+            </h2>
+            <h3 id="moduleTitle"></h3>
             <div>
-                <h3>Course Description</h3>
-                <p><%= course.description %></p>
-            <div>
-                <% for (let module of course.modules) { %>
-                    <h3><%= module.title %></h3>
-                    <div>
-                        <% for (let lesson of module.lessons) { %>
-                            <h4><%= lesson.title %></h4>
-                            <% for (let line of lesson.info.split('\n')) { %>
-                                <p><%= line %></p>
-                            <% } %>
-                        <% } %>
-                    </div>
-                <% } %>
+                <h4 id="lessonTitle"></h4>
+                <p id="lessonInfo"></p>
             </div>
         </div>
     </div>
 </body>
+
+<!-- ejs setting current module and lesson -->
+<script>
+    const course = <%- JSON.stringify(course) %>;
+
+    let currModule = course.modules[0];
+    let currLesson = currModule.lessons[0];
+
+    const moduleTitle = document.getElementById("moduleTitle");
+    const lessonTitle = document.getElementById("lessonTitle");
+    const lessonInfo = document.getElementById("lessonInfo");
+
+    function setCurrModule(module) {
+        currModule = module;
+        moduleTitle.innerHTML = currModule.title;
+    }
+
+    function setCurrLesson(lesson) {
+        currLesson = lesson;
+        lessonTitle.innerHTML = currLesson.title;
+        const info = lesson.info.replace(/\n/g, "<br>");
+        lessonInfo.innerHTML = info;
+        // set module to parent module of lesson
+        setCurrModule(course.modules.find(module => module.lessons.includes(currLesson)));
+    }
+
+    setCurrLesson(currLesson);
+
+    const moduleButtons = document.getElementsByClassName("module-button");
+    const lessonButtons = document.getElementsByClassName("lesson-button");
+
+    for (let i = 0; i < moduleButtons.length; i++) {
+        moduleButtons[i].addEventListener("click", () => {
+            setCurrLesson(course.modules[i].lessons[0]);
+        });
+    }
+
+    const lessonCounts = course.modules.map(module => module.lessons.length);
+    let buttonNum = 0;
+    let module = 0;
+
+    for (let i = 0; i < lessonButtons.length; i++) {
+        // if greater than lessoncounts[module] then set to 0 and increment module
+        for (module = 0; module < lessonCounts.length-1;) {
+            if (i >= lessonCounts[module]) {
+            if (buttonNum >= lessonCounts[module]) {
+                buttonNum -= lessonCounts[module];
+            }
+            module++;
+            }
+            break;
+        }
+        const currentButtonNum = buttonNum; // save current button number
+        const currentModule = module; // save current module number
+        lessonButtons[i].addEventListener("click", () => {
+            setCurrLesson(course.modules[currentModule].lessons[currentButtonNum]);
+        });
+        buttonNum++;
+    }
+</script>
+
 </html>

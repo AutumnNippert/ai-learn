@@ -179,3 +179,19 @@ Generating module: Organization and productivity techniques
 89.99999999999999% complete. Generating Lesson: Overcoming Procrastination: Tips and Tricks for Productive Work
 100.0% complete. Finishing up...
 Course generated successfully.
+Generating course: HTML Basics | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 7:33 PM
+Generating module: Introduction to HTML
+0% complete. Generating Lesson: Basic structure of an HTML document
+10% complete. Generating Lesson: HTML tags and their uses
+20% complete. Generating Lesson: Creating headings, paragraphs, and lists in HTML
+30.000000000000004% complete. Generating Lesson: Adding links and images to an HTML document
+40% complete. Generating Lesson: Basic CSS styling for HTML elements
+Generating module: HTML Document Structure and Tags
+50% complete. Generating Lesson: The basic structure of an HTML document
+60% complete. Generating Lesson: The head section of an HTML document and its contents
+70% complete. Generating Lesson: The body section of an HTML document and its contents
+80% complete. Generating Lesson: The most commonly used HTML tags for structuring your document
+89.99999999999999% complete. Generating Lesson: Adding comments to an HTML document
+100.0% complete. Finishing up...
+Course generated successfully.
