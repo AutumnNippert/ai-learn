@@ -3,7 +3,16 @@ const axios = require('axios');
 const express = require('express');
 const app = express();
 
-const port = 3001;
+const args = process.argv.slice(2); // Ignore first two arguments
+
+// Default port number
+let port = 80;
+
+// Check for -port argument
+const portIndex = args.indexOf('-port');
+if (portIndex !== -1 && portIndex < args.length - 1) {
+    port = parseInt(args[portIndex + 1], 10);
+}
 
 app.set('view engine', 'ejs');
 
