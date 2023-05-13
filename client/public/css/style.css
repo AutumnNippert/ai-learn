@@ -167,7 +167,7 @@ button {
     width: 250px;
     height: 350px;
     text-align: center;
-
+    cursor: pointer;
 }
 
 .courseElement h1 {
@@ -313,7 +313,7 @@ button {
     grid-template-columns: 1fr;
 }
 
-.content {
-    /* height: 100%;
-    overflow-y: scroll !important; */
-}
+/* .content {
+    height: 100%;
+    overflow-y: scroll !important; 
+} */
