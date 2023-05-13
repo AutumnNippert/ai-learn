@@ -39,12 +39,18 @@ class Course {
     toFile(file_name) {
         const fs = require('fs');
         const courseJson = JSON.stringify(this, null, 4, CourseEncoder);
-        fs.writeFileSync("res/" + file_name, courseJson);
+        fs.writeFileSync("res/courses/" + file_name, courseJson);
+        // add to courses.json
+        const coursesJson = fs.readFileSync("res/courses.json", 'utf8');
+        const toAdd = { "title": this.title, "description": this.description, "id": this.id };
+        const courses = JSON.parse(coursesJson);
+        courses.push(toAdd);
+        fs.writeFileSync("res/courses.json", JSON.stringify(courses, null, 4));
     }
 
     static fromFile(file_name) {
         const fs = require('fs');
-        const courseJson = fs.readFileSync("res/" + file_name, 'utf8');
+        const courseJson = fs.readFileSync("res/courses/" + file_name, 'utf8');
         const course = JSON.parse(courseJson);
         return course;
     }
