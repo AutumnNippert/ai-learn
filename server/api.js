@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const { Course } = require('./bin/course');
+const { Course, CourseMeta } = require('./class/course');
 const { generateCourse } = require('./bin/course_generator');
 const { log } = require('./bin/logger');
 
@@ -22,7 +22,6 @@ app.get('/', (req, res) => {
 
 app.post('/API/add_course/:courseName/:moduleCount', async (req, res) => {
     try {
-        console.log(req.body);
         const courseTitle = req.params.courseName;
         const moduleCount = parseInt(req.params.moduleCount, 10);
         log(`Generating course: ${courseTitle} | with ${moduleCount} modules`);
@@ -47,6 +46,17 @@ app.get('/API/get_course/:course_id', async (req, res) => {
         } else {
             res.status(500).send('Error fetching course data');
         }
+    }
+});
+
+app.get('/API/get_courses', (req, res) => {
+    console.log('API/get_courses');
+    try {
+        const courses = CourseMeta.getAll();
+        res.json(courses);
+    } catch (error) {
+        console.log(error.message);
+        res.status(500).send('Error fetching course data');
     }
 });
 
