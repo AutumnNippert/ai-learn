@@ -37,9 +37,10 @@ app.get('/course/:course_id', async (req, res) => {
     }
 });
 
-app.get('/API/add_course', async (req, res) => {
+app.get('/API/add_course/:courseName/:moduleCount', async (req, res) => {
     try {
-        await axios.get(`http://localhost:3000/API/add_course/${req.body.courseName}/${req.body.moduleCount}`);
+        const { courseName, moduleCount } = req.params;
+        await axios.post(`http://localhost:3000/API/add_course/${courseName}/${moduleCount}`, req.body);
     } catch (error) {
         res.render('error', { error: '500: Internal Server Error' });
     }
