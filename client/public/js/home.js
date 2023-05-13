@@ -1,3 +1,17 @@
+// Clickable Course Elements
+document.addEventListener('DOMContentLoaded', function() {
+    var courseElements = document.querySelectorAll('.courseElement');
+    courseElements.forEach (function(element) {
+        element.addEventListener('click', function() {
+            console.log(element.id);
+            var url = '';
+            window.open(url, '_blank');
+        });
+    });
+});
+
+
+// Add Courses Button and Modal
 document.addEventListener('DOMContentLoaded', function () {
     // Courses Page-----------
     const addCourseButton = document.getElementById('addCourseButton');
