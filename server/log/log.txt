@@ -195,3 +195,30 @@ Generating module: HTML Document Structure and Tags
 89.99999999999999% complete. Generating Lesson: Adding comments to an HTML document
 100.0% complete. Finishing up...
 Course generated successfully.
+Generating course: Complex html | with 4 modules
+Estimated time to complete: 6.666666666666667 minutes | 7:52 PM
+Generating module: Basic HTML tags and syntax 
+0% complete. Generating Lesson: Introduction to HTML and its applications
+5% complete. Generating Lesson: Structure of an HTML document
+10% complete. Generating Lesson: Common HTML tags and their functions
+15.000000000000002% complete. Generating Lesson: Basic text formatting and styling 
+20% complete. Generating Lesson: Creating hyperlinks with HTML tags
+Generating module: Advanced HTML tags and attributes
+25% complete. Generating Lesson: Introduction to advanced HTML tags and attributes
+31.25% complete. Generating Lesson: Working with tables and lists
+37.5% complete. Generating Lesson: Embedding multimedia content using HTML
+43.75% complete. Generating Lesson: Understanding and using forms in HTML
+Generating module: Creating and styling forms 
+50% complete. Generating Lesson: Overview of form elements and their functions
+55.00000000000001% complete. Generating Lesson: Creating form fields, labels, and buttons
+60.00000000000001% complete. Generating Lesson: Validating form data with HTML5 attributes
+65.00000000000001% complete. Generating Lesson: Using CSS to style form elements
+70.00000000000001% complete. Generating Lesson: Best practices for designing user-friendly forms
+Generating module: Responsive design and media queries
+75.00000000000003% complete. Generating Lesson: Introduction to responsive design and its importance
+80.00000000000003% complete. Generating Lesson: Using CSS media queries to create responsive layout
+85.00000000000003% complete. Generating Lesson: Creating fluid and flexible grid layouts
+90.00000000000003% complete. Generating Lesson: Optimizing images for different screen sizes
+95.00000000000004% complete. Generating Lesson: Testing and debugging responsive design
+100.0% complete. Finishing up...
+Course generated successfully.

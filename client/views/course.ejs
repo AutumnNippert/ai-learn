@@ -96,17 +96,18 @@
 
     for (let i = 0; i < lessonButtons.length; i++) {
         // if greater than lessoncounts[module] then set to 0 and increment module
-        for (module = 0; module < lessonCounts.length-1;) {
+        for (let m = 0; m < lessonCounts.length; m++) {
             if (i >= lessonCounts[module]) {
-            if (buttonNum >= lessonCounts[module]) {
-                buttonNum -= lessonCounts[module];
+                if (buttonNum >= lessonCounts[module]) {
+                    buttonNum -= lessonCounts[module];
+                    module++;
+                    break;
+                }
             }
-            module++;
-            }
-            break;
         }
         const currentButtonNum = buttonNum; // save current button number
         const currentModule = module; // save current module number
+        console.log(i, currentButtonNum, currentModule)
         lessonButtons[i].addEventListener("click", () => {
             setCurrLesson(course.modules[currentModule].lessons[currentButtonNum]);
         });
