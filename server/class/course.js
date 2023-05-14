@@ -82,14 +82,20 @@ class CourseMeta {
         // add to courses.json
         const fs = require('fs');
         console.log("toFile");
-        const courses = fs.readdirSync('/res/courses');
+        let courses = fs.readFileSync("res/courses.json", 'utf8');
+        courses = JSON.parse(courses);
+        // courses has a list of all the courses as "courses"
+        courses = courses.data;
+        console.log(courses);
         courses.unshift(this);
-        fs.writeFileSync("/res/courses.json", JSON.stringify(courses, null, 4));
+        console.log(courses);
+        const courseJson = JSON.stringify(courses, null, 4);
+        fs.writeFileSync("res/courses.json", courseJson);
     }
 
     static getAll() {
         const fs = require('fs');
-        const courseJson = fs.readFileSync("/res/courses.json", 'utf8');
+        const courseJson = fs.readFileSync("res/courses.json", 'utf8');
         const courses = JSON.parse(courseJson);
         return courses;
     }

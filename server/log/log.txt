@@ -388,3 +388,69 @@ Generating module: Understanding the Basics of Cake Frying
 10% complete. Generating Lesson: Selecting the Right Frying Oil and Equipment for Cake Frying
 20% complete. Generating Lesson: Preparing the Cake Batter and Correctly Shaping the Cakes for Frying
 30.000000000000004% complete. Generating Lesson: Frying Techniques for Different Types of Cakes, Including Donuts, Churros, and Fritters 
+40% complete. Generating Lesson: Tips for Properly Draining and Serving Fried Cakes to Maintain their Texture and Flavor.
+Generating module: Advanced Techniques for Perfectly Fried Cakes
+Generating course: Banana Slicing | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 12:45 PM
+Generating module: Introduction to Banana Slicing: History, Varieties of Bananas, Types of Cuts and Equipment
+0% complete. Generating Lesson: The history of banana slicing
+10% complete. Generating Lesson: Types of bananas commonly used for slicing
+20% complete. Generating Lesson: Different types of cuts for bananas
+30.000000000000004% complete. Generating Lesson: Essential equipment for banana slicing
+40% complete. Generating Lesson: Tips for selecting and preparing bananas for slicing
+Generating module: Advanced Techniques in Banana Slicing: Presentation, Safety Tips, and Recipes that Utilize Banana Slices
+50% complete. Generating Lesson: Presentation techniques for sliced bananas
+60% complete. Generating Lesson: Safety tips when working with knives and other slicing equipment
+70% complete. Generating Lesson: Recipes that use banana slices as a key ingredient
+80% complete. Generating Lesson: Advanced slicing techniques for different banana varieties
+89.99999999999999% complete. Generating Lesson: Tips for efficient slicing and minimizing waste.
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Apple Peeling | with 2 modules
+Generating module: The Basics of Apple Peeling
+Estimated time to complete: 3.3333333333333335 minutes | 12:49 PM
+0% complete. Generating Lesson: Common Tools and Materials for Apple Peeling
+10% complete. Generating Lesson: Preparing the Apple for Peeling
+20% complete. Generating Lesson: Step-by-Step Guide to Peeling an Apple
+30.000000000000004% complete. Generating Lesson: Tips for Efficient and Safe Apple Peeling
+40% complete. Generating Lesson: Common Mistakes to Avoid While Peeling Apples
+Generating module: Advanced Apple Peeling Techniques
+50% complete. Generating Lesson: Introduction to Advanced Techniques
+60% complete. Generating Lesson: Spiral Peeling
+70% complete. Generating Lesson: Continuous Peeling
+80% complete. Generating Lesson: Coring and Peeling in One Motion
+89.99999999999999% complete. Generating Lesson: Wave Peeling
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Apple microwaving | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 12:56 PM
+Generating module: Safety precautions for microwaving Apples 
+0% complete. Generating Lesson: Understanding microwave safety 
+10% complete. Generating Lesson: Identifying microwave-safe containers for Apples 
+20% complete. Generating Lesson: How to prepare Apples for microwaving 
+30.000000000000004% complete. Generating Lesson: Understanding the microwave power settings and cooking time for Apples 
+40% complete. Generating Lesson: How to safely handle hot Apples from the microwave
+Generating module: How to select, prepare, and microwave Apples to perfection
+50% complete. Generating Lesson: The different types of Apples and their best uses for microwaving 
+60% complete. Generating Lesson: How to properly wash and dry Apples 
+70% complete. Generating Lesson: Understanding the different methods for coring and slicing Apples 
+80% complete. Generating Lesson: Techniques for seasoning and flavoring Apples 
+89.99999999999999% complete. Generating Lesson: Best practices for covering Apples while microwaving them to retain moisture
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Making cows | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 1:06 PM
+Generating module: Introduction to Cow Anatomy and Physiology
+0% complete. Generating Lesson: Overview of cow anatomy and basic body systems
+10% complete. Generating Lesson: Muscles and skeleton of dairy cattle
+20% complete. Generating Lesson: Understanding the digestive system of cows
+30.000000000000004% complete. Generating Lesson: Reproductive anatomy and physiology of cattle
+40% complete. Generating Lesson: The basics of cow behavior and how it relates to their biology
+Generating module: Fundamentals of Breeding and Genetics in Cattle
+50% complete. Generating Lesson: Introduction to cattle breeding and genetics
+60% complete. Generating Lesson: Understanding the principles of inheritance
+70% complete. Generating Lesson: The genetic tool kit: DNA, chromosomes and genes
+80% complete. Generating Lesson: Breeding goals and selection criteria
+89.99999999999999% complete. Generating Lesson: Predictive tools in breeding: estimation of breeding values, genomic selection
+100.0% complete. Finishing up...
+Course generated successfully.
