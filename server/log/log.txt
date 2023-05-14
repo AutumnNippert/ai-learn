@@ -566,3 +566,19 @@ Generating module: Water Drinking Techniques: Practical Tips to Help You Stay Hy
 89.99999999999999% complete. Generating Lesson: Creative ways to incorporate more water-rich foods in your diet
 100.0% complete. Finishing up...
 Course generated successfully.
+Generating course: Baking Beef Beautifully | with 2 modules
+Generating module: Understanding different cuts of beef and their characteristics that impact cooking methods and times.
+Estimated time to complete: 3.3333333333333335 minutes | 4:14 PM
+0% complete. Generating Lesson: Understanding beef's muscle structure and how it influences tenderness and flavor of different cuts.
+10% complete. Generating Lesson: Identifying different beef cuts and their unique characteristics.
+20% complete. Generating Lesson: Understanding different cooking methods for various beef cuts, such as grilling, roasting, and braising.
+30.000000000000004% complete. Generating Lesson: Learning how to properly use cooking equipment, such as meat thermometers and sous vide machines, to achieve desired results.
+40% complete. Generating Lesson: Analyzing the effect of aging and grading systems on beef quality and flavor.
+Generating module: Mastering the art of seasoning, marinating and cooking beef to perfect tenderness and flavor using various baking techniques.
+50% complete. Generating Lesson: Understanding the basics of seasoning and marinating for beef.
+60% complete. Generating Lesson: Identifying which seasoning blend or marinade works best for each specific cut of beef.
+70% complete. Generating Lesson: Learning to cook beef using a variety of baking techniques such as broiling, grilling, and slow cooking in order to achieve desired tenderness.
+80% complete. Generating Lesson: Properly cooking different cuts of beef, such as briskets, tenderloins, and roasts to achieve perfect tenderness and flavor.
+89.99999999999999% complete. Generating Lesson: Understanding the science behind the Maillard reaction and how it affects the flavor and texture of cooked beef.
+100.0% complete. Finishing up...
+Course generated successfully.

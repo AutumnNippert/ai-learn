@@ -1,4 +1,13 @@
 function main(course){
+    const content = document.getElementsByClassName("banner")[0];
+    // get banner image
+    const bannerImage = course.image.replace(/ /g, "");
+    content.style.backgroundImage = `url(${bannerImage})`;
+    // center the image vertically, and stretch to fit vertically
+    content.style.backgroundPosition = "center";
+    content.style.backgroundSize = "cover";
+    
+
     let currModule = course.modules[0];
     let currLesson = currModule.lessons[0];
 

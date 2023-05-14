@@ -10,8 +10,8 @@
     </title>
     <link rel="stylesheet" href="/css/course.css">
     <link rel="stylesheet" href="/css/general.css">
-    <script src="/js/course.js"></script>
     <script src="/js/general.js"></script>
+    <script src="/js/course.js"></script>
     <!-- External Fonts from Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,12 +41,12 @@
             </div>
             <% } %>
     </div>
-    <div class="banner">
-        <button id="prevButton">Prev</button>
-        <button id="nextButton">Next</button>
-    </div>
 
     <div class="container">
+        <div class="banner" id="banner">
+            <button id="prevButton">Prev</button>
+            <button id="nextButton">Next</button>
+        </div>
         <div id="content">
             <h2>
                 <%= course.title %>
