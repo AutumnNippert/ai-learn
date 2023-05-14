@@ -15,7 +15,7 @@ function get_new_id() {
 
 async function generateCourse(topic, moduleCount = 4) {
 	const image = await generateImage(topic);
-	const course = new Course(topic, 'none', get_new_id(), image);
+	const course = new Course(topic, 'none', get_new_id(), 'https://liftlearning.com/wp-content/uploads/2020/09/default-image.png');
 	let lessonPlan = await generateCoursePlan(topic, moduleCount);
 	let moduleHeaders = [];
 
@@ -70,6 +70,7 @@ async function generateCourse(topic, moduleCount = 4) {
 
 	const description = await generateBriefDescription(topic, lessonPlan);
 	course.description = description;
+	course.image = image;
 	log("Course generated successfully.")
 	return course;
 }

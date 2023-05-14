@@ -41,15 +41,9 @@ class Course {
         const fs = require('fs');
         const courseJson = JSON.stringify(this, null, 4, CourseEncoder);
         fs.writeFileSync("res/courses/" + file_name, courseJson);
-        // add to courses.json
-        const coursesJson = fs.readFileSync("res/courses.json", 'utf8');
-        const toAdd = { "title": this.title, "description": this.description, "id": this.id };
-        const courses = JSON.parse(coursesJson);
-        courses.push(toAdd);
-        fs.writeFileSync("res/courses.json", JSON.stringify(courses, null, 4));
 
-        // add to courses.txt
-        const meta = new CourseMeta(this.title, this.description, this.id);
+        // add to courses.json
+        const meta = new CourseMeta(this.title, this.description, this.id, this.image);
         meta.toFile();
     }
 
@@ -87,20 +81,15 @@ class CourseMeta {
     toFile() {
         // add to courses.json
         const fs = require('fs');
-        const coursesJson = fs.readFileSync("res/courses.json", 'utf8');
-        const courses = JSON.parse(coursesJson);
-        if (courses == null) {
-            courses = {};
-        }
-        const toAdd = { title: this.title, description: this.description, id: this.id, image: this.image };
-
-        courses.push(toAdd);
-        fs.writeFileSync("res/courses.json", JSON.stringify(courses, null, 4));
+        console.log("toFile");
+        const courses = fs.readdirSync('/res/courses');
+        courses.unshift(this);
+        fs.writeFileSync("/res/courses.json", JSON.stringify(courses, null, 4));
     }
 
     static getAll() {
         const fs = require('fs');
-        const courseJson = fs.readFileSync("res/courses.json", 'utf8');
+        const courseJson = fs.readFileSync("/res/courses.json", 'utf8');
         const courses = JSON.parse(courseJson);
         return courses;
     }

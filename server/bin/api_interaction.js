@@ -27,12 +27,12 @@ async function generateResponse(messages) {
 
 async function generateImage(prompt) {
     try {
-        const response = await openai.image.create({
+        const response = await openai.createImage({
             prompt: prompt,
             n: 1,
             size: "512x512"
         });
-        return String(response.data[0].url);
+        return String(response.data.data[0].url);
     } catch (error) {
         console.error(error.message);
         return null;

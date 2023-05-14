@@ -275,3 +275,116 @@ Course generated successfully.
 89.99999999999999% complete. Generating Lesson: Building scalable and efficient server-side applications with NodeJS and performance optimization techniques.
 100.0% complete. Finishing up...
 Course generated successfully.
+Generating course: American History | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 11:32 AM
+Generating module: Colonial America: Exploring the origins of the United States from the arrival of European settlers to the American Revolution.
+0% complete. Generating Lesson: The First Colonies: Jamestown, Plymouth, and New Amsterdam
+10% complete. Generating Lesson: The Growth of Colonial Society: Economy, Religion, and Education
+20% complete. Generating Lesson: The Road to Revolution: The French and Indian War, the Stamp Act, and the Boston Tea Party
+30.000000000000004% complete. Generating Lesson: Key Figures of the American Revolution: George Washington, Thomas Jefferson, and Benjamin Franklin
+40% complete. Generating Lesson: Life in Early America: Slavery, Women's Roles, and the Importance of Community
+Generating module: The Civil Rights Movement: From segregation to the fight for voting rights, this module will cover the struggle for equality for African Americans from the 1940s to the 1960s.
+50% complete. Generating Lesson: Segregation and the Jim Crow Laws: The Legal and Social Barriers to Equality
+60% complete. Generating Lesson: The Rise of Civil Rights Organizations: The NAACP, SCLC, and CORE
+70% complete. Generating Lesson: The Montgomery Bus Boycott and the Leadership of Martin Luther King Jr.
+80% complete. Generating Lesson: The March on Washington and the Civil Rights Act of 1964
+89.99999999999999% complete. Generating Lesson: The Fight for Voting Rights: The Selma March and the Voting Rights Act of 1965
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: European History | with 2 modules
+Generating module: Europe in the Middle Ages
+Estimated time to complete: 3.3333333333333335 minutes | 11:46 AM
+0% complete. Generating Lesson: Introduction to the Middle Ages
+10% complete. Generating Lesson: The Roman Empire's collapse and the rise of European Feudalism
+Generating course: European History | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 11:47 AM
+Generating module: The Renaissance and its Impact on European Society
+0% complete. Generating Lesson: Historical and Cultural Context of the Renaissance
+10% complete. Generating Lesson: Art and Architecture during the Renaissance
+Generating course: European History | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 11:48 AM
+Generating module: The Renaissance and its impact on European society, art, and literature.
+0% complete. Generating Lesson: The origins and key features of the Renaissance.
+Generating course: European History | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 11:49 AM
+Generating module: The Renaissance and Baroque Era
+0% complete. Generating Lesson: Introduction to the Renaissance period 
+Generating course: European History | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 11:49 AM
+Generating module: Feudalism and the Middle Ages
+0% complete. Generating Lesson: The Emergence of Feudalism
+Generating course: European History | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 11:50 AM
+Generating module: The Renaissance and Reformation in Europe
+Generating course: European History | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 11:52 AM
+Generating module: Rise and Fall of Ancient Greece and Rome
+0% complete. Generating Lesson: The Emergence of Ancient Greece: Historical Context and Greek Mythology
+10% complete. Generating Lesson: Greek Philosophy and the Birth of Civilization
+20% complete. Generating Lesson: The Rise of the Roman Empire: A Conquest of Europe and Beyond
+30.000000000000004% complete. Generating Lesson: Classical Roman Culture: Art, Language, and Religion
+40% complete. Generating Lesson: The Fall of Ancient Rome: Barbarian Encroachment and Imperial Decay
+Generating module: The Renaissance and Protestant Reformation in Europe
+50% complete. Generating Lesson: The Renaissance and Its Impact on Europe
+60% complete. Generating Lesson: Humanism and the Revival of Classical Learning
+70% complete. Generating Lesson: The Protestant Reformation: Origins and Impacts
+80% complete. Generating Lesson: Key Figures of the Protestant Reformation: Martin Luther, John Calvin and Others
+89.99999999999999% complete. Generating Lesson: The Catholic Counter-Reformation and the Council of Trent
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Banana Baking | with 2 modules
+Generating module: Introduction to Banana Baking: This module introduces students to the various baking techniques and ingredients associated with banana baking
+Estimated time to complete: 3.3333333333333335 minutes | 12:15 PM
+0% complete. Generating Lesson: The Basics of Baking with Bananas
+10% complete. Generating Lesson: Selecting the Right Bananas for Baking
+20% complete. Generating Lesson: Overview of Baking Tools and Equipment for Banana Baking
+30.000000000000004% complete. Generating Lesson: Understanding the Importance of Measuring Ingredients
+40% complete. Generating Lesson: Common Terminologies in Banana Baking
+Generating module: Essential Recipes for Banana Baking: In this module, students will learn how to make essential banana-based baked goods such as banana bread, banana muffins, banana cake, and banana pancakes, among others
+50% complete. Generating Lesson: Preparing Banana Bread with Walnuts
+60% complete. Generating Lesson: Creating Delicious Banana Muffins with Chocolate Chips 
+70% complete. Generating Lesson: A Beginner's Guide to Making a Simple Banana Cake with Vanilla Frosting 
+80% complete. Generating Lesson: How to Make Fluffy Banana Pancakes with Caramel Sauce 
+89.99999999999999% complete. Generating Lesson: Exploring Creative Variations of Banana-Based Baked Treats
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Steak Baking | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 12:22 PM
+Generating module: Understanding types of steak and their ideal cooking methods
+0% complete. Generating Lesson: The different cuts of steak and their characteristics
+10% complete. Generating Lesson: The importance of meat grading and what it means
+20% complete. Generating Lesson: Understanding the difference between wet and dry-aged beef
+30.000000000000004% complete. Generating Lesson: The best cooking methods for different cuts of steak
+40% complete. Generating Lesson: How to properly slice and serve steak for optimal enjoyment
+Generating module: Tips and tricks for seasoning and cooking the perfect steak every time
+50% complete. Generating Lesson: The importance of properly seasoning your steak
+60% complete. Generating Lesson: How to choose the right cooking oil for your steak
+70% complete. Generating Lesson: Different cooking techniques for achieving the perfect sear
+80% complete. Generating Lesson: Tips for determining when your steak is perfectly cooked
+89.99999999999999% complete. Generating Lesson: Resting and serving your steak for maximum enjoyment.
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Steak Baking | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 12:35 PM
+Generating module: Choosing the Perfect Steak: Types, Grades, and Cuts
+0% complete. Generating Lesson: Understanding the Different Types of Steak: Beef, Pork, Lamb, and More 
+10% complete. Generating Lesson: Identifying the Different Grades of Steak and Their Quality 
+20% complete. Generating Lesson: Selecting the Best Cut of Steak for Your Needs: Ribeye, Strip, Filet Mignon, and More 
+30.000000000000004% complete. Generating Lesson: Characteristics of Dry-aged and Wet-aged Steak and What to Consider When Choosing 
+40% complete. Generating Lesson: The Importance of Marbling and How It Affects Flavor and Tenderness
+Generating module: Mastering the Art of Steak Baking: Techniques and Recipes
+50% complete. Generating Lesson: Here are 5 sub lessons for 'Mastering the Art of Steak Baking: Techniques and Recipes':
+58.333333333333336% complete. Generating Lesson: Prepping the Steak for Baking: Preparation Techniques for Optimal Flavor and Tenderness.
+66.66666666666667% complete. Generating Lesson: The Perfect Temperature: Determining the Correct Internal Temperature for Your Steak to Achieve Your Desired Doneness.
+75.00000000000001% complete. Generating Lesson: Tips and Tricks for Perfectly Seared Steak: Searing and Browning Techniques for Optimal Taste and Presentation.
+83.33333333333334% complete. Generating Lesson: Oven vs
+91.66666666666669% complete. Generating Lesson: Delicious Sauce Pairings: Complementing Your Steak with the Perfect Sauce for Boundless Flavor Opportunities.
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Cake frying | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 12:42 PM
+Generating module: Understanding the Basics of Cake Frying
+0% complete. Generating Lesson: The Importance of Proper Temperature in Cake Frying
+10% complete. Generating Lesson: Selecting the Right Frying Oil and Equipment for Cake Frying
+20% complete. Generating Lesson: Preparing the Cake Batter and Correctly Shaping the Cakes for Frying
+30.000000000000004% complete. Generating Lesson: Frying Techniques for Different Types of Cakes, Including Donuts, Churros, and Fritters 

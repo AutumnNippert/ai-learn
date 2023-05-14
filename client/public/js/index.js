@@ -1,8 +1,8 @@
 // Clickable Course Elements
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var courseElements = document.querySelectorAll('.courseElement');
-    courseElements.forEach (function(element) {
-        element.addEventListener('click', function() {
+    courseElements.forEach(function (element) {
+        element.addEventListener('click', function () {
             console.log(element.course_id);
             window.location.href = `/course/${element.dataset.courseId}`;
         });
@@ -45,9 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var moduleCountInput = document.getElementById('moduleCount');
 
     submitButton.addEventListener('click', async function () {
-
-
-
         var courseName = courseNameInput.value;
         var moduleCount = moduleCountInput.value;
 
@@ -69,19 +66,15 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             body: JSON.stringify(input)
         })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                // close the modal
-                modal.style.display = "none";
-                alert("Course Generating. Will be added shortly!");
-            })
             .catch(error => {
                 modal.style.display = "none";
                 alert("An error occurred. Please try again later.");
                 console.error('Error:', error);
             });
+
+        // close the modal
+        modal.style.display = "none";
+        alert("Course Generating. Will be added shortly!");
 
     });
 
