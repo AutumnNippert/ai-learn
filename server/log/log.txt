@@ -454,3 +454,99 @@ Generating module: Fundamentals of Breeding and Genetics in Cattle
 89.99999999999999% complete. Generating Lesson: Predictive tools in breeding: estimation of breeding values, genomic selection
 100.0% complete. Finishing up...
 Course generated successfully.
+Generating course: TL;DR The Bible | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 1:12 PM
+Generating module: Overview of the Bible and its Themes
+0% complete. Generating Lesson: Introduction to the Bible and its importance
+10% complete. Generating Lesson: History of the Bible and its writing
+20% complete. Generating Lesson: Major Themes and teachings in the Old Testament
+30.000000000000004% complete. Generating Lesson: Major Themes and teachings in the New Testament
+40% complete. Generating Lesson: Importance of the Bible in today's world.
+Generating module: TL;DR Versions of Key Books in the Bible
+50% complete. Generating Lesson: The Book of Genesis
+60% complete. Generating Lesson: The Book of Exodus
+70% complete. Generating Lesson: The Gospel of Matthew
+80% complete. Generating Lesson: The Gospel of Luke
+89.99999999999999% complete. Generating Lesson: The Book of Revelation
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: How to make a song | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 1:18 PM
+Generating module: Understanding Music Theory and Song Structure
+0% complete. Generating Lesson: Introduction to Music Theory
+10% complete. Generating Lesson: Understanding Scales and Modes
+20% complete. Generating Lesson: Chord Progressions and Harmony 
+30.000000000000004% complete. Generating Lesson: Song Forms and Structures 
+40% complete. Generating Lesson: Analyzing Famous Songs to Understand Theory and Structure
+Generating module: The Creative Process of Writing Lyrics and Melodies
+50% complete. Generating Lesson: Introduction to the elements of melody
+60% complete. Generating Lesson: Techniques for creating memorable melodies
+70% complete. Generating Lesson: Understanding rhythm and its relationship to melody
+80% complete. Generating Lesson: Crafting effective lyrics 
+89.99999999999999% complete. Generating Lesson: Using melody and lyrics to create emotional impact in a song.
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: How to make a webapp with Node | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 1:23 PM
+Generating module: Introduction to Node.js and Web Applications
+0% complete. Generating Lesson: Understanding Node.js and its Features
+10% complete. Generating Lesson: Creating a Simple Web Server with Node.js
+20% complete. Generating Lesson: Understanding the Node.js Package Manager (NPM)
+30.000000000000004% complete. Generating Lesson: Introduction to Express Framework
+40% complete. Generating Lesson: Building a Basic Web Application using Node.js and Express
+Generating module: Building a Web Application using Node.js and Express Framework
+50% complete. Generating Lesson: Setting up and Installing Express Framework
+60% complete. Generating Lesson: Handling Routes and Sending Responses
+70% complete. Generating Lesson: Working with Templates for Dynamic Web Pages
+80% complete. Generating Lesson: Handling Forms and User Input
+89.99999999999999% complete. Generating Lesson: Implementing CRUD Operations through RESTful APIs in Express.
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Playing Fortnite | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 1:31 PM
+Generating module: Introduction to Fortnite: History, Gameplay and Basic Controls
+0% complete. Generating Lesson: History of Fortnite: The Origins, Development and Popularity
+10% complete. Generating Lesson: Overview of Fortnite Gameplay: Battle Royale, Creative, and Save the World
+20% complete. Generating Lesson: Basic Controls and Navigation in Fortnite: Movement, Weapons, and Inventory
+30.000000000000004% complete. Generating Lesson: Character Customization and Skins in Fortnite
+40% complete. Generating Lesson: Teamwork and Communication in Fortnite: Solo, Duos, and Squads.
+Generating module: Advanced Strategies and Tactics in Fortnite: Building, Scavenging, and Combat.
+50% complete. Generating Lesson: Advanced Building Techniques: Double and Triple Ramp Rushing, 90° Degree Turns, and Wall Replace Technique.
+62.5% complete. Generating Lesson: Scavenging and Looting Tips and Tricks: Hot Drops, Llama Hunting and Loot Paths.
+75% complete. Generating Lesson: Combat Strategies and Tactics: Proper Weapon Selection and Utilization, Positioning, and Covering.
+87.5% complete. Generating Lesson: End Game Approaches: Rotations, Zone Awareness, and High Ground Stealing.
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Being a Pro in Apex Legends | with 5 modules
+Estimated time to complete: 8.333333333333334 minutes | 1:41 PM
+Generating module: Introduction to Apex Legends: Basic Gameplay Mechanics
+0% complete. Generating Lesson: Understanding the Objective of the Game
+4% complete. Generating Lesson: Choosing a Legend and Learning their Abilities
+8% complete. Generating Lesson: Overview of the Gameplay Mechanics: Movement, Inventory, and Combat
+12% complete. Generating Lesson: Understanding the Ping System and Communication with Teammates 
+16% complete. Generating Lesson: Basic Strategies for Surviving and Winning in Apex Legends
+Generating module: Mastering Legend Abilities and Combos
+20% complete. Generating Lesson: Understanding the Core Abilities of Each Legend
+24.000000000000004% complete. Generating Lesson: Combining Abilities for Greater Impact 
+28.000000000000004% complete. Generating Lesson: Mastering Ultimate Timing and Placement
+32% complete. Generating Lesson: Using Legend Abilities in Different Scenarios
+36% complete. Generating Lesson: Counterplaying Against Opposing Legends
+Generating module: Advanced Weapon Tactics and Strategies
+40% complete. Generating Lesson: Understanding the Different Weapon Types and Their Advantages/Disadvantages
+44.99999999999999% complete. Generating Lesson: Recoil Control: Mastering the Art of Controlling Your Shots 
+49.99999999999999% complete. Generating Lesson: Engaging in Different Scenarios: Close Range, Mid Range, and Long Range Combat
+54.99999999999999% complete. Generating Lesson: Weapon Attachments and Loadouts: Choosing the Right Setup for the Situation
+Generating module: Effective Communication and Teamwork
+60% complete. Generating Lesson: Importance of Clear and Concise Communication
+64% complete. Generating Lesson: Understanding Roles and Team Composition 
+68% complete. Generating Lesson: Callouts and Positioning: Making Your Intentions Clear 
+72.00000000000001% complete. Generating Lesson: Providing and Receiving Constructive Feedback 
+76.00000000000001% complete. Generating Lesson: Practice and Implementation of Effective Communication and Teamwork Skills.
+Generating module: Game Sense and Map Awareness: Positioning and Rotations
+80.00000000000001% complete. Generating Lesson: Understanding the Importance of Map Awareness and Positioning 
+84.00000000000001% complete. Generating Lesson: Implementing Strategies for Rotations and Map Movement 
+88.00000000000003% complete. Generating Lesson: Understanding High Traffic Areas and Hot Drops 
+92.00000000000003% complete. Generating Lesson: Utilizing Map Features to Your Advantage 
+96.00000000000003% complete. Generating Lesson: Analyzing Ring Closures and Predicting End Game Scenarios
+100.0% complete. Finishing up...
+Course generated successfully.
