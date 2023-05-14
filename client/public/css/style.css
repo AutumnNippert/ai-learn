@@ -20,11 +20,10 @@ body {
 
 button {
     cursor: pointer;
-
 }
 
 #topbar {
-    position: absolute;
+    position: sticky;
     background-color: var(--grey1);
     width: 100%;
     height: 5vh;
@@ -61,13 +60,8 @@ button {
     cursor: pointer;
 }
 
-/* .topbar button:hover {
-    background-color:var(--blue);
-} */
-
-
 #sidebar {
-    position: absolute;
+    position: fixed;
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -78,6 +72,9 @@ button {
     transform: translateX(-105%);
     transition: transform 600ms ease;
     z-index: 1;
+    max-height: calc(100vh - 5vh);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 #sidebar[data-status="open"] {
@@ -101,10 +98,11 @@ button {
 #sidebar button {
     background-color: var(--white);
 
-    height: 50px;
-    font-size: 1.25rem;
+    height: fit-content;
+    width: 100%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
 
     border: none;
 
@@ -119,16 +117,20 @@ button {
     background-color: var(--blue);
 }
 
+#sidebar .module-button {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
 #sidebar .module-lessons {
-    display: block;
-    padding-left: 20px;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 #content {
     margin-top: 6vh;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 5vh;
