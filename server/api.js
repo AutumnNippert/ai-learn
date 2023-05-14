@@ -1,3 +1,4 @@
+const fs = require('fs');
 const express = require('express');
 const app = express();
 
@@ -5,16 +6,7 @@ const { Course, CourseMeta } = require('./class/course');
 const { generateCourse } = require('./bin/course_generator');
 const { log } = require('./bin/logger');
 
-const args = process.argv.slice(2); // Ignore first two arguments
-
-// Default port number
-let port = 3000;
-
-// Check for -port argument
-const portIndex = args.indexOf('-port');
-if (portIndex !== -1 && portIndex < args.length - 1) {
-    port = parseInt(args[portIndex + 1], 10);
-}
+const config = JSON.parse(fs.readFileSync("res/server_config.json"));
 
 app.get('/', (req, res) => {
     res.json({ message: `API Running on port ${port}` })
@@ -60,6 +52,22 @@ app.get('/API/get_courses', (req, res) => {
     }
 });
 
-app.listen(port, () => {
-    console.log(`Rest API started listening on port ${port}`);
+app.get('/API/images/:image_id', (req, res) => {
+    console.log(`API/images/${req.params.image_id}`);
+    try {
+        const image = fs.readFileSync(`res/images/${req.params.image_id}.png`);
+        res.writeHead(200, { 'Content-Type': 'image/png' });
+        res.end(image, 'binary');
+    } catch (error) {
+        console.log(error.message);
+        if (error.code === 'ENOENT') {
+            res.status(404).send('Image not found');
+        } else {
+            res.status(500).send('Error fetching image');
+        }
+    }
+});
+
+app.listen(config.PORT, config.HOSTNAME, () => {
+    console.log(`API running at ${config.PROTOCOL}://${config.HOSTNAME}:${config.PORT}`)
 });

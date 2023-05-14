@@ -2,7 +2,7 @@
     "title": "Intro to NodeJS",
     "description": "This class covers the introduction to NodeJS and its ecosystem while also teaching how to build server-side applications with it.",
     "id": 48,
-    "image": null,
+    "image": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png",
     "modules": [
         {
             "title": "Introduction to NodeJS and its ecosystem",

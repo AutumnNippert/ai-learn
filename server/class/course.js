@@ -30,6 +30,7 @@ class Course {
         this.description = description;
         this.id = id;
         this.image = image;
+        this.progress = 0;
         this.modules = [];
     }
 
@@ -53,7 +54,7 @@ class Course {
         const course = JSON.parse(courseJson);
         return course;
     }
-
+    
     toString() {
         return this.title + "\n" + this.description;
     }

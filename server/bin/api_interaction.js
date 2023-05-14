@@ -1,6 +1,6 @@
 const { Configuration, OpenAIApi } = require("openai");
 const fs = require('fs');
-let config = fs.readFileSync("res/config.json");
+let config = fs.readFileSync("res/content_config.json");
 config = JSON.parse(config);
 require('dotenv').config();
 
@@ -13,15 +13,20 @@ const openai = new OpenAIApi(configuration);
 async function generateResponse(messages) {
     messages.unshift({ role: "system", content: config.BOT_PERSONALITY })
     //console.log(messages);
-    try {
-        let completion = await openai.createChatCompletion({
-            model: "gpt-3.5-turbo",
-            messages: messages,
-        });
-        return String(completion.data.choices[0].message.content);
-    } catch (error) {
-        console.error(error);
-        return String(error.message);
+    for (; ;) {
+        try {
+            let completion = await openai.createChatCompletion({
+                model: "gpt-3.5-turbo",
+                messages: messages,
+            });
+            return String(completion.data.choices[0].message.content);
+        } catch (error) {
+            if (!error.message.includes("429")) {
+                console.error(error);
+                return String(error.message);
+            }
+            // continue in while loop and try again
+        }
     }
 }
 
@@ -31,9 +36,9 @@ async function generateImage(prompt) {
             prompt: prompt,
             n: 1,
             size: "512x512",
-            response_format: "b64_json",
+            response_format: "url",
         });
-        return "data:image/png;base64, " + String(response.data.data[0].b64_json); // returns as base64 encoded image
+        return String(response.data.data[0].url); // returns as base64 encoded image
     } catch (error) {
         console.error(error.message);
         return null;

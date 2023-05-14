@@ -2,12 +2,13 @@ const fs = require('fs');
 const axios = require('axios');
 const express = require('express');
 
-// load config.json
-const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 
 const app = express();
 
 const args = process.argv.slice(2); // Ignore first two arguments
+
+// load config.json
+const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 
 // Default port number
 let port = config.DEFAULT_PORT;
@@ -73,5 +74,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}`)
+    console.log(`Web server running at http://${hostname}:${port}`)
 });

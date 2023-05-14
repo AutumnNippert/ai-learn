@@ -3,8 +3,10 @@ const { log } = require("./logger");
 const { generateResponse, generateImage } = require("./api_interaction");
 const { Course, Module, Lesson } = require("../class/course");
 
-let config = fs.readFileSync("res/config.json");
+let config = fs.readFileSync("res/content_config.json");
+let serverConfig = fs.readFileSync("res/server_config.json");
 config = JSON.parse(config);
+serverConfig = JSON.parse(serverConfig);
 
 function get_new_id() {
 	const id = parseInt(fs.readFileSync("res/id.txt", "utf8"));
@@ -14,8 +16,9 @@ function get_new_id() {
 }
 
 async function generateCourse(topic, moduleCount = 4) {
-	const image = await generateImage(topic);
-	const course = new Course(topic, 'none', get_new_id(), 'https://liftlearning.com/wp-content/uploads/2020/09/default-image.png');
+	const id = get_new_id();
+	downloadImage(await generateImage(topic), `res/images/${id}.png`);
+	const course = new Course(topic, 'none', id, 'https://liftlearning.com/wp-content/uploads/2020/09/default-image.png');
 	let lessonPlan = await generateCoursePlan(topic, moduleCount);
 	let moduleHeaders = [];
 
@@ -70,7 +73,9 @@ async function generateCourse(topic, moduleCount = 4) {
 
 	const description = await generateBriefDescription(topic, lessonPlan);
 	course.description = description;
-	course.image = image;
+
+	const serverUrl = serverConfig.PROTOCOL + "://" + serverConfig.HOSTNAME + ":" + serverConfig.PORT + "/API";
+	course.image = serverUrl + "/images/" + course.id;
 	log("Course generated successfully.")
 	return course;
 }
@@ -108,9 +113,28 @@ async function createLessonInfo(lessonPlan, lessonHeader) {
 	const history = [];
 	history.push({ "role": "system", "content": "Current Lesson Plan" + lessonPlan });
 	history.push({ "role": "user", "content": prompt });
-    history.push({ role: "system", content: "An example lesson:\n" + config.EXAMPLE_CONTENT })
+	history.push({ role: "system", content: "An example lesson:\n" + config.EXAMPLE_CONTENT })
 	const lessonInfo = await generateResponse(history);
 	return lessonInfo;
+}
+
+async function downloadImage(url, filepath) {
+	const https = require('https');
+	const file = fs.createWriteStream(filepath);
+	return new Promise((resolve, reject) => {
+	  https.get(url, (response) => {
+		if (response.statusCode !== 200) {
+		  reject(new Error(`Failed to download image. Status code: ${response.statusCode}`));
+		}
+		response.pipe(file);
+		file.on('finish', () => {
+		  file.close();
+		  resolve();
+		});
+	  }).on('error', (error) => {
+		reject(new Error(`Failed to download image. Error: ${error.message}`));
+	  });
+	});
 }
 
 async function generateCourseImage(topic) {

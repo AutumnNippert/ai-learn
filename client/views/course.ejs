@@ -25,7 +25,6 @@
         <button class="fa-solid fa-bars fa-xl" id="sidebarButton">
         </button>
         <h1><a href="/">AI Learn</a></h1>
-
     </div>
     <div id="sidebar" data-status="closed">
         <% for (let module of course.modules) { %>
@@ -43,7 +42,7 @@
     </div>
 
     <div class="container">
-        <div class="banner" id="banner">
+        <div class="banner" id="banner" style="background-image: url(<%= course.image %>)">
             <button id="prevButton">Prev</button>
             <button id="nextButton">Next</button>
         </div>

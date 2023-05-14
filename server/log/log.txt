@@ -582,3 +582,77 @@ Generating module: Mastering the art of seasoning, marinating and cooking beef t
 89.99999999999999% complete. Generating Lesson: Understanding the science behind the Maillard reaction and how it affects the flavor and texture of cooked beef.
 100.0% complete. Finishing up...
 Course generated successfully.
+Generating course: Basic Math | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 5:59 PM
+Generating module: Arithmetic Operations: Addition, Subtraction, Multiplication, and Division
+0% complete. Generating Lesson: Understanding the concept of addition and how to perform addition with whole numbers.
+12.5% complete. Generating Lesson: Understanding the concept of subtraction and how to perform subtraction with whole numbers.
+25% complete. Generating Lesson: Understanding the concept of multiplication and how to perform multiplication with whole numbers.
+37.5% complete. Generating Lesson: Understanding the concept of division and how to perform division with whole numbers.
+Generating module: Basic Algebra: Variables, Equations, Inequalities, and Formulas
+50% complete. Generating Lesson: Introduction to Variables: Definition, Types, and Importance
+60% complete. Generating Lesson: Solving Simple Linear Equations: One Variable, Two Variables, and Word Problems
+70% complete. Generating Lesson: Inequalities: Basic Concepts and Solving Simple Inequalities
+80% complete. Generating Lesson: Formulas: Understanding the Concept and Solving Problems using Formulas
+89.99999999999999% complete. Generating Lesson: Introduction to Quadratic Equations: Definition, Solving Methods, and Applications
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Banana Peeling | with 2 modules
+Generating module: The Basics of Banana Peeling
+Estimated time to complete: 3.3333333333333335 minutes | 6:22 PM
+0% complete. Generating Lesson: Understanding the anatomy of a banana 
+10% complete. Generating Lesson: Assessing the ripeness of a banana 
+20% complete. Generating Lesson: Methods for peeling a banana 
+30.000000000000004% complete. Generating Lesson: Common mistakes to avoid while peeling 
+40% complete. Generating Lesson: Uses for banana peels
+Generating module: Advanced Techniques for Banana Peeling
+50% complete. Generating Lesson: One-handed banana peel 
+60% complete. Generating Lesson: The art of double-peeling 
+70% complete. Generating Lesson: Using a spoon for a perfect peel 
+80% complete. Generating Lesson: The perfect peel for a banana split 
+89.99999999999999% complete. Generating Lesson: Mastering the ultimate peel for a banana smoothie.
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Banana Peeling | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 6:29 PM
+Generating module: Understanding the Anatomy of a Banana and its Peel
+0% complete. Generating Lesson: External Anatomy of a Banana Fruit
+10% complete. Generating Lesson: Internal Anatomy of a Banana Fruit
+20% complete. Generating Lesson: Physical Properties of a Banana Peel
+30.000000000000004% complete. Generating Lesson: Chemical Composition of a Banana Peel
+40% complete. Generating Lesson: Microscopic Structure of a Banana Peel
+Generating module: Techniques for Efficient and Safe Banana Peeling
+50% complete. Generating Lesson: The Basic Banana Peeling Technique
+60% complete. Generating Lesson: Alternative Techniques for Peeling a Banana
+70% complete. Generating Lesson: Tips for Safe Banana Peeling
+80% complete. Generating Lesson: Troubleshooting Common Banana Peel Problems
+89.99999999999999% complete. Generating Lesson: Creative Ways to Use Banana Peels after Peeling
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Agile Development | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 7:30 PM
+Generating module: Introduction to Agile Development: Principles and Methodologies
+Generating module: Agile Practices: Scrum, Kanban, Extreme Programming (XP), and Test Driven Development (TDD)
+0% complete. Generating Lesson: Scrum: Roles and ceremonies
+10% complete. Generating Lesson: Kanban: Visualizing work and workflow
+20% complete. Generating Lesson: Extreme Programming (XP): Pair programming and continuous integration
+30.000000000000004% complete. Generating Lesson: Test Driven Development (TDD): Red-Green-Refactor cycle
+40% complete. Generating Lesson: Choosing the Right Agile Methodology for your Team
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Making Tortillas | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 7:41 PM
+Generating module: History and Cultural Significance of Tortillas
+0% complete. Generating Lesson: The indigenous origins of tortillas and their significance in Mesoamerican cultures
+10% complete. Generating Lesson: The introduction of tortillas to European colonizers and their spread throughout the world
+20% complete. Generating Lesson: The role of tortillas in Mexican cuisine and the cultural significance of their versatility
+30.000000000000004% complete. Generating Lesson: The symbolism of tortillas in contemporary Mexican-American identity and politics 
+40% complete. Generating Lesson: The impact of globalization on tortilla production and consumption in modern times.
+Generating module: Tortilla Making Techniques and Recipes
+50% complete. Generating Lesson: The basic ingredients and equipment needed for tortilla making
+60% complete. Generating Lesson: Techniques for preparing and cooking masa dough
+70% complete. Generating Lesson: Different methods for shaping and rolling tortillas
+80% complete. Generating Lesson: Tips for cooking and storing tortillas to maintain their freshness and flavor
+89.99999999999999% complete. Generating Lesson: Recipe variations for flavored and colored tortillas.
+100.0% complete. Finishing up...
+Course generated successfully.

@@ -22,6 +22,8 @@
     padding: 1rem;
     align-items: center;
     justify-content: center;
+    background-position: center;
+    background-size: cover;
 }
 
 .banner button{
