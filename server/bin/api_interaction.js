@@ -30,9 +30,10 @@ async function generateImage(prompt) {
         const response = await openai.createImage({
             prompt: prompt,
             n: 1,
-            size: "512x512"
+            size: "512x512",
+            response_format: "b64_json",
         });
-        return String(response.data.data[0].url);
+        return "data:image/png;base64, " + String(response.data.data[0].b64_json); // returns as base64 encoded image
     } catch (error) {
         console.error(error.message);
         return null;
@@ -41,10 +42,8 @@ async function generateImage(prompt) {
 
 if (require.main === module) {
     //testing
-    const prompt = "Hi How are you?";
-    const messages = [{ "role": "user", 'content': prompt }];
-    const description = generateResponse(messages);
-    console.log(description);
+    //make imgae
+    generateImage("A painting of a cat sitting on a chair. Painted by the famous artist Pablo Picasso.");
 }
 
 module.exports = { generateResponse, generateImage };

@@ -59,10 +59,14 @@ function main(course){
     const prevButton = document.getElementById("prevButton");
 
     nextButton.addEventListener("click", () => {
+        // get button of next lesson
         const lessonIndex = currModule.lessons.indexOf(currLesson);
+        // if lessonIndex < currModule.lessons.length - 1 then set to next lesson
         if (lessonIndex < currModule.lessons.length - 1) {
             setCurrLesson(currModule.lessons[lessonIndex + 1]);
-        } else {
+        }
+        // else if lessonIndex == currModule.lessons.length - 1 then set to first lesson of next module
+        else {
             const moduleIndex = course.modules.indexOf(currModule);
             if (moduleIndex < course.modules.length - 1) {
                 setCurrLesson(course.modules[moduleIndex + 1].lessons[0]);
@@ -71,13 +75,17 @@ function main(course){
     });
 
     prevButton.addEventListener("click", () => {
+        // get button of previous lesson
         const lessonIndex = currModule.lessons.indexOf(currLesson);
+        // if lessonIndex > 0 then set to previous lesson
         if (lessonIndex > 0) {
             setCurrLesson(currModule.lessons[lessonIndex - 1]);
-        } else {
+        }
+        // else if lessonIndex == 0 then set to last lesson of previous module
+        else {
             const moduleIndex = course.modules.indexOf(currModule);
             if (moduleIndex > 0) {
-                setCurrLesson(course.modules[moduleIndex - 1].lessons[0]);
+                setCurrLesson(course.modules[moduleIndex - 1].lessons[course.modules[moduleIndex - 1].lessons.length - 1]);
             }
         }
     });

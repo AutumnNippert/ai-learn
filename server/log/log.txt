@@ -550,3 +550,19 @@ Generating module: Game Sense and Map Awareness: Positioning and Rotations
 96.00000000000003% complete. Generating Lesson: Analyzing Ring Closures and Predicting End Game Scenarios
 100.0% complete. Finishing up...
 Course generated successfully.
+Generating course: How to Drink Water | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 3:21 PM
+Generating module: The Importance of Hydration: Understanding the Benefits of Drinking Water
+0% complete. Generating Lesson: The science behind hydration
+10% complete. Generating Lesson: The symptoms of dehydration
+20% complete. Generating Lesson: The benefits of staying hydrated
+30.000000000000004% complete. Generating Lesson: The dangers of chronic dehydration
+40% complete. Generating Lesson: Strategies for incorporating more water into your daily routine
+Generating module: Water Drinking Techniques: Practical Tips to Help You Stay Hydrated
+50% complete. Generating Lesson: The ideal amount of water to drink each day
+60% complete. Generating Lesson: How to make water taste better 
+70% complete. Generating Lesson: Tricks to remember to drink water throughout the day
+80% complete. Generating Lesson: The best containers for staying hydrated 
+89.99999999999999% complete. Generating Lesson: Creative ways to incorporate more water-rich foods in your diet
+100.0% complete. Finishing up...
+Course generated successfully.
