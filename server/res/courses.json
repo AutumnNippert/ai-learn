@@ -1,6 +1,18 @@
 {
     "courses": [
         {
+            "title": "Intro to NodeJS",
+            "description": "This class covers the introduction to NodeJS and its ecosystem while also teaching how to build server-side applications with it.",
+            "id": 48,
+            "image": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png"
+        },
+        {
+            "title": "Intro to NodeJS",
+            "description": "Introduction to NodeJS: Learn the history, advantages, syntax, and architecture of NodeJS, as well as the basics of modules, HTTP server, file system, event loop, and promises.",
+            "id": 47,
+            "image": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png"
+        },
+        {
             "title": "Complex html",
             "description": "Creating and teaching the curriculum for a class on complex HTML, covering basic and advanced tags and syntax, creating and styling forms, and responsive design with media queries.",
             "id": 45,

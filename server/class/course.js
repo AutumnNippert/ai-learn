@@ -25,10 +25,11 @@ class Module {
 }
 
 class Course {
-    constructor(title, description, id) {
+    constructor(title, description, id, image) {
         this.title = title;
         this.description = description;
         this.id = id;
+        this.image = image;
         this.modules = [];
     }
 

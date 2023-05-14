@@ -243,3 +243,35 @@ Generating module: Practical Applications of Potatoes in Everyday Life and Beyon
 91.66666666666667% complete. Generating Lesson: Commercial and Industrial Applications of Potatoes, Such as Textile Manufacturing and Biodegradable Packaging.
 100.0% complete. Finishing up...
 Course generated successfully.
+Generating course: Intro to NodeJS | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 12:01 AM
+Generating module: Introduction to NodeJS: History, Advantages, Syntax, and Architecture
+0% complete. Generating Lesson: Here's a list of 4 sub-lessons for Introduction to NodeJS:
+Generating course: Intro to NodeJS | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 12:01 AM
+Generating module: Introduction to NodeJS and its ecosystem
+10% complete. Generating Lesson: History of NodeJS: How it was created and evolved over the years.
+0% complete. Generating Lesson: Understanding the basics of NodeJS including its architecture and features
+20% complete. Generating Lesson: Advantages of NodeJS: What makes it a popular choice among developers.
+10% complete. Generating Lesson: Installing and configuring NodeJS on local machines
+30.000000000000004% complete. Generating Lesson: Syntax of NodeJS: Basic syntax rules and code structure for writing programs in NodeJS.
+20% complete. Generating Lesson: Exploring the Node Package Manager (NPM) and its usage for managing dependencies
+30.000000000000004% complete. Generating Lesson: Introduction to popular NodeJS frameworks like ExpressJS and their usage for building web applications
+40% complete. Generating Lesson: Architecture of NodeJS: High-level understanding of how NodeJS works and its components.
+Generating module: NodeJS basics: Modules, HTTP Server, File System, Event Loop, and Promises.
+50% complete. Generating Lesson: Modules: Importing/Exporting files in NodeJS
+40% complete. Generating Lesson: Examining the role of NodeJS in the larger web development ecosystem and its advantages over other server-side technologies.
+Generating module: Building server-side applications with NodeJS
+60% complete. Generating Lesson: HTTP Server: Creating and Running a Server with NodeJS
+50% complete. Generating Lesson: Understanding server-side programming concepts and principles
+60% complete. Generating Lesson: Building a basic server-side application with NodeJS
+70% complete. Generating Lesson: File System: Basic Operations like Reading, Writing or Deleting a File using NodeJS
+80% complete. Generating Lesson: Event Loop: Understanding the Asynchronous execution model in NodeJS
+70% complete. Generating Lesson: Handling requests and responses using NodeJS and ExpressJS
+89.99999999999999% complete. Generating Lesson: Promises: Promises and how it helps in Asynchronous programming.
+80% complete. Generating Lesson: Working with databases using NodeJS and MongoDB
+100.0% complete. Finishing up...
+Course generated successfully.
+89.99999999999999% complete. Generating Lesson: Building scalable and efficient server-side applications with NodeJS and performance optimization techniques.
+100.0% complete. Finishing up...
+Course generated successfully.

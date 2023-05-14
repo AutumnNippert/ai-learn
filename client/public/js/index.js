@@ -73,10 +73,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
-                // do something like pop up a modal that says "Course Added" or something.
-                return
+                // close the modal
+                modal.style.display = "none";
+                alert("Course Generating. Will be added shortly!");
             })
             .catch(error => {
+                modal.style.display = "none";
+                alert("An error occurred. Please try again later.");
                 console.error('Error:', error);
             });
 
