@@ -14,6 +14,15 @@ if (portIndex !== -1 && portIndex < args.length - 1) {
     port = parseInt(args[portIndex + 1], 10);
 }
 
+// Default hostname
+let hostname = 'localhost';
+
+// Check for -hostname argument
+const hostnameIndex = args.indexOf('-hostname');
+if (hostnameIndex !== -1 && hostnameIndex < args.length - 1) {
+    hostname = args[hostnameIndex + 1];
+}
+
 app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({ extended: true }));
@@ -59,6 +68,6 @@ app.get('*', (req, res) => {
     res.render('error', { error: '404: Page Not Found' });
 });
 
-app.listen(port, () => {
-    console.log('Server started on port ' + port);
+app.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}`)
 });
