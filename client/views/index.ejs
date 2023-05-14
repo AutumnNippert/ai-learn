@@ -36,35 +36,26 @@
         <div>
             <!-- <h2>Favorites</h2> -->
             <div id="courseItems">
-
-                <!-- <div class="courseElement" id="course_graphicDesign">
-                    <div class="courseElementImg">
-                        <img src="img/other.jpg" alt="Graphic Design" width="100%" height="100%">
-                    </div>
-                    <button class="favoriteButton fa-regular fa-star" onclick="favorite('course_graphicDesign')"
-                        data-favorited="false"></button>
-
-                    <h1>Graphic Design</h1>
-                    <div class="courseElementDesc">
-                        Lorem Ipsum dolor sit amet
-                    </div>
-                </div> -->
-                <% for (let i=0; i < courses.length; i++) { %>
-                    <% const course=courses[i]; %>
-                    <div class="courseElement" id="course_<%= course.title.replace(/\s+/g, '') %>">
-                        <div class="courseElementImg">
-                            <img src="<%= course.image %>" alt="<%= course.title %>" width="100%" height="100%">
+                <% if (locals.courses) { %>
+                    <% for (let i=0; i < courses.length; i++) { %>
+                        <% const course=courses[i]; %>
+                        <div class="courseElement" data-course-id="<%= course.id %>">
+                            <div class="courseElementImg">
+                                <img src="<%= course.image %>" alt="<%= course.title %>" width="100%" height="100%">
+                            </div>
+                            <button class="favoriteButton fa-regular fa-star"
+                                onclick="favorite('course_<%= course.title.replace(/\s+/g, '') %>')"
+                                data-favorited="false"></button>
+                            <h1>
+                                <%= course.title %>
+                            </h1>
+                            <div class="courseElementDesc">
+                                <%= course.description %>
+                            </div>
                         </div>
-                        <button class="favoriteButton fa-regular fa-star"
-                            onclick="favorite('course_<%= course.title.replace(/\s+/g, '') %>')"
-                            data-favorited="false"></button>
-                        <h1>
-                            <%= course.title %>
-                        </h1>
-                        <div class="courseElementDesc">
-                            <%= course.description %>
-                        </div>
-                    </div>
+                    <% } %>
+                <% } else { %>
+                    <h1>No Courses Found</h1>
                 <% } %>
             </div>
         </div>
@@ -77,7 +68,7 @@
             <h1>Add a Course</h1>
             <label for="courseName">Course Name</label>
             <br>
-            <input type="text" name="courseName" id="courseName" required>
+            <input type="text" name="courseName" id="courseName" required maxlength="30">
             <br>
             <!-- module count number selector 1-15 -->
             <label for="moduleCount">Number of Modules</label>

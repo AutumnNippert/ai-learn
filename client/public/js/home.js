@@ -3,9 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var courseElements = document.querySelectorAll('.courseElement');
     courseElements.forEach (function(element) {
         element.addEventListener('click', function() {
-            console.log(element.id);
-            var url = '';
-            window.open(url, '_blank');
+            console.log(element.course_id);
+            window.location.href = `/course/${element.dataset.courseId}`;
         });
     });
 });

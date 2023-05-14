@@ -71,11 +71,16 @@ class CourseEncoder {
 }
 
 class CourseMeta {
-    constructor(title, description, id) {
+    constructor(title, description, id, image) {
         this.title = title;
         this.description = description;
         this.id = id;
-        this.image = "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg";
+        if (!image) {
+            this.image = "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg";
+        }
+        else {
+            this.image = image;
+        }
     }
 
     toFile() {
@@ -86,7 +91,7 @@ class CourseMeta {
         if (courses == null) {
             courses = {};
         }
-        const toAdd = { title: this.title, description: this.description, id: this.id, image: this.image};
+        const toAdd = { title: this.title, description: this.description, id: this.id, image: this.image };
 
         courses.push(toAdd);
         fs.writeFileSync("res/courses.json", JSON.stringify(courses, null, 4));

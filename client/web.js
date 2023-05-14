@@ -25,7 +25,6 @@ app.get('/', async (req, res) => {
     try {
         const response = await axios.get(`${apiURL}/get_courses`);
         const courses = response.data;
-        console.log(courses);
         res.render('index', courses);
     } catch (error) {
         res.render('error', { error: '500: Internal Server Error' });

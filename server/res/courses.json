@@ -1,16 +1,106 @@
 {
     "courses": [
         {
-            "title": "Banana Bread",
-            "description": "Banana Bread.",
-            "id": 30,
-            "image": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80"
+            "title": "Complex html",
+            "description": "Creating and teaching the curriculum for a class on complex HTML, covering basic and advanced tags and syntax, creating and styling forms, and responsive design with media queries.",
+            "id": 45,
+            "image": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png"
+        },
+        {
+            "title": "HTML Basics",
+            "description": "HTML Basics: Learn the fundamentals of creating and structuring web pages with HTML.",
+            "id": 44,
+            "image": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png"
+        },
+        {
+            "title": "How to get my life together",
+            "description": "This class teaches goal-setting, time management, organization, and productivity techniques to help individuals improve their personal lives.",
+            "id": 43,
+            "image": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png"
         },
         {
             "title": "Software Engineering 2",
             "description": "This course covers software design principles and software testing and quality assurance.",
             "id": 42,
-            "image": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
+            "image": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png"
+        },
+        {
+            "title": "Software Engineering",
+            "description": "Software Engineering: Learn the fundamentals of software engineering including design, architecture, coding, and testing.",
+            "id": 40,
+            "image": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png"
+        },
+        {
+            "title": "Kanban Development",
+            "description": "This class teaches the methodology, implementation, and management of Kanban boards and workflows.",
+            "id": 39,
+            "image": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png"
+        },
+        {
+            "title": "Agile Development",
+            "description": "Learn how to create quality software that can quickly adapt to change through the principles of Agile Development.",
+            "id": 38,
+            "image": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png"
+        },
+        {
+            "title": "Banana Bread Making",
+            "description": "Learn to make the perfect banana bread with tips and tricks for flavor and texture.",
+            "id": 37,
+            "image": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png"
+        },
+        {
+            "title": "Georgia History",
+            "description": "This class on Georgia History will explore the rich and diverse history of the state of Georgia, from its early Indigenous inhabitants to its role in the American Civil War and beyond. Students will gain an understanding of the key people, events, and cultural influences that have shaped the state's past and present, as well as its unique place in the broader history of the United States.",
+            "id": 28,
+            "image": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png"
+        },
+        {
+            "title": "Angular Development",
+            "description": "In this advanced Angular Development class, students will learn the ins and outs of creating complex web applications. From building components and services to handling HTTP requests, attendees will gain the skills needed to create dynamic, reactive web applications that can stand up to a variety of real-world situations.",
+            "id": 27,
+            "image": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png"
+        },
+        {
+            "title": "Using Reaper (DAW)",
+            "description": "In this class, we will explore the features and functions of the Reaper digital audio workstation (DAW), including recording, editing, mixing, and producing high-quality audio tracks. From basic interface navigation to advanced audio processing techniques, you will learn how to get the most out of this powerful DAW for your music and audio production needs.",
+            "id": 13,
+            "image": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png"
+        },
+        {
+            "title": "Intro to OOP",
+            "description": "This course is an introduction to Object-Oriented Programming (OOP) with an emphasis on its practical use. The course covers the fundamental concepts of OOP, including encapsulation, inheritance, and polymorphism, and provides hands-on experience building classes and objects using a popular programming language such as Java or Python. Students will also learn how to design and develop robust and reusable software systems using object-oriented techniques.",
+            "id": 12,
+            "image": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png"
+        },
+        {
+            "title": "Intro to Java 1",
+            "description": "This course provides an introduction to programming concepts using Java. Topics covered include variables, data types, control structures, arrays, functions and classes. Students will learn how to write basic Java programs and create simple applications. No prior programming experience is required.",
+            "id": 11,
+            "image": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png"
+        },
+        {
+            "title": "How to make a song",
+            "description": "In this class, you will learn the basics of songwriting, from choosing a topic to developing lyrics and creating a memorable melody. Through hands-on exercises and analysis of popular songs, you will gain insights into the process of crafting a great song and leave with the tools to start creating your own. All musical experience levels are welcome, as this class will focus on the fundamentals of songwriting applicable to any genre. So, come ready to explore your creativity and let's create some hit songs together!",
+            "id": 10,
+            "image": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png"
+        },
+        {
+            "title": "How To Play Mahjong Effectively",
+            "description": "Mahjong is a tile-based game that originated in China. This class will teach you the basic rules and strategies needed to play the game effectively, including understanding the different types of tiles and how to form sets and sequences. You will also learn how to read the wall, the art of discarding tiles and how to build your hand. By the end of the class, you will have the skills and knowledge to participate in friendly games and tournaments with confidence.",
+            "id": 8,
+            "image": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png"
+        },
+        {
+            "title": "Music Theory for Dummies",
+            "description": "The Music Theory for Dummies class is a comprehensive introduction to the fundamentals of music theory. Students will learn about rhythm, melody, harmony, key signatures, scales, chords, and more. No prior musical experience is necessary, as the class is designed for beginners. The course is taught in a friendly and accessible manner, with lots of examples and practical exercises to help students master the concepts. By the end of the class, students will have a solid foundation in music theory, and be able to apply their new knowledge to a variety of musical styles and genres.",
+            "id": 6,
+            "image": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png"
+        },
+        {
+            "title": "Music Theory for Dummies",
+            "description": "This class will delve into the basic principles of music theory, including pitch, rhythm, harmony, and form. We will also explore how these concepts are applied in various styles of music, from classical to jazz to pop. Whether you are a complete beginner or simply need a refresher, this class is designed to make music theory accessible and fun for everyone. No prior musical experience or knowledge is required, just an open mind and a willingness to learn!",
+            "id": 5,
+            "image": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png"
         }
     ]
 }
