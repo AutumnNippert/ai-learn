@@ -50,7 +50,7 @@ button {
     color: var(--black);
 }
 
-#topbar button {
+#sidebarButton {
     position: absolute;
     left: 1vh;
     height: 5vh;
@@ -130,88 +130,6 @@ button {
 #content h2 {
     margin-top: 0;
     text-align: center;
-}
-
-#addCourseButton {
-    position: absolute;
-    right: 2.5vh;
-    width: 18vh;
-    height: 4vh;
-
-    background-color: var(--grey2);
-    border: none;
-
-    font-family: 'Roboto', sans-serif;
-    font-size: larger;
-    font-weight: 600;
-
-    cursor: pointer;
-
-    transition: background-color 0.2s ease-in-out;
-}
-
-#addCourseButton:hover {
-    background-color: var(--grey3);
-}
-
-#courseItems {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-
-    width: 100%;
-    height: 800px;
-    margin: 0 auto;
-    gap: 40px;
-}
-
-.courseElement {
-    position: relative;
-    background-color: var(--grey2);
-    width: 250px;
-    height: 350px;
-    text-align: center;
-    cursor: pointer;
-}
-
-@media (max-width: 900px) {
-    #courseItems {
-        /* flex-direction: column; */
-        align-items: center;
-    }
-}
-
-.courseElement h1 {
-    top: 0;
-    margin-top: 0;
-    background-color: var(--grey2);
-    border-top: 5px solid var(--grey3);
-    border-bottom: 5px solid var(--grey3);
-    padding-top: 2px;
-    padding-bottom: 2px;
-    height: 80px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.courseElementImg {
-    height: 100px;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-
-}
-
-.courseElementImg img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    object-fit: cover;
 }
 
 .container {
