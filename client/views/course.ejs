@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= course.title %></title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>
+        <%= course.title %>
+    </title>
+    <link rel="stylesheet" href="/css/course.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <script src="/js/course.js"></script>
     <script src="/js/general.js"></script>
     <!-- External Fonts from Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,38 +19,46 @@
     <!-- External Font Awesome Packages script gives us custom classes which provide the symbols for the buttons. -->
     <script src="https://kit.fontawesome.com/0bade4009c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div id="topbar">
         <button class="fa-solid fa-bars fa-xl" id="sidebarButton">
         </button>
         <h1><a href="/">AI Learn</a></h1>
-        
+
     </div>
     <div id="sidebar" data-status="closed">
-        <button data-selected="true">Courses</button>
-        <button>About</button>
+        <% for (let module of course.modules) { %>
+            <button class="module-button" data-default-text="<%= module.title %>">
+                <%= module.title %>
+            </button>
+            <div class="module-lessons">
+                <% for (let lesson of module.lessons) { %>
+                    <button class="lesson-button" data-default-text="<%= lesson.title %>">
+                        <%= lesson.title %>
+                    </button>
+                    <% } %>
+            </div>
+            <% } %>
     </div>
 
     <div class="container">
         <div id="content">
-            <h2><%= course.title %></h2>
+            <h2>
+                <%= course.title %>
+            </h2>
+            <h3 id="moduleTitle"></h3>
             <div>
-                <h3>Course Description</h3>
-                <p><%= course.description %></p>
-            <div>
-                <% for (let module of course.modules) { %>
-                    <h3><%= module.title %></h3>
-                    <div>
-                        <% for (let lesson of module.lessons) { %>
-                            <h4><%= lesson.title %></h4>
-                            <% for (let line of lesson.info.split('\n')) { %>
-                                <p><%= line %></p>
-                            <% } %>
-                        <% } %>
-                    </div>
-                <% } %>
+                <h4 id="lessonTitle"></h4>
+                <p id="lessonInfo"></p>
             </div>
         </div>
     </div>
 </body>
+
+<!-- ejs setting current module and lesson -->
+<script>
+    main(<%- JSON.stringify(course) %>);
+</script>
+
 </html>

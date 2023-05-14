@@ -14,7 +14,8 @@ function get_new_id() {
 }
 
 async function generateCourse(topic, moduleCount = 4) {
-	const course = new Course(topic, 'none', get_new_id());
+	const image = await generateImage(topic);
+	const course = new Course(topic, 'none', get_new_id(), image);
 	let lessonPlan = await generateCoursePlan(topic, moduleCount);
 	let moduleHeaders = [];
 

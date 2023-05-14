@@ -19,13 +19,21 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-app.get('/', (req, res) => {
-    res.render('index');
+const apiURL = 'http://localhost:3000/API';
+
+app.get('/', async (req, res) => {
+    try {
+        const response = await axios.get(`${apiURL}/get_courses`);
+        const courses = response.data;
+        res.render('index', courses);
+    } catch (error) {
+        res.render('error', { error: '500: Internal Server Error' });
+    }
 });
 
 app.get('/course/:course_id', async (req, res) => {
     try {
-        const response = await axios.get(`http://localhost:3000/API/get_course/${req.params.course_id}`);
+        const response = await axios.get(`${apiURL}/get_course/${req.params.course_id}`);
         const course = response.data;
         res.render('course', { course });
     } catch (error) {
@@ -39,7 +47,7 @@ app.get('/course/:course_id', async (req, res) => {
 
 app.post('/add_course/:courseName/:moduleCount', async (req, res) => {
     try {
-        await axios.post(`http://localhost:3000/API/add_course/${req.params.courseName}/${req.params.moduleCount}`, req.body);
+        await axios.post(`${apiURL}/add_course/${req.params.courseName}/${req.params.moduleCount}`, req.body);
     } catch (error) {
         res.render('error', { error: '500: Internal Server Error' });
     }

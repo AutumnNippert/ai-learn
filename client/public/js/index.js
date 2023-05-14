@@ -3,9 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var courseElements = document.querySelectorAll('.courseElement');
     courseElements.forEach (function(element) {
         element.addEventListener('click', function() {
-            console.log(element.id);
-            var url = '';
-            window.open(url, '_blank');
+            console.log(element.course_id);
+            window.location.href = `/course/${element.dataset.courseId}`;
         });
     });
 });
@@ -74,10 +73,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
-                // do something like pop up a modal that says "Course Added" or something.
-                return
+                // close the modal
+                modal.style.display = "none";
+                alert("Course Generating. Will be added shortly!");
             })
             .catch(error => {
+                modal.style.display = "none";
+                alert("An error occurred. Please try again later.");
                 console.error('Error:', error);
             });
 
@@ -105,4 +107,3 @@ function favorite(courseID) {
 
     }
 }
-
