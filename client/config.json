@@ -1,0 +1,7 @@
+{
+    "DEFAULT_HOSTNAME": "localhost",
+    "DEFAULT_PORT": 80,
+    "DEFAULT_PROTOCOL": "http",
+
+    "DEFAULT_API_URL": "http://localhost:3000/API"
+}

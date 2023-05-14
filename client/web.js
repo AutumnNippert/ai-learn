@@ -1,12 +1,16 @@
+const fs = require('fs');
 const axios = require('axios');
-
 const express = require('express');
+
+// load config.json
+const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
+
 const app = express();
 
 const args = process.argv.slice(2); // Ignore first two arguments
 
 // Default port number
-let port = 80;
+let port = config.DEFAULT_PORT;
 
 // Check for -port argument
 const portIndex = args.indexOf('-port');
@@ -15,7 +19,7 @@ if (portIndex !== -1 && portIndex < args.length - 1) {
 }
 
 // Default hostname
-let hostname = 'localhost';
+let hostname = config.DEFAULT_HOSTNAME;
 
 // Check for -hostname argument
 const hostnameIndex = args.indexOf('-hostname');
@@ -28,7 +32,7 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-const apiURL = 'http://localhost:3000/API';
+const apiURL = config.DEFAULT_API_URL;
 
 app.get('/', async (req, res) => {
     try {
