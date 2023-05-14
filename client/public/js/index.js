@@ -87,8 +87,44 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+// Search Bar Functionality 
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById("searchInput");
+
+    // tracks when the searchInput is updated
+    searchInput.addEventListener("input", function() {
+        var currInput = searchInput.value;
+        currInput = currInput.toLowerCase();
+
+        // console.log("Current Input: " + currInput);
+        searchForCourseAndHideOthers(currInput);
+    });
+});
+
+// Searches for a course element on the page using an input string (used for the search bar)
+// Hides nonmatching courses. Only shows matching courses.
+// an empty input hits true on all courses.
+function searchForCourseAndHideOthers(courseName) {
+    const courseElems = document.querySelectorAll('.courseElement');
+
+    courseElems.forEach (function(element) {
+        // Search for the course title inside of the course element's h1
+        var title = element.querySelector("h1");
+        // console.log("searchForCourse(" + courseName + ") vs " + title.innerText);
+        if (title.innerText.toLowerCase().includes(courseName)) {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
+        }
+    });
+}
 
 
+
+
+// Favoriting feature may or may not get axed.
+// While this does technically work, due to how we interact with course Elements you also
+// end up clicking that, and getting redirected as a result.
 function favorite(courseID) {
     const course = document.getElementById(courseID);
     const starButton = course.querySelector('.favoriteButton');
