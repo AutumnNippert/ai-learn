@@ -7,58 +7,6 @@
     --blue: #94EAFF;
 }
 
-html {
-    width: 100%;
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    /* overflow-y: hidden; */
-}
-
-body {
-    margin: 0;
-}
-
-button {
-    cursor: pointer;
-}
-
-#topbar {
-    position: sticky;
-    background-color: var(--grey1);
-    width: 100%;
-    height: 5vh;
-
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    margin-top: 0;
-}
-
-#topbar h1 {
-    color: var(--black);
-    position: absolute;
-    top: 0.1vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#topbar a {
-    text-decoration: none;
-    color: var(--black);
-}
-
-#sidebarButton {
-    position: relative;
-    left: 1vh;
-    height: 5vh;
-    border: none;
-    transition: all 100ms ease;
-    background-color: var(--grey1);
-    cursor: pointer;
-    align-items: center;
-}
-
 #searchBar {
     position: absolute;
     right: 3vh;
@@ -104,88 +52,6 @@ button {
 
 #searchButton:hover {
     background-color: var(--grey3);
-}
-
-#sidebar {
-    position: fixed;
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    background-color: var(--white);
-    left: 0vh;
-    top: 5vh;
-    width: 300px;
-    transform: translateX(-105%);
-    transition: transform 600ms ease;
-    z-index: 1;
-    max-height: calc(100vh - 5vh);
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-#sidebar[data-status="open"] {
-    transform: translateX(0%);
-}
-
-#sidebar[data-status="closed"] {
-    visibility: hidden;
-}
-
-#sidebar::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -2px;
-    width: 3px;
-    height: 100%;
-    background-color: var(--black);
-}
-
-#sidebar button {
-    background-color: var(--white);
-
-    height: fit-content;
-    width: 100%;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    font-family: 'Roboto', sans-serif;
-
-    border: none;
-
-    transition: background-color 200ms ease;
-}
-
-#sidebar button:hover {
-    background-color: var(--grey2);
-}
-
-#sidebar button[data-selected="true"] {
-    background-color: var(--blue);
-}
-
-#sidebar .module-button {
-    font-size: 1.25rem;
-    font-weight: 600;
-}
-
-#sidebar .module-lessons {
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-#content {
-    margin-top: 6vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom: 5vh;
-    padding-top: 0vh;
-}
-
-#content h2 {
-    margin-top: 0;
-    text-align: center;
 }
 
 #addCourseButton {
@@ -290,14 +156,6 @@ button {
     object-fit: cover;
 }
 
-/* #course_softwareEngineering .courseElementImg {
-    background-image: url(../images/clement-helardot-95YRwf6CNw8-unsplash.jpg);
-}
-
-#course_graphicDesign .courseElementImg {
-    background-image: url(../images/photo-1561070791-36c11767b26a.avif);
-} */
-
 .modal {
     display: none;
     /* Hidden by default */
@@ -373,15 +231,3 @@ button {
     font-weight: 600;
     cursor: pointer;
 }
-
-.container {
-    display: grid;
-    margin: 0;
-    padding: 0;
-    grid-template-columns: 1fr;
-}
-
-/* .content {
-    height: 100%;
-    overflow-y: scroll !important; 
-} */
