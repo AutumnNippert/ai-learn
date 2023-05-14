@@ -17,32 +17,33 @@
     font-weight: 500;
 }
 
-#table_of_contents {
+.banner {
+    margin: 0;
+    padding: 1rem;
+    align-items: center;
+}
+
+.banner button{
     background-color: var(--grey1);
-    width: 100%;
-    padding-top: 3vh;
-    margin: 0;
+    color: var(--black);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
     font-size: 1.25rem;
     font-weight: 600;
-    cursor: pointer;
+    margin: 1rem 0;
+
+    transition: 100ms ease-in-out;
 }
 
-#table_of_contents h3 {
-    background-color: var(--grey2);
-    width: 100%;
-    padding: 1vh;
-    margin: 0;
-    font-size: 1.25rem;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-#table_of_contents h4 {
+.banner button:hover {
     background-color: var(--grey3);
-    width: 100%;
-    padding: 1vh;
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
+}
+
+#nextButton {
+    right: 5vh;
+}
+
+#prevButton {
+    left: 5vh;
 }

@@ -54,4 +54,31 @@ function main(course){
         });
         buttonNum++;
     }
+
+    const nextButton = document.getElementById("nextButton");
+    const prevButton = document.getElementById("prevButton");
+
+    nextButton.addEventListener("click", () => {
+        const lessonIndex = currModule.lessons.indexOf(currLesson);
+        if (lessonIndex < currModule.lessons.length - 1) {
+            setCurrLesson(currModule.lessons[lessonIndex + 1]);
+        } else {
+            const moduleIndex = course.modules.indexOf(currModule);
+            if (moduleIndex < course.modules.length - 1) {
+                setCurrLesson(course.modules[moduleIndex + 1].lessons[0]);
+            }
+        }
+    });
+
+    prevButton.addEventListener("click", () => {
+        const lessonIndex = currModule.lessons.indexOf(currLesson);
+        if (lessonIndex > 0) {
+            setCurrLesson(currModule.lessons[lessonIndex - 1]);
+        } else {
+            const moduleIndex = course.modules.indexOf(currModule);
+            if (moduleIndex > 0) {
+                setCurrLesson(course.modules[moduleIndex - 1].lessons[0]);
+            }
+        }
+    });
 }
