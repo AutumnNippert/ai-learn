@@ -51,6 +51,21 @@
     left: 5vh;
 }
 
+#printButton {
+    position: absolute;
+    right: 5vh;
+    height: 5vh;
+    width: 5vh;
+    border: none;
+    transition: all 200ms ease-in-out;
+    background-color: var(--grey1);
+}
+
+#printButton:hover {
+    background-color: var(--grey3);
+}
+
+
 .container {
     display: flex;
     flex-direction: column;

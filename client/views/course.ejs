@@ -29,6 +29,9 @@
         <button class="fa-solid fa-bars fa-xl" id="sidebarButton">
         </button>
         <h1><a href="/">AI Learn</a></h1>
+        <!-- Go To Non Dynamic Course button -->
+        <button class="fa-solid fa-arrow-right fa-xl" id="printButton" title="Go to One Page Course" onclick="window.location.href='/full-course/<%= course.id %>'">
+        
     </div>
     <div id="sidebar" data-status="closed">
         <% for (let module of course.modules) { %>

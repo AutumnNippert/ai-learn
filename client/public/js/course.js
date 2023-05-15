@@ -1,4 +1,7 @@
+let course;
+
 function main(course){
+    course = course;
     let currModule = course.modules[0];
     let currLesson = currModule.lessons[0];
 

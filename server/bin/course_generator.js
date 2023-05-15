@@ -32,7 +32,7 @@ async function generateCourse(topic, moduleCount = 4) {
 		}
 	});
 
-	const eta = (moduleHeaders.length * 100) / 60.0;
+	const eta = (moduleHeaders.length * 350) / 60.0; // 350 seconds per module
 	const etaDateTime = new Date(Date.now() + eta * 60000);
 	log(`Estimated time to complete: ${eta} minutes | ${etaDateTime.toLocaleString("en-US", { hour: "numeric", minute: "numeric", hour12: true })}`);
 
@@ -99,7 +99,7 @@ async function generateCoursePlan(topic, moduleCount) {
 
 async function generateLessons(lessonPlan, moduleHeader) {
 	// Develop a lesson
-	const prompt = `Create a list of sub lessons for a module on ${moduleHeader} that is around 4 to 5 sub lessons. Respond with only the list of sub lessons, numbered as '1. ', '2. ', and NOT '1.1' or the like.`;
+	const prompt = `Create a list of sub lessons for a module on ${moduleHeader} that is around 3 to 8 sub lessons. Respond with only the list of sub lessons, numbered as '1. ', '2. ', and NOT '1.1' or the like.`;
 	const history = [];
 	history.push({ "role": "system", "content": "Current Lesson Plan" + lessonPlan });
 	history.push({ "role": "user", "content": prompt });
@@ -109,11 +109,11 @@ async function generateLessons(lessonPlan, moduleHeader) {
 
 async function createLessonInfo(lessonPlan, lessonHeader) {
 	// Create lesson info
-	const prompt = `Create lesson content about ${lessonHeader} as if it were for a class. Be sure to include examples for things you may cover. Feel free to add in helpful images as links. You can add Questions with answers and other quiz like things. Make it 2 to 3 paragraphs long. Respond with only the lesson content.`;
+	const prompt = `Create lesson content about ${lessonHeader}. Respond with only the lesson content.`;
 	const history = [];
 	history.push({ "role": "system", "content": "Current Lesson Plan" + lessonPlan });
 	history.push({ "role": "user", "content": prompt });
-	history.push({ role: "system", content: "An example lesson:\n" + config.EXAMPLE_CONTENT })
+	history.push({ role: "system", content: "An example lesson template:\n" + config.EXAMPLE_CONTENT })
 	const lessonInfo = await generateResponse(history);
 	return lessonInfo;
 }

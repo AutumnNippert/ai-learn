@@ -672,3 +672,47 @@ Generating module: Planning and Designing a Wireless Network with Access Points 
 89.99999999999999% complete. Generating Lesson: Analyzing and Optimizing AP Placement for Better Performance
 100.0% complete. Finishing up...
 Course generated successfully.
+Generating course: Getting good at Apple Peeling | with 2 modules
+Generating module: The basics of apple peeling: Getting comfortable with the peeler, selecting the right apple and techniques for a successful beginning.
+Estimated time to complete: 3.3333333333333335 minutes | 10:33 PM
+0% complete. Generating Lesson: Understanding the different types of peelers available.
+7.142857142857142% complete. Generating Lesson: Choosing the right apple for the job.
+14.285714285714285% complete. Generating Lesson: Ensuring safety during peeling.
+21.428571428571427% complete. Generating Lesson: Proper hand positioning and grip for efficient peeling.
+28.57142857142857% complete. Generating Lesson: Techniques for removing just the right amount of peel.
+35.71428571428571% complete. Generating Lesson: Tips for dealing with stubborn spots or blemishes on the apple skin.
+42.85714285714285% complete. Generating Lesson: The importance of cleaning and maintaining your peeler.
+Generating module: Advanced apple peeling techniques: Different peeling styles, tidying up the skin’s tough spots, dealing with curly peels, and tips for getting the maximum amount of fruit.
+49.999999999999986% complete. Generating Lesson: Different peeling styles: vertical, horizontal, and spiral.
+56.249999999999986% complete. Generating Lesson: Identifying and cleaning up tough spots on the apple skin.
+62.499999999999986% complete. Generating Lesson: Techniques for dealing with curly peels.
+68.74999999999999% complete. Generating Lesson: Getting the most out of your apple: tips for minimal waste while peeling.
+74.99999999999999% complete. Generating Lesson: Tricks for peeling multiple apples quickly and efficiently.
+81.24999999999999% complete. Generating Lesson: How different apple varieties may require different peeling techniques.
+87.49999999999999% complete. Generating Lesson: How to present and plate peeled apples for maximum visual appeal.
+93.74999999999999% complete. Generating Lesson: Troubleshooting common peeling problems like broken peels or excess waste.
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Low Level Cache Memory Ops | with 3 modules
+Estimated time to complete: 5 minutes | 11:24 PM
+Generating module: Introduction to Cache Memory: Basics, Types, Operations.
+0% complete. Generating Lesson: The CPU-Memory Gap and Cache Design Overview.
+5.555555555555555% complete. Generating Lesson: Types of Cache Memory: Direct-Mapped, Set-Associative and Fully-Associative.
+11.11111111111111% complete. Generating Lesson: Memory Hierarchy and Cache Management Policies.
+16.666666666666664% complete. Generating Lesson: Basic Cache Operations: Hit vs
+22.22222222222222% complete. Generating Lesson: Cache Mapping Algorithms and Performance Analysis.
+27.77777777777778% complete. Generating Lesson: Cache Design Trade-offs and Future Trends.
+Generating module: Cache Parameters, Metrics, and Performance Analysis.
+33.333333333333336% complete. Generating Lesson: Cache Parameters: Block Size, Associativity, and Capacity.
+41.66666666666667% complete. Generating Lesson: Cache Metrics: Hit Rate, Miss Rate, Hit Time, Miss Penalty, and Average Access Time.
+50% complete. Generating Lesson: Cache Performance Analysis: Workload Characterization and Benchmarking.
+58.333333333333336% complete. Generating Lesson: Cache Performance Optimization: Cost-Benefit Analysis and Design Space Exploration.
+Generating module: Advanced Cache Operations: Coherency, Synchronization and Consistency.
+66.66666666666667% complete. Generating Lesson: Basics of Cache Coherency: MESI, MOESI, and Dragon Protocols.
+72.22222222222223% complete. Generating Lesson: Synchronization/Coherency of Shared Memory Multiprocessors: Snoopy, Directory-based and Hybrid Coherency Protocols.
+77.77777777777779% complete. Generating Lesson: Consistency Models: Sequential, Weak, Release and Processor Consistency.
+83.33333333333334% complete. Generating Lesson: Memory Ordering: Total Store Order and Partial Order Reduction.
+88.8888888888889% complete. Generating Lesson: Concurrent Data Structures: Lock-based and Lock-free Data Structures.
+94.44444444444446% complete. Generating Lesson: Memory Barrier and Memory Fence Operations.
+100.0% complete. Finishing up...
+Course generated successfully.

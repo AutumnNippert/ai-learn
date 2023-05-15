@@ -59,6 +59,20 @@ app.get('/course/:course_id', async (req, res) => {
     }
 });
 
+app.get('/full-course/:course_id', async (req, res) => {
+    try {
+        const response = await axios.get(`${apiURL}/get_course/${req.params.course_id}`);
+        const course = response.data;
+        res.render('fullCourse', { course });
+    } catch (error) {
+        if (error.response.status === 404) {
+            res.render('error', { error: '404: Course Not Found' });
+        } else {
+            res.render('error', { error: '500: Internal Server Error' });
+        }
+    }
+});
+
 app.post('/add_course/:courseName/:moduleCount', async (req, res) => {
     try {
         await axios.post(`${apiURL}/add_course/${req.params.courseName}/${req.params.moduleCount}`, req.body);

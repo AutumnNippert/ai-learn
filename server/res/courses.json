@@ -1,6 +1,18 @@
 {
     "courses": [
         {
+            "title": "Low Level Cache Memory Ops",
+            "description": "Low Level Cache Memory Ops: An in-depth look at cache memory, its functions, metrics, and advanced operations such as coherency, synchronization, and consistency.",
+            "id": 79,
+            "image": "http://localhost:3000/API/images/79"
+        },
+        {
+            "title": "Getting good at Apple Peeling",
+            "description": "This class teaches both the basics and advanced techniques of apple peeling.",
+            "id": 78,
+            "image": "http://localhost:3000/API/images/78"
+        },
+        {
             "title": "Placement of Wireless APs",
             "description": "This class covers the basics of radio frequency and planning and designing a wireless network with access point placement considerations.",
             "id": 77,
