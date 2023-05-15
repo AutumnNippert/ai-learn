@@ -20,7 +20,11 @@ function main(course){
         const info = lesson.info.replace(/\n/g, "<br>");
         lessonInfo.innerHTML = info;
         // set module to parent module of lesson
-        setCurrModule(course.modules.find(module => module.lessons.includes(currLesson)));
+        var module = course.modules.find(module => module.lessons.includes(currLesson));
+        setCurrModule(module);
+
+        console.log("MY DEBUG: " + course.modules.indexOf(currModule) + currModule.lessons.indexOf(currLesson));
+        lessonHighlightSelect(course.modules.indexOf(currModule), currModule.lessons.indexOf(currLesson));
     }
 
     setCurrLesson(currLesson);
@@ -96,7 +100,6 @@ function main(course){
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    const sidebar = document.getElementById('sidebar');
     const moduleLessonDivs = document.querySelectorAll('.module-lessons');
     const moduleButtons = document.querySelectorAll(".module-button");
 
@@ -108,12 +111,28 @@ document.addEventListener('DOMContentLoaded', function() {
     for (var i = 0; i < moduleLessonDivs.length; i++) {
         (function(index) {
             moduleButtons[index].addEventListener('click', function() {
-            if (moduleLessonDivs[index].getAttribute("data-status") == "open") {
-                moduleLessonDivs[index].setAttribute("data-status", "closed");
-            } else {
-                moduleLessonDivs[index].setAttribute("data-status", "open");
-            }
+                if (moduleLessonDivs[index].getAttribute("data-status") == "open") {
+                    moduleLessonDivs[index].setAttribute("data-status", "closed");
+                } else {
+                    moduleLessonDivs[index].setAttribute("data-status", "open");
+                }
             });
         })(i);
     }
 });
+
+// handles the "Previous" and "Next" button cycling through the sidebar menu.
+// Changes the highlight to match the current lesson.
+// Opens dropdowns as necessary.
+function lessonHighlightSelect(moduleNum, lessonNum) {
+    var modules = document.querySelectorAll(".module-lessons");
+    var allInnerButtons = document.querySelectorAll(".sidebarInner");
+    var moduleSidebarInners = modules[moduleNum].querySelectorAll(".sidebarInner");
+
+    modules[moduleNum].setAttribute("data-status", "open");
+
+    for (var i = 0; i < allInnerButtons.length; i++) {
+        allInnerButtons[i].setAttribute("data-selected", "false");
+    }
+    moduleSidebarInners[lessonNum].setAttribute("data-selected", "true");
+}
