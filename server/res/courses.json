@@ -1,6 +1,12 @@
 {
     "courses": [
         {
+            "title": "Placement of Wireless APs",
+            "description": "This class covers the basics of radio frequency and planning and designing a wireless network with access point placement considerations.",
+            "id": 77,
+            "image": "http://localhost:3000/API/images/77"
+        },
+        {
             "title": "Making Tortillas",
             "description": "This class teaches the history, cultural significance, techniques, and recipes for making tortillas.",
             "id": 76,

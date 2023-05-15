@@ -7,7 +7,12 @@
     "modules": [
         {
             "title": "Introduction to Agile Development: Principles and Methodologies",
-            "lessons": []
+            "lessons": [
+                {
+                    "title": "This broke.",
+                    "info": "Request failed with status code it shit it's pants"
+                }
+            ]
         },
         {
             "title": "Agile Practices: Scrum, Kanban, Extreme Programming (XP), and Test Driven Development (TDD)",

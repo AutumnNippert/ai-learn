@@ -656,3 +656,19 @@ Generating module: Tortilla Making Techniques and Recipes
 89.99999999999999% complete. Generating Lesson: Recipe variations for flavored and colored tortillas.
 100.0% complete. Finishing up...
 Course generated successfully.
+Generating course: Placement of Wireless APs | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 8:07 PM
+Generating module: Understanding Radio Frequency (RF) Basics and Implications for Wi-Fi
+0% complete. Generating Lesson: Overview of RF Spectrum
+10% complete. Generating Lesson: Understanding Frequency, Amplitude, and Phase Concepts
+20% complete. Generating Lesson: Propagation and Attenuation of Radio Waves
+30.000000000000004% complete. Generating Lesson: Basics of Modulation and Demodulation
+40% complete. Generating Lesson: Antennas and their Role in Wireless Communications
+Generating module: Planning and Designing a Wireless Network with Access Points Placement Considerations.
+50% complete. Generating Lesson: Understanding the Concept of Site Survey in Wireless Network Design
+60% complete. Generating Lesson: Factors Affecting Wireless Network Coverage and Capacity
+70% complete. Generating Lesson: Designing a Wireless Network with Access Point Selection
+80% complete. Generating Lesson: Conducting a Site Survey: Techniques, Tools, and Procedures
+89.99999999999999% complete. Generating Lesson: Analyzing and Optimizing AP Placement for Better Performance
+100.0% complete. Finishing up...
+Course generated successfully.
