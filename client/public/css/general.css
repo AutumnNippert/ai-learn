@@ -86,6 +86,7 @@ button {
 }
 
 #sidebar::after {
+    z-index: 5;
     content: '';
     position: absolute;
     top: 0;

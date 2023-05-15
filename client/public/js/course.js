@@ -93,3 +93,27 @@ function main(course){
         }
     });
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sidebar = document.getElementById('sidebar');
+    const moduleLessonDivs = document.querySelectorAll('.module-lessons');
+    const moduleButtons = document.querySelectorAll(".module-button");
+
+    // initial states
+    moduleLessonDivs[0].setAttribute("data-status", "open");
+    var firstLesson = moduleLessonDivs[0].querySelector('.lesson-button');
+    firstLesson.setAttribute("data-selected", "true");
+
+    for (var i = 0; i < moduleLessonDivs.length; i++) {
+        (function(index) {
+            moduleButtons[index].addEventListener('click', function() {
+            if (moduleLessonDivs[index].getAttribute("data-status") == "open") {
+                moduleLessonDivs[index].setAttribute("data-status", "closed");
+            } else {
+                moduleLessonDivs[index].setAttribute("data-status", "open");
+            }
+            });
+        })(i);
+    }
+});
