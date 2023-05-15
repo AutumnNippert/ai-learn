@@ -95,7 +95,7 @@ button {
     background-color: var(--black);
 }
 
-#sidebar button {
+.sidebarInner {
     background-color: var(--white);
 
     height: fit-content;
@@ -109,11 +109,19 @@ button {
     transition: background-color 200ms ease;
 }
 
-#sidebar button:hover {
+/* #sidebar button:hover {
     background-color: var(--grey2);
 }
 
 #sidebar button[data-selected="true"] {
+    background-color: var(--blue);
+} */
+
+.sidebarInner:hover {
+    background-color: var(--grey2);
+}
+
+.sidebarInner[data-selected="true"] {
     background-color: var(--blue);
 }
 

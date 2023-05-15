@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Sidebar Selection Handler
-    const sidebarInnerButtons = sidebar.querySelectorAll('button');
+    const sidebarInnerButtons = sidebar.querySelectorAll('.sidebarInner');
 
     sidebarInnerButtons.forEach(function (button) {
         button.addEventListener('click', function () {

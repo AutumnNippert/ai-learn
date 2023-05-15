@@ -35,12 +35,12 @@
     </div>
     <div id="sidebar" data-status="closed">
         <% for (let module of course.modules) { %>
-            <button class="module-button" data-default-text="<%= module.title %>">
+            <button class="module-button sidebarInner" data-default-text="<%= module.title %>">
                 <%= module.title %>
             </button>
             <div class="module-lessons">
                 <% for (let lesson of module.lessons) { %>
-                    <button class="lesson-button" data-default-text="<%= lesson.title %>">
+                    <button class="lesson-button sidebarInner" data-default-text="<%= lesson.title %>">
                         <%= lesson.title %>
                     </button>
                     <% } %>
