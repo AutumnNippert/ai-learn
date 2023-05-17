@@ -1,3 +1,16 @@
 {
-    "coursesInProgress": []
+    "coursesInProgress": [
+        {
+            "banana eating": {
+                "lesson": "Selecting bananas based on intended use and personal preference",
+                "progress": 20
+            }
+        },
+        {
+            "Making rice": {
+                "lesson": "Introduction to the different types of rice: white, brown, Basmati, Jasmine, Arborio, and wild rice.",
+                "progress": 0
+            }
+        }
+    ]
 }

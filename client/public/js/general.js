@@ -49,11 +49,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-function displaySnackbar(text, delay) {
+function displaySnackbar(text) {
+    const delay = 3000;
+    
     // Get the snackbar DIV
     var x = document.getElementById("snackbar");
 
     x.innerHTML = text;
+
+    // set --time in the css from #snackbar to the delay
+    x.style.setProperty('--time', delay + "ms");
   
     // Add the "show" class to DIV
     x.className = "show";

@@ -179,13 +179,38 @@
 
 /* Modal Content/Box */
 .modal-content {
+    position: relative;
     background-color: #fefefe;
     margin: 15% auto;
     /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 60%;
     /* Could be more or less, depending on screen size */
+}
+
+#submitCourse{
+    /*Put to bottom right of modal*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1vh;
+    padding: 1vh;
+
+    /*
+    Make button not look bad
+    */
+    border: none;
+    border-radius: 5px;
+    background-color: var(--grey1);
+    transition: background-color 0.2s ease-in-out;
+
+    color: var(--black);
+    font-size: 1rem;
+}
+
+#submitCourse:hover{
+    background-color: var(--grey3);
 }
 
 /* The Close Button */
@@ -235,4 +260,19 @@
     text-align: center;
     border-radius: 5px;
     z-index: 2;
+}
+
+.similarCourse{
+    position: relative;
+    background-color: var(--grey2);
+    padding: 1vh;
+    width: 50%;
+    height: fit-content;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.similarCourse:hover{
+    background-color: var(--grey3);
 }

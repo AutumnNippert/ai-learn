@@ -1,3 +1,5 @@
+let creatingCourse;
+
 // Clickable Course Elements
 document.addEventListener('DOMContentLoaded', function () {
     var courseElements = document.querySelectorAll('.courseElement');
@@ -23,6 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // When the user clicks on the button, open the modal
     addCourseButton.onclick = function () {
+        if(creatingCourse) {
+            displaySnackbar("Please wait for the current course to finish generating.");
+            return;
+        }
         modal.style.display = "block";
     }
 
@@ -72,10 +78,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.error('Error:', error);
             });
 
+        creatingCourse = true;
+
         // close the modal
         modal.style.display = "none";
         // toast message
-        displaySnackbar("Course Added! Generating...", 3000);
+        displaySnackbar("Course Generating...");
 
         startProgressBar(courseName);
     });
@@ -96,6 +104,36 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// modal course name search
+document.addEventListener('DOMContentLoaded', function () {
+    // Modal course name search
+    const modalCourseNameInput = document.getElementById("courseName");
+
+    // tracks when the searchInput is updated
+    modalCourseNameInput.addEventListener("input", function () {
+        var currInput = modalCourseNameInput.value;
+        currInput = currInput.toLowerCase();
+
+        const similarCourses = getSimilarCourses(currInput);
+
+        // create a span for each similar course
+        const similarCoursesContainer = document.getElementById("similarCoursesContainer");
+        similarCoursesContainer.innerHTML = "";
+        similarCourses.forEach(function (course) {
+            const span = document.createElement("span");
+            span.classList.add("similarCourse");
+            span.innerHTML = course.querySelector("h1").innerHTML;
+            similarCoursesContainer.appendChild(span);
+            span.addEventListener("click", function () {
+                // take you to the course page
+                window.location.href = `/course/${course.dataset.courseId}`;
+            });
+            span.appendChild(document.createElement("br"));
+        }
+        );
+    });
+});
+
 // Searches for a course element on the page using an input string (used for the search bar)
 // Hides nonmatching courses. Only shows matching courses.
 // an empty input hits true on all courses.
@@ -113,7 +151,10 @@ function searchForCourseAndHideOthers(courseName) {
     });
 }
 
-function getSimilarCourses(searchStr){
+function getSimilarCourses(searchStr) {
+    if (searchStr == "") {
+        return [];
+    }
     let keywords = searchStr.trim().toLowerCase().split(" ");
     // remove filler words
     const fillerWords = ["a", "an", "the", "of", "and", "or", "but", "is", "are", "was", "were", "be", "been", "have", "has", "had", "do", "does", "did", "will", "would", "should", "can", "could", "may", "might", "must", "shall", "should", "to", "in", "on", "at", "by", "for", "from"];
@@ -181,7 +222,8 @@ function startProgressBar(course_name) {
             bar.style.display = "none";
             text.style.display = "none";
             text.innerHTML = "loading...";
-            displaySnackbar("Course Complete! Refresh page to see!", 3000);
+            displaySnackbar("Course Complete! Refresh page to see!");
+            creatingCourse = false;
         } else {
             fetch(`/progress/${course_name}`, {
                 method: 'GET',
@@ -195,9 +237,10 @@ function startProgressBar(course_name) {
                         bar.style.display = "none";
                         text.style.display = "none";
                         text.innerHTML = "loading...";
-                        displaySnackbar("Server error occured...", 3000);
+                        displaySnackbar("Server error occured...");
                         console.error('Error:', error);
                         clearInterval(intervalId);
+                        creatingCourse = false;
                     } else {
                         return response.json();
                     }
@@ -228,14 +271,14 @@ function startProgressBar(course_name) {
                     bar.style.display = "none";
                     text.style.display = "none";
                     text.innerHTML = "loading...";
-                    displaySnackbar("Something shat...", 3000);
+                    displaySnackbar("Something shat...");
                     console.error('Error:', error);
                     clearInterval(intervalId);
+                    creatingCourse = false;
                 });
         }
     }
 }
-
 
 // Favoriting feature may or may not get axed.
 // While this does technically work, due to how we interact with course Elements you also

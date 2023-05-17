@@ -1563,3 +1563,82 @@ Generating module: Choosing the Right Irrigation System
 93.75% complete. Generating Lesson: Investing in Smart Irrigation Technology
 100.0% complete. Finishing up...
 Course generated successfully.
+Generating course: What Can You Airfry and How | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 3:56 PM
+Generating module: Introduction to air frying
+0% complete. Generating Lesson: What is air frying?
+10% complete. Generating Lesson: Benefits of air frying
+20% complete. Generating Lesson: Types of foods that can be air fried
+30.000000000000004% complete. Generating Lesson: Types of air fryers available on the market
+40% complete. Generating Lesson: Common misconceptions about air frying
+Generating module: Recipes and techniques for air frying different types of food
+50% complete. Generating Lesson: Techniques for air frying vegetables
+58.333333333333336% complete. Generating Lesson: Techniques for air frying poultry
+66.66666666666667% complete. Generating Lesson: Techniques for air frying seafood
+75.00000000000001% complete. Generating Lesson: Techniques for air frying meat
+83.33333333333334% complete. Generating Lesson: Techniques for air frying desserts
+91.66666666666669% complete. Generating Lesson: Tips and tricks for using an air fryer safely and effectively
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: banana eating | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 4:48 PM
+Generating module: History and cultural significance of bananas 
+0% complete. Generating Lesson: The origins of bananas and how they were domesticated 
+8.333333333333332% complete. Generating Lesson: The role of bananas in ancient civilizations and their significance in art and mythology 
+16.666666666666664% complete. Generating Lesson: The spread of bananas throughout the world and their impact on trade and consumption 
+25% complete. Generating Lesson: The historical and cultural significance of bananas in regions where they are a staple food 
+33.33333333333333% complete. Generating Lesson: The impact of colonialism on the global banana industry 
+Generating course: banana eating | with 2 modules
+Generating course: banana eating | with 2 modules
+Generating module: The Anatomy of a Banana: Understanding the different parts of a banana and their purpose in the eating experience.
+Estimated time to complete: 11.666666666666666 minutes | 4:51 PM
+Generating module: Introduction to Different Types of Bananas and Their Nutritional Values
+Estimated time to complete: 11.666666666666666 minutes | 4:52 PM
+41.666666666666664% complete. Generating Lesson: Modern day issues in the banana industry and the future of banana cultivation.
+0% complete. Generating Lesson: The exterior of a banana: Understanding the physical characteristics of the banana peel.
+0% complete. Generating Lesson: The History and Origin of Bananas
+7.142857142857142% complete. Generating Lesson: The Anatomy of a Banana
+Generating module: Techniques and best practices for peeling and eating bananas
+10% complete. Generating Lesson: Examining the anatomy of a banana slice: The different parts of a banana slice and what role they play in the eating experience.
+49.99999999999999% complete. Generating Lesson: The proper way to peel a banana 
+14.285714285714285% complete. Generating Lesson: Common Types of Bananas: Cavendish, Lady Finger, Blood Banana, etc.
+56.25% complete. Generating Lesson: Different methods for peeling bananas 
+Generating course: banana eating | with 2 modules
+Generating course: banana eating | with 2 modules
+Generating module: History & Varieties of Bananas
+Estimated time to complete: 11.666666666666666 minutes | 4:53 PM
+21.428571428571427% complete. Generating Lesson: Nutritional Values of Bananas: Vitamins, Minerals, and Fiber
+Estimated time to complete: 11.666666666666666 minutes | 4:53 PM
+Generating module: The Science of Bananas: The Anatomy, Classification, and Nutritional Value of Bananas
+0% complete. Generating Lesson: Introduction to bananas as a fruit
+20% complete. Generating Lesson: The science behind a banana's flavor: Discussing the different flavor components of bananas and how they work together.
+62.5% complete. Generating Lesson: How to avoid bruising and damaging the fruit while peeling 
+0% complete. Generating Lesson: The Anatomy of a Banana: Understanding the Structure of the Fruit and its Parts
+7.142857142857142% complete. Generating Lesson: Evolution of the banana plant and its spread around the world
+Generating course: banana eating | with 2 modules
+Generating module: The Anatomy of a Perfectly Ripe Banana
+Estimated time to complete: 11.666666666666666 minutes | 4:53 PM
+28.57142857142857% complete. Generating Lesson: Health Benefits of Bananas: Preventing and Managing Chronic Diseases
+0% complete. Generating Lesson: Understanding the Different Stages of Banana Ripeness
+8.333333333333332% complete. Generating Lesson: Classification of Bananas: Knowing the Different Types of Bananas and their Characteristics
+Generating course: banana eating | with 2 modules
+30.000000000000004% complete. Generating Lesson: The nutritional value of a banana: Exploring the vitamins and minerals found in a banana and how they benefit our health.
+Estimated time to complete: 11.666666666666666 minutes | 4:54 PM
+Generating module: Banana: Anatomy and Nutrition
+68.75% complete. Generating Lesson: The proper way to store bananas to keep them fresh 
+35.71428571428571% complete. Generating Lesson: Environmental and Social Impact of Banana Production
+Generating course: banana eating | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 4:57 PM
+Generating module: Selecting the perfect banana for consumption
+0% complete. Generating Lesson: Understanding the different stages of ripeness
+10% complete. Generating Lesson: Identifying external and internal indicators of ripeness
+Generating course: banana eating | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 4:59 PM
+Generating module: The Science of Bananas: Varieties, Nutritional Profile, and Ripening Process
+0% complete. Generating Lesson: Introduction to bananas
+6.25% complete. Generating Lesson: Banana varieties around the world
+20% complete. Generating Lesson: Selecting bananas based on intended use and personal preference
+Generating course: Making rice | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 5:00 PM
+Generating module: Understanding the different types of rice and which ones are best for specific dishes.
+0% complete. Generating Lesson: Introduction to the different types of rice: white, brown, Basmati, Jasmine, Arborio, and wild rice.

@@ -1,6 +1,12 @@
 {
     "courses": [
         {
+            "title": "What Can You Airfry and How",
+            "description": "Air Fryer 101: Discover the world of air frying, the benefits, and how to cook various types of food with different techniques using your air fryer.",
+            "id": 173,
+            "image": "http://localhost:3000/API/images/173"
+        },
+        {
             "title": "Watering Your Lawn",
             "description": "This class teaches how to properly water and maintain a healthy lawn by understanding its water needs and selecting the right irrigation system.",
             "id": 172,
