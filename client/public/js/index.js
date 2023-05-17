@@ -100,18 +100,63 @@ document.addEventListener('DOMContentLoaded', function () {
 // Hides nonmatching courses. Only shows matching courses.
 // an empty input hits true on all courses.
 function searchForCourseAndHideOthers(courseName) {
+    const simCourseElems = getSimilarCourses(courseName);
     const courseElems = document.querySelectorAll('.courseElement');
 
     courseElems.forEach(function (element) {
         // Search for the course title inside of the course element's h1
-        var title = element.querySelector("h1");
-        // console.log("searchForCourse(" + courseName + ") vs " + title.innerText);
-        if (title.innerText.toLowerCase().includes(courseName)) {
+        if (simCourseElems.includes(element)) {
             element.style.display = "block";
         } else {
             element.style.display = "none";
         }
     });
+}
+
+function getSimilarCourses(searchStr){
+    let keywords = searchStr.trim().toLowerCase().split(" ");
+    // remove filler words
+    const fillerWords = ["a", "an", "the", "of", "and", "or", "but", "is", "are", "was", "were", "be", "been", "have", "has", "had", "do", "does", "did", "will", "would", "should", "can", "could", "may", "might", "must", "shall", "should", "to", "in", "on", "at", "by", "for", "from"];
+    keywords = keywords.filter(word => !fillerWords.includes(word));
+
+    // get courses that contain the keywords
+    const courseElems = document.querySelectorAll('.courseElement');
+    let courses = [];
+    courseElems.forEach(function (element) {
+        // Search for the course title inside of the course element's h1
+        var title = element.querySelector("h1");
+        var titleText = title.innerHTML.toLowerCase();
+        var titleWords = titleText.split(" ");
+        var isSimilar = false;
+        keywords.forEach(function (keyword) {
+            titleWords.forEach(function (titleWord) {
+                if (titleWord.includes(keyword)) {
+                    isSimilar = true;
+                }
+            });
+        });
+        if (isSimilar) {
+            courses.push(element);
+        }
+    });
+
+    // sort by similarity to search string
+    courses.sort(function (a, b) {
+        var aTitle = a.querySelector("h1").innerHTML.toLowerCase();
+        var bTitle = b.querySelector("h1").innerHTML.toLowerCase();
+        var aSimilarity = 0;
+        var bSimilarity = 0;
+        keywords.forEach(function (keyword) {
+            if (aTitle.includes(keyword)) {
+                aSimilarity++;
+            }
+            if (bTitle.includes(keyword)) {
+                bSimilarity++;
+            }
+        });
+        return bSimilarity - aSimilarity;
+    });
+    return courses;
 }
 
 
