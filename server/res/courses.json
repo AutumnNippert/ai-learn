@@ -1,6 +1,12 @@
 {
     "courses": [
         {
+            "title": "Making rice",
+            "description": "This class teaches the types of rice, their nutritional values, best use in specific dishes, cooking methods, and cultural significance.",
+            "id": 183,
+            "image": "http://localhost:3000/API/images/183"
+        },
+        {
             "title": "What Can You Airfry and How",
             "description": "Air Fryer 101: Discover the world of air frying, the benefits, and how to cook various types of food with different techniques using your air fryer.",
             "id": 173,

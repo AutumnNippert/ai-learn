@@ -1642,3 +1642,21 @@ Generating course: Making rice | with 2 modules
 Estimated time to complete: 11.666666666666666 minutes | 5:00 PM
 Generating module: Understanding the different types of rice and which ones are best for specific dishes.
 0% complete. Generating Lesson: Introduction to the different types of rice: white, brown, Basmati, Jasmine, Arborio, and wild rice.
+6.25% complete. Generating Lesson: Understanding the nutritional value and health benefits of each type of rice.
+12.5% complete. Generating Lesson: Which types of rice work best in specific dishes: sushi, risotto, paella, stir-fry, biryani, and more.
+18.75% complete. Generating Lesson: Learning about the differences between short-grain, medium-grain, and long-grain rice.
+25% complete. Generating Lesson: How to properly store different types of rice to maintain freshness.
+31.25% complete. Generating Lesson: Understanding the cultural significance of rice in various cuisines around the world.
+37.5% complete. Generating Lesson: Comparing the taste and texture of different types of rice.
+43.75% complete. Generating Lesson: Tips for cooking rice to perfection, including water ratios and cooking times.
+Generating module: Learning various cooking methods for rice, including boiling, steaming, and using a rice cooker.
+50% complete. Generating Lesson: Introduction to the different cooking methods for rice
+56.25% complete. Generating Lesson: Boiling rice in a pot or saucepan
+62.5% complete. Generating Lesson: Steaming rice using a steamer basket or microwave
+68.75% complete. Generating Lesson: Using a rice cooker and its benefits 
+75% complete. Generating Lesson: Proper ratios of water and rice for each method 
+81.25% complete. Generating Lesson: Tips for avoiding common cooking mistakes 
+87.5% complete. Generating Lesson: How to tell when rice is done 
+93.75% complete. Generating Lesson: Tricks for keeping rice warm and fluffy after cooking
+100.0% complete. Finishing up...
+Course generated successfully.
