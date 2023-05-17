@@ -1,6 +1,12 @@
 {
     "courses": [
         {
+            "title": "Watering Your Lawn",
+            "description": "This class teaches how to properly water and maintain a healthy lawn by understanding its water needs and selecting the right irrigation system.",
+            "id": 172,
+            "image": "http://localhost:3000/API/images/172"
+        },
+        {
             "title": "Microwaving Apples",
             "description": "This class teaches the science behind microwaving apples and explores creative recipes using this method.",
             "id": 171,

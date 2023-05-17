@@ -99,6 +99,10 @@ app.get('/progress/:course_name', async (req, res) => {
     }
 });
 
+app.get('/about', (req, res) => {
+    res.render('about');
+});
+
 //err page
 app.get('*', (req, res) => {
     res.render('error', { error: '404: Page Not Found' });

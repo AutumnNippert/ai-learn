@@ -77,14 +77,6 @@
     background-color: var(--grey3);
 }
 
-/* #nextButton {
-    right: 5vh;
-}
-
-#prevButton {
-    left: 5vh; 
-} */
-
 #printButton {
     position: absolute;
     right: 5vh;
@@ -98,7 +90,6 @@
 #printButton:hover {
     background-color: var(--grey3);
 }
-
 
 .container {
     display: flex;

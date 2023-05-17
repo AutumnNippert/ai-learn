@@ -1541,3 +1541,25 @@ Generating module: Exploring Creative Microwave Apple Recipes
 89.99999999999999% complete. Generating Lesson: Easy and Fun-to-Make Microwaved Apple Beverages
 100.0% complete. Finishing up...
 Course generated successfully.
+Generating course: Watering Your Lawn | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 2:10 PM
+Generating module: Understanding Your Lawn's Water Needs
+0% complete. Generating Lesson: The Importance of Knowing Your Lawn's Water Needs
+6.25% complete. Generating Lesson: Factors that Affect Your Lawn's Water Needs
+12.5% complete. Generating Lesson: The Signs of Overwatering and Underwatering
+18.75% complete. Generating Lesson: Calculating Your Lawn's Watering Needs
+25% complete. Generating Lesson: Types of Watering Methods
+31.25% complete. Generating Lesson: Best Times to Water Your Lawn
+37.5% complete. Generating Lesson: Watering Tips and Techniques
+43.75% complete. Generating Lesson: Common Watering Mistakes to Avoid
+Generating module: Choosing the Right Irrigation System
+50% complete. Generating Lesson: Understanding the Different Types of Irrigation Systems
+56.25% complete. Generating Lesson: Analyzing Your Property's Landscape
+62.5% complete. Generating Lesson: Water Conservation and Irrigation Systems
+68.75% complete. Generating Lesson: Choosing the Right Irrigation System for Your Needs
+75% complete. Generating Lesson: The Importance of Proper Installation and Maintenance
+81.25% complete. Generating Lesson: Common Irrigation System Problems and Solutions
+87.5% complete. Generating Lesson: Installing Drip Irrigation Systems
+93.75% complete. Generating Lesson: Investing in Smart Irrigation Technology
+100.0% complete. Finishing up...
+Course generated successfully.
