@@ -1,5 +1,6 @@
 {
     "PROTOCOL": "http",
     "HOSTNAME": "localhost",
-    "PORT": 3000
+    "PORT": 3000,
+    "NO_AI": false
 }

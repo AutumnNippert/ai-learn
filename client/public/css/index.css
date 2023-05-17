@@ -202,32 +202,37 @@
     cursor: pointer;
 }
 
-#table_of_contents {
-    background-color: var(--grey1);
+#progressBar {
+    position: sticky;
+    bottom: 0;
     width: 100%;
-    padding-top: 3vh;
-    margin: 0;
-    font-size: 1.25rem;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-#table_of_contents h3 {
+    height: 4vh;
     background-color: var(--grey2);
-    width: 100%;
-    padding: 1vh;
-    margin: 0;
-    font-size: 1.25rem;
-    font-weight: 600;
-    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+    
+    z-index: 0;
 }
 
-#table_of_contents h4 {
-    background-color: var(--grey3);
+#progressBarInner {
+    position: relative;
+    height: 100%;
+    width: 0%;
+    background-color: var(--blue);
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+    z-index: 1;
+}
+
+#progressBarText {
+    display: none;
+    position: sticky;
+    bottom: 0;
     width: 100%;
-    padding: 1vh;
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
+    height: 4vh;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 2;
 }

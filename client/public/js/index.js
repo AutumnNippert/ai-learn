@@ -74,18 +74,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // close the modal
         modal.style.display = "none";
-        alert("Course Generating. Will be added shortly!");
+        // toast message
+        displaySnackbar("Course Added! Generating...", 3000);
 
+        startProgressBar(courseName);
     });
 
 });
 
 // Search Bar Functionality 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const searchInput = document.getElementById("searchInput");
 
     // tracks when the searchInput is updated
-    searchInput.addEventListener("input", function() {
+    searchInput.addEventListener("input", function () {
         var currInput = searchInput.value;
         currInput = currInput.toLowerCase();
 
@@ -100,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function searchForCourseAndHideOthers(courseName) {
     const courseElems = document.querySelectorAll('.courseElement');
 
-    courseElems.forEach (function(element) {
+    courseElems.forEach(function (element) {
         // Search for the course title inside of the course element's h1
         var title = element.querySelector("h1");
         // console.log("searchForCourse(" + courseName + ") vs " + title.innerText);
@@ -113,6 +115,81 @@ function searchForCourseAndHideOthers(courseName) {
 }
 
 
+// progress bar
+function startProgressBar(course_name) {
+    var bar = document.getElementById("progressBar");
+    var inner = document.getElementById("progressBarInner");
+    var text = document.getElementById("progressBarText");
+
+    bar.style.display = "block";
+    inner.style.width = "0%";
+    text.innerHTML = `Creating Course: ${course_name}`;
+    text.style.display = "flex";
+
+
+    // add a timer for every 1 second
+    var isComplete = false;
+    var intervalId = setInterval(getProgress, 5000);
+    function getProgress() {
+        if (isComplete) {
+            clearInterval(intervalId);
+            bar.style.display = "none";
+            text.style.display = "none";
+            text.innerHTML = "loading...";
+            displaySnackbar("Course Complete! Refresh page to see!", 3000);
+        } else {
+            fetch(`/progress/${course_name}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify()
+            })
+                .then(response => {
+                    if (response.status !== 200) {
+                        bar.style.display = "none";
+                        text.style.display = "none";
+                        text.innerHTML = "loading...";
+                        displaySnackbar("Server error occured...", 3000);
+                        console.error('Error:', error);
+                        clearInterval(intervalId);
+                    } else {
+                        return response.json();
+                    }
+                })
+                .then(data => {
+                    console.log(data);
+                    // if data doesn't have the course name, done
+                    if (!data.hasOwnProperty(course_name)) {
+                        isComplete = true;
+                        return;
+                    }
+                    const percent = data[course_name].progress;
+                    const lessonName = data[course_name].lesson;
+                    // set the width of the progress bar
+                    inner.style.width = percent + "%";
+                    // set the text of the progress bar
+                    text.innerHTML = lessonName + " | " + percent + "%";
+
+                    if (lessonName === null) {
+                        text.innerHTML = `Creating Course: ${course_name}`;
+                    }
+
+                    if (percent >= 100) {
+                        isComplete = true;
+                    }
+                })
+                .catch(error => {
+                    bar.style.display = "none";
+                    text.style.display = "none";
+                    text.innerHTML = "loading...";
+                    displaySnackbar("Something shat...", 3000);
+                    console.error('Error:', error);
+                    clearInterval(intervalId);
+                });
+        }
+    }
+}
 
 
 // Favoriting feature may or may not get axed.

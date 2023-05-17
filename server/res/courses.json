@@ -1,6 +1,30 @@
 {
     "courses": [
         {
+            "title": "Microwaving Apples",
+            "description": "This class teaches the science behind microwaving apples and explores creative recipes using this method.",
+            "id": 171,
+            "image": "http://localhost:3000/API/images/171"
+        },
+        {
+            "title": "Linking in C Programming Lang",
+            "description": "This class focuses on understanding and dealing with variable linkage in C programming.",
+            "id": 82,
+            "image": "http://localhost:3000/API/images/82"
+        },
+        {
+            "title": "Intro to Linear Algebra",
+            "description": "This class covers Vectors, Matrices, Systems of Linear Equations and Gaussian Elimination in an introductory level.",
+            "id": 81,
+            "image": "http://localhost:3000/API/images/81"
+        },
+        {
+            "title": "Intro to Rust",
+            "description": "Intro to Rust: Learn the fundamentals of the Rust programming language including data types, control flow statements, ownership management, and struct, enums, and modules.",
+            "id": 80,
+            "image": "http://localhost:3000/API/images/80"
+        },
+        {
             "title": "Low Level Cache Memory Ops",
             "description": "Low Level Cache Memory Ops: An in-depth look at cache memory, its functions, metrics, and advanced operations such as coherency, synchronization, and consistency.",
             "id": 79,

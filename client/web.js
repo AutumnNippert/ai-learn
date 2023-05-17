@@ -81,6 +81,23 @@ app.post('/add_course/:courseName/:moduleCount', async (req, res) => {
     }
 });
 
+app.get('/progress/:course_name', async (req, res) => {
+    try {
+        const response = await axios.get(`${apiURL}/progress/${req.params.course_name}`);
+        if (response.status === 404) {
+            res.status(404);
+        } else {
+            res.json(response.data);
+        }
+    } catch (error) {
+        console.log(error);
+        if (error.status === 404) {
+            res.json({ error: '404: Course Not Found' });
+        } else {
+            res.json({ error: '500: Internal Server Error' });
+        }
+    }
+});
 
 //err page
 app.get('*', (req, res) => {

@@ -716,3 +716,828 @@ Generating module: Advanced Cache Operations: Coherency, Synchronization and Con
 94.44444444444446% complete. Generating Lesson: Memory Barrier and Memory Fence Operations.
 100.0% complete. Finishing up...
 Course generated successfully.
+Generating course: Intro to Rust | with 5 modules
+Estimated time to complete: 8.333333333333334 minutes | 11:59 PM
+Generating module: Introduction to Rust programming language
+0% complete. Generating Lesson: What is Rust?
+2.5% complete. Generating Lesson: History and Features of Rust
+5% complete. Generating Lesson: Installing Rust
+7.500000000000001% complete. Generating Lesson: Syntax and Data Structures in Rust
+10% complete. Generating Lesson: Compiling and running Rust programs
+12.5% complete. Generating Lesson: Cargo package manager in Rust
+15% complete. Generating Lesson: Rust tools and IDEs
+17.5% complete. Generating Lesson: Rust resources for further learning
+Generating module: Data types and Variables in Rust
+20% complete. Generating Lesson: Introduction to Rust data types
+22.499999999999996% complete. Generating Lesson: Scalar data types in Rust
+24.999999999999996% complete. Generating Lesson: Integer data types in Rust
+27.499999999999996% complete. Generating Lesson: Floating-point data types in Rust
+30% complete. Generating Lesson: Boolean data types in Rust
+32.5% complete. Generating Lesson: Character data types in Rust
+35% complete. Generating Lesson: Compound data types in Rust
+37.50000000000001% complete. Generating Lesson: Declaring and initializing variables in Rust
+Generating module: Control flow statements and Functions in Rust
+40.00000000000001% complete. Generating Lesson: If/else statements in Rust
+43.33333333333334% complete. Generating Lesson: Loops in Rust
+46.66666666666667% complete. Generating Lesson: Match expressions in Rust
+50.000000000000014% complete. Generating Lesson: Functions in Rust
+53.33333333333334% complete. Generating Lesson: Function parameters and return values in Rust
+56.66666666666668% complete. Generating Lesson: Closures in Rust
+Generating module: Ownership management in Rust
+60.00000000000001% complete. Generating Lesson: Introduction to ownership in Rust
+62.500000000000014% complete. Generating Lesson: Stack vs heap allocation in Rust
+65.00000000000001% complete. Generating Lesson: The ownership transfer in Rust
+67.50000000000001% complete. Generating Lesson: Borrowing and References in Rust
+70.00000000000001% complete. Generating Lesson: Mutable references in Rust
+72.50000000000001% complete. Generating Lesson: Slices in Rust
+75.00000000000003% complete. Generating Lesson: Ownership with Structs and Enums in Rust
+77.50000000000003% complete. Generating Lesson: Memory management in Rust with Arc and Rc.
+Generating module: Structs, Enums, and Modules in Rust
+80.00000000000003% complete. Generating Lesson: Structs in Rust
+82.85714285714289% complete. Generating Lesson: Defining and using methods in Rust structs
+85.71428571428574% complete. Generating Lesson: Tuple structs in Rust
+88.5714285714286% complete. Generating Lesson: Enums in Rust
+91.42857142857146% complete. Generating Lesson: Defining behavior with Rust Enums
+94.28571428571432% complete. Generating Lesson: Modules and visibility in Rust
+97.14285714285718% complete. Generating Lesson: Path resolution in Rust modules.
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Intro to Linear Algebra | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 12:30 AM
+Generating module: Vectors and Matrices
+0% complete. Generating Lesson: Introduction to Vectors
+10% complete. Generating Lesson: Vector Addition and Subtraction
+20% complete. Generating Lesson: Vector Multiplication
+30.000000000000004% complete. Generating Lesson: Introduction to Matrices
+40% complete. Generating Lesson: Matrix Operations
+Generating module: Systems of Linear Equations and Gaussian Elimination
+50% complete. Generating Lesson: Introduction to Systems of Linear Equations
+58.333333333333336% complete. Generating Lesson: Solving Systems of Linear Equations Using Gaussian Elimination
+66.66666666666667% complete. Generating Lesson: Gaussian Elimination with Row Reduction Method
+75.00000000000001% complete. Generating Lesson: Pivoting Strategies for Gaussian Elimination
+83.33333333333334% complete. Generating Lesson: Homogenous Systems and Trivial vs Nontrivial Solutions
+91.66666666666669% complete. Generating Lesson: Applications of Systems of Linear Equations in Real-Life Scenarios
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Linking in C Programming Lang | with 2 modules
+Estimated time to complete: 3.3333333333333335 minutes | 1:14 AM
+Generating module: Understanding Variable Linkage in C Programming
+0% complete. Generating Lesson: Basic concepts of variable linkage in C programming 
+6.25% complete. Generating Lesson: Static variables, their declaration and usage 
+12.5% complete. Generating Lesson: External variables and their declaration 
+18.75% complete. Generating Lesson: Understanding the difference between external and internal linkage 
+25% complete. Generating Lesson: How to use extern keyword 
+31.25% complete. Generating Lesson: The concept of common block 
+37.5% complete. Generating Lesson: Global variables and their implications 
+43.75% complete. Generating Lesson: Static variables and their linkage in functions
+Generating module: Dealing with External and Internal Linkage in C Programming
+50% complete. Generating Lesson: Review: what is variable linkage in C programming?
+56.25% complete. Generating Lesson: Definition and behavior of internal linkage
+62.5% complete. Generating Lesson: Using the static keyword for internal linkage
+68.75% complete. Generating Lesson: Definition and behavior of external linkage
+75% complete. Generating Lesson: Using the extern keyword for external linkage
+81.25% complete. Generating Lesson: How to use global and external variables effectively
+87.5% complete. Generating Lesson: Understanding the implications of multiple definitions
+93.75% complete. Generating Lesson: Using header files for linking variables and functions.
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 11:43 PM
+Generating module: Introduction to Test Principles and Types
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 11:47 PM
+Generating module: Introduction to Testing: Concepts, Principles, and Types
+0% complete. Generating Lesson: Understanding the Basics of Software Testing
+8.333333333333332% complete. Generating Lesson: The Importance of Software Testing
+16.666666666666664% complete. Generating Lesson: Principles of Software Testing
+25% complete. Generating Lesson: Types of Software Testing
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 11:50 PM
+Generating module: Introduction to Test Taking Strategies
+0% complete. Generating Lesson: Understanding the importance of test taking strategies
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Generating module: Introduction to Test and Measurement Theory
+Estimated time to complete: 11.666666666666666 minutes | 11:52 PM
+0% complete. Generating Lesson: The Importance of Test and Measurement
+6.25% complete. Generating Lesson: Terminology and Concepts in Test and Measurement
+12.5% complete. Generating Lesson: Types of Tests and Measurements
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 11:54 PM
+Generating module: Introduction to Testing: Understanding the Importance and Types of Testing
+0% complete. Generating Lesson: Why Testing is Important: Understanding the Benefits and Risks Involved
+Generating course: testCourse | with 2 modules
+Generating module: Introduction to testCourse and its history
+Estimated time to complete: 11.666666666666666 minutes | 11:56 PM
+0% complete. Generating Lesson: Overview of testCourse and its scope
+6.25% complete. Generating Lesson: History of testCourse and its evolution
+12.5% complete. Generating Lesson: Major milestones in the development of testCourse
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 12:00 AM
+Generating module: Introduction to Testing
+0% complete. Generating Lesson: Here are the sub lessons for a module on Introduction to Testing:
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 12:01 AM
+Generating module: Introduction to Testing
+0% complete. Generating Lesson: What is testing?
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 12:02 AM
+Generating module: Introduction to testing: definitions, types of tests, testing process, and testing strategies.
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 12:03 AM
+Generating module: Introduction to Test: Basic Concepts and Types
+0% complete. Generating Lesson: Definition and Purpose of Tests
+7.142857142857142% complete. Generating Lesson: Types of Tests
+14.285714285714285% complete. Generating Lesson: Test Formats and Features
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Generating module: Understanding the Basics of Test Taking
+Estimated time to complete: 11.666666666666666 minutes | 12:05 AM
+Estimated time to complete: 11.666666666666666 minutes | 12:05 AM
+Generating module: Understanding the Purpose and Types of Tests
+0% complete. Generating Lesson: The Purpose and Types of Tests
+0% complete. Generating Lesson: Identifying the purpose of tests, such as diagnostic, formative, and summative assessments
+Generating course: test | with 2 modules
+21.428571428571427% complete. Generating Lesson: Properties of Test Items
+Generating module: Introduction to Testing
+Estimated time to complete: 11.666666666666666 minutes | 12:05 AM
+0% complete. Generating Lesson: The concept of software testing
+8.333333333333332% complete. Generating Lesson: Different Question Formats and How to Answer Them
+Generating course: test | with 2 modules
+Generating module: Introduction to Testing
+Estimated time to complete: 11.666666666666666 minutes | 12:06 AM
+0% complete. Generating Lesson: What is Testing?
+10% complete. Generating Lesson: Understanding the different types of tests, including multiple choice, essay, and true/false
+6.25% complete. Generating Lesson: Why is Testing Important?
+16.666666666666664% complete. Generating Lesson: Time Management and Test Pacing
+6.25% complete. Generating Lesson: The importance of software testing
+20% complete. Generating Lesson: Exploring the advantages and disadvantages of various types of tests
+12.5% complete. Generating Lesson: Types of Testing
+28.57142857142857% complete. Generating Lesson: Test Reliability and Validity
+25% complete. Generating Lesson: Effective Study Habits and Note-taking Skills
+18.75% complete. Generating Lesson: Test Planning
+12.5% complete. Generating Lesson: Software testing life cycle
+35.71428571428571% complete. Generating Lesson: Test Score Interpretation
+30.000000000000004% complete. Generating Lesson: Understanding how tests are scored, including methods such as raw scores and scaled scores
+25% complete. Generating Lesson: Test Case Design
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 12:07 AM
+Generating module: Introduction to Testing: Defining Testing, Why Testing is Important, Types of Software Testing, Software Development Lifecycle
+Estimated time to complete: 11.666666666666666 minutes | 12:07 AM
+Generating module: Understanding the Different Types of Tests
+Generating module: Software Testing Techniques: Test Planning, Test Design, Test Execution, Test Reporting and Analysis, Test Management
+Generating course: test | with 2 modules
+33.33333333333333% complete. Generating Lesson: Coping with Test Anxiety and Stress
+0% complete. Generating Lesson: Multiple Choice Test
+31.25% complete. Generating Lesson: Test Execution and Reporting
+Generating module: Introduction to Test-Taking Strategies
+Estimated time to complete: 11.666666666666666 minutes | 12:07 AM
+0% complete. Generating Lesson: Why test-taking strategies are important 
+18.75% complete. Generating Lesson: The software testing process
+0% complete. Generating Lesson: Test Planning:
+37.5% complete. Generating Lesson: Automated Testing
+42.85714285714285% complete. Generating Lesson: Ethical Issues in Test Use
+43.75% complete. Generating Lesson: Best Practices for Testing
+10% complete. Generating Lesson: Test Design:
+41.666666666666664% complete. Generating Lesson: Reviewing and Learning from Test Results
+25% complete. Generating Lesson: Goals of software testing
+8.333333333333332% complete. Generating Lesson: How to analyze test questions 
+Generating module: Test Development and Administration: Principles and Practices
+20% complete. Generating Lesson: Test Execution:
+40% complete. Generating Lesson: Discussing the importance of validity and reliability in test design and administration
+49.999999999999986% complete. Generating Lesson: Steps in Test Development
+Generating module: Strategies for Test Preparation and Execution
+49.99999999999999% complete. Generating Lesson: Setting Realistic Goals and Prioritizing Tasks
+31.25% complete. Generating Lesson: Levels of software testing
+Generating module: Types of Tests
+Generating module: Techniques for Test Taking Success
+50% complete. Generating Lesson: Unit Testing
+30.000000000000004% complete. Generating Lesson: Test Reporting and Analysis:
+10% complete. Generating Lesson: Essay Test
+56.249999999999986% complete. Generating Lesson: Item Writing and Analysis 
+50% complete. Generating Lesson: The importance of preparation, including developing a study plan and managing time effectively
+37.5% complete. Generating Lesson: Verification and validation in software testing
+16.666666666666664% complete. Generating Lesson: Time management during a test 
+Generating course: test | with 2 modules
+58.33333333333333% complete. Generating Lesson: Developing an Effective Study Schedule
+Estimated time to complete: 11.666666666666666 minutes | 12:09 AM
+Generating module: Introduction to Testing:
+57.14285714285714% complete. Generating Lesson: Integration Testing
+0% complete. Generating Lesson: The testing process
+Generating course: test | with 2 modules
+25% complete. Generating Lesson: Identifying key words and phrases 
+Generating module: Introduction to Testing: Basics, Types, and Techniques
+Estimated time to complete: 11.666666666666666 minutes | 12:10 AM
+20% complete. Generating Lesson: True or False Test
+40% complete. Generating Lesson: Test Management:
+0% complete. Generating Lesson: What is Testing?
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 12:10 AM
+Generating module: Introduction to Testing: Types of Test, Testing Process, and Testing Techniques
+62.499999999999986% complete. Generating Lesson: Item Review and Selection 
+6.25% complete. Generating Lesson: Test Planning
+0% complete. Generating Lesson: The Need for Testing
+58.333333333333336% complete. Generating Lesson: Techniques for improving concentration and reducing anxiety, such as deep breathing exercises and mindfulness
+6.25% complete. Generating Lesson: Types of Testing
+33.33333333333333% complete. Generating Lesson: Preparing for different types of questions (e.g
+Generating course: test | with 2 modules
+Generating module: Introduction to Testing: importance of testing, types of testing, testing process, testing tools and techniques.
+Estimated time to complete: 11.666666666666666 minutes | 12:13 AM
+Generating module: Test Planning and Execution: test strategies, test plans, test cases, test automation, test reporting and analysis.
+0% complete. Generating Lesson: Test Strategy
+8.333333333333332% complete. Generating Lesson: Test Plan
+16.666666666666664% complete. Generating Lesson: Test Cases
+25% complete. Generating Lesson: Test Automation
+33.33333333333333% complete. Generating Lesson: Test Reporting
+41.666666666666664% complete. Generating Lesson: Test Analysis
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 12:16 AM
+Generating module: Basics of Test Taking Strategies
+0% complete. Generating Lesson: Time Management Techniques
+7.142857142857142% complete. Generating Lesson: Test Anxiety Management
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 12:18 AM
+Generating module: Introduction to Testing: Fundamentals, Testing Techniques, and Test Plans.
+Generating module: Software Testing: Types of Software Testing, Test Automation, and Best Practices.
+0% complete. Generating Lesson: Types of Software Testing
+14.285714285714285% complete. Generating Lesson: Understanding Test Structures
+Generating course: test | with 2 modules
+21.428571428571427% complete. Generating Lesson: Reading Comprehension Skills
+Estimated time to complete: 11.666666666666666 minutes | 12:19 AM
+Generating module: Introduction to testing: principles and practices
+Generating course: test | with 2 modules
+6.25% complete. Generating Lesson: Functional Testing
+0% complete. Generating Lesson: The importance of software testing
+Generating course: test | with 2 modules
+Generating module: Introduction to Testing: Understanding the Importance and Types of Tests
+Estimated time to complete: 11.666666666666666 minutes | 12:19 AM
+Estimated time to complete: 11.666666666666666 minutes | 12:19 AM
+Generating module: Introduction to Test taking Strategies
+0% complete. Generating Lesson: Understanding Different Types of Tests
+0% complete. Generating Lesson: Why do we test? Understanding the importance of testing
+Generating course: test | with 2 modules
+28.57142857142857% complete. Generating Lesson: Effective Note-taking Strategies
+Estimated time to complete: 11.666666666666666 minutes | 12:19 AM
+Generating module: Introduction to Testing
+6.25% complete. Generating Lesson: Types of software testing
+0% complete. Generating Lesson: The Importance of Testing
+12.5% complete. Generating Lesson: Non-Functional Testing
+6.25% complete. Generating Lesson: The Importance of Time Management 
+8.333333333333332% complete. Generating Lesson: Types of tests: Unit, Integration, System, Acceptance and Regression testing
+Generating course: test | with 2 modules
+Generating module: Introduction to Testing: Principles, Types, and Techniques 
+Estimated time to complete: 11.666666666666666 minutes | 12:20 AM
+12.5% complete. Generating Lesson: The software testing life cycle
+35.71428571428571% complete. Generating Lesson: Guessing Strategies
+0% complete. Generating Lesson: Understanding basics of testing and its importance
+12.5% complete. Generating Lesson: Strategies for Multiple-Choice Tests 
+8.333333333333332% complete. Generating Lesson: Types of Testing
+Generating course: test | with 2 modules
+Generating module: Understanding the Testing Process
+Estimated time to complete: 11.666666666666666 minutes | 12:20 AM
+18.75% complete. Generating Lesson: Acceptance Testing
+16.666666666666664% complete. Generating Lesson: Black box vs
+42.85714285714285% complete. Generating Lesson: Test Day Preparation Guidelines
+0% complete. Generating Lesson: Importance of understanding the test format
+18.75% complete. Generating Lesson: Test case design techniques
+6.25% complete. Generating Lesson: Principles of testing: Verification and Validation, Adequacy, and Defect Management
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 12:21 AM
+Generating module: Introduction to testing: types, goals, and strategies
+Generating course: test | with 2 modules
+0% complete. Generating Lesson: The Importance of Testing
+Estimated time to complete: 11.666666666666666 minutes | 12:21 AM
+Generating module: Introduction to Test Theory and Types of Tests
+0% complete. Generating Lesson: Overview of Test Theory
+6.25% complete. Generating Lesson: Types of Tests - Objective and Subjective
+6.25% complete. Generating Lesson: Types of Testing
+12.5% complete. Generating Lesson: Characteristics of Objective Tests
+12.5% complete. Generating Lesson: Functional Testing
+18.75% complete. Generating Lesson: Advantages and Disadvantages of Objective Tests
+18.75% complete. Generating Lesson: Non-Functional Testing
+25% complete. Generating Lesson: Characteristics of Subjective Tests
+25% complete. Generating Lesson: Test Strategy and Planning
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 12:24 AM
+Generating module: Introduction to Testing:
+0% complete. Generating Lesson: The Purpose and Benefits of Testing
+31.25% complete. Generating Lesson: Advantages and Disadvantages of Subjective Tests
+31.25% complete. Generating Lesson: Test Execution and Management
+6.25% complete. Generating Lesson: Types of Testing
+37.5% complete. Generating Lesson: Choosing the Appropriate Test for a Given Context
+37.5% complete. Generating Lesson: Test Reporting and Analysis
+12.5% complete. Generating Lesson: Black Box Testing
+43.75% complete. Generating Lesson: Key Considerations when Developing Tests
+Generating course: test | with 2 modules
+Generating module: Understanding the Basics of Test Taking 
+Estimated time to complete: 11.666666666666666 minutes | 12:26 AM
+0% complete. Generating Lesson: Introduction: Importance of Test Taking Skills 
+6.25% complete. Generating Lesson: Different Types of Tests 
+12.5% complete. Generating Lesson: Understanding Test Formats (Multiple Choice, True/False, Essay, etc.)
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 12:27 AM
+Generating module: Introduction to different types of tests and their uses 
+Generating course: How roast turkey with spoon | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 12:31 AM
+Generating module: Introduction to Roasting Turkey with a Spoon
+0% complete. Generating Lesson: The Basics of Roasting Turkey with a Spoon
+10% complete. Generating Lesson: Selecting the Right Spoon for Roasting Turkey
+20% complete. Generating Lesson: Preparing the Turkey for Roasting with a Spoon
+30.000000000000004% complete. Generating Lesson: Seasoning the Turkey for Roasting with a Spoon
+40% complete. Generating Lesson: Roasting the Turkey to Perfection with a Spoon
+Generating module: Advanced Techniques for Cooking Turkey with a Spoon
+50% complete. Generating Lesson: Basting a Turkey with a Spoon
+60% complete. Generating Lesson: Using a Spoon to Carve Turkey
+70% complete. Generating Lesson: Spooning the Sauce for Turkey
+80% complete. Generating Lesson: Making Gravy with a Spoon
+89.99999999999999% complete. Generating Lesson: Serving Turkey with a Spoon
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 1:29 AM
+Generating module: Understanding the Purpose and Types of Tests
+0% complete. Generating Lesson: The Purpose of Testing
+6.25% complete. Generating Lesson: Different Types of Tests
+12.5% complete. Generating Lesson: Standardized Tests
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 1:30 AM
+Generating module: Introduction to Test Theory
+0% complete. Generating Lesson: The history of test theory
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 1:32 AM
+Generating module: Introduction to Testing: Types, Methods, and Objectives
+0% complete. Generating Lesson: Understanding Software Testing: An Introduction
+6.25% complete. Generating Lesson: Importance of Software Testing
+12.5% complete. Generating Lesson: Different Types of Software Testing
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 1:33 AM
+Generating module: Understanding Test Formats and Design
+0% complete. Generating Lesson: Introduction to Test Formats and Design
+7.142857142857142% complete. Generating Lesson: Different Types of Test Formats
+Generating course: tets | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 1:35 AM
+Generating module: Basics of Test Design
+0% complete. Generating Lesson: Introduction to test design
+6.25% complete. Generating Lesson: Functional and non-functional requirements
+12.5% complete. Generating Lesson: Test planning and strategy
+Generating course: tst | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 1:36 AM
+Generating module: Introduction to Software Testing 
+0% complete. Generating Lesson: Understanding the basics of software testing
+6.25% complete. Generating Lesson: Types of software testing
+12.5% complete. Generating Lesson: The software testing life cycle
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 1:38 AM
+Generating module: Introduction to Testing: Types of Tests, Benefits of Testing, and Testing Techniques
+0% complete. Generating Lesson: Overview of testing
+8.333333333333332% complete. Generating Lesson: Benefits of testing
+16.666666666666664% complete. Generating Lesson: Types of testing
+25% complete. Generating Lesson: Black Box Testing
+33.33333333333333% complete. Generating Lesson: White Box Testing
+41.666666666666664% complete. Generating Lesson: Gray Box Testing
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 1:41 AM
+Generating module: Understanding the basics of testing
+0% complete. Generating Lesson: Introduction to Testing: Explaining the concept and importance of testing in software development.
+10% complete. Generating Lesson: Testing Types: Understanding various types of testing such as Unit testing, Integration testing, System Testing, and Acceptance Testing.
+Generating course: test | with 2 modules
+Generating module: Introduction to Test: Understanding the purpose, types, and methods of testing
+Estimated time to complete: 11.666666666666666 minutes | 1:43 AM
+Generating module: Test Design and Implementation: Planning, creating, executing, and evaluating effective tests
+0% complete. Generating Lesson: Importance of planning for effective testing
+8.333333333333332% complete. Generating Lesson: Test design techniques
+16.666666666666664% complete. Generating Lesson: Creating test cases
+25% complete. Generating Lesson: Test data creation and management
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 1:45 AM
+Generating module: Understanding the Basics of Testing: In this module, we will cover the fundamental concepts of testing, including the various types of tests, testing levels, test cases, test plans, and testing techniques.
+0% complete. Generating Lesson: Introduction to Testing
+7.142857142857142% complete. Generating Lesson: Types of Testing
+14.285714285714285% complete. Generating Lesson: Testing Levels
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 1:47 AM
+Generating module: Introduction to Testing: Definitions, Types and Techniques 
+0% complete. Generating Lesson: The role of software testing in software development
+6.25% complete. Generating Lesson: Common software testing types (e.g
+12.5% complete. Generating Lesson: Differences between functional and non-functional testing 
+Generating course: test | with 2 modules
+Generating module: Test Taking Strategies 
+Estimated time to complete: 11.666666666666666 minutes | 1:49 AM
+0% complete. Generating Lesson: Knowing the test format
+6.25% complete. Generating Lesson: Time management 
+12.5% complete. Generating Lesson: How to read instructions 
+Generating course: test | with 2 modules
+Generating module: Introduction to Testing: Principles, Fundamentals and Types
+Estimated time to complete: 11.666666666666666 minutes | 1:51 AM
+0% complete. Generating Lesson: Defining Testing and Its Importance
+6.25% complete. Generating Lesson: Principles of Testing, including Verification and Validation
+12.5% complete. Generating Lesson: Fundamentals of Testing, including Test Cases and Test Coverage
+18.75% complete. Generating Lesson: Types of Testing, including Unit, Integration, System and Acceptance Testing
+25% complete. Generating Lesson: Black Box Testing and White Box Testing Methodologies
+31.25% complete. Generating Lesson: Manual Testing vs Automated Testing 
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 1:56 AM
+Generating module: Introduction to Testing: Purpose, Objectives, and Benefits of Testing, Types of Testing, Testing Techniques, and Testing Lifecycle.
+0% complete. Generating Lesson: Definition of Testing and its Role in Software Development
+Generating course: test | with 2 modules
+Generating module: Understanding the basics of testing
+Estimated time to complete: 11.666666666666666 minutes | 1:57 AM
+0% complete. Generating Lesson: Introduction to software testing
+Generating course: test | with 2 modules
+Generating module: Introduction to Testing: Principles, Types, and Processes
+Estimated time to complete: 11.666666666666666 minutes | 1:58 AM
+0% complete. Generating Lesson: What is software testing?
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 1:59 AM
+Generating module: Introduction to Test Taking Strategies
+Estimated time to complete: 11.666666666666666 minutes | 1:59 AM
+Generating module: Introduction to Testing: Definition of testing, Testing Objectives, Testing Principles, Test Levels, Test Design Techniques, Test Planning, Test Case Execution and Reporting.
+0% complete. Generating Lesson: Understanding the Test Format
+7.142857142857142% complete. Generating Lesson: Importance of testing in software development
+0% complete. Generating Lesson: Different types of testing and their importance.
+6.25% complete. Generating Lesson: Time Management Strategies 
+Generating course: test | with 2 modules
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 2:00 AM
+Generating module: Introduction to Test Taking: Test Format, Strategies and Tips
+0% complete. Generating Lesson: Understanding the Different Types of Tests
+Generating course: test | with 2 modules
+Generating module: Introduction to Testing: Types and Techniques
+Estimated time to complete: 11.666666666666666 minutes | 2:00 AM
+0% complete. Generating Lesson: Understanding the need for testing
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 2:01 AM
+Generating module: Introduction to Testing
+0% complete. Generating Lesson: Definition and Importance of Testing 
+8.333333333333332% complete. Generating Lesson: Goals and Objectives of Testing
+16.666666666666664% complete. Generating Lesson: Types of Software Testing 
+Generating course: test | with 2 modules
+Generating module: Introduction to Testing
+Estimated time to complete: 11.666666666666666 minutes | 2:03 AM
+0% complete. Generating Lesson: Why Testing is Important
+10% complete. Generating Lesson: Types of Software Testing
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 2:04 AM
+Generating module: Introduction to Testing: This module will cover the basics of what testing is, why it is important, and the different types of tests, such as unit tests, integration tests, and acceptance tests
+0% complete. Generating Lesson: What is Testing?
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 2:04 AM
+Generating module: Basics of Test-taking: Techniques and Strategies
+0% complete. Generating Lesson: Understanding the Format and Structure of Different Kinds of Tests
+6.25% complete. Generating Lesson: Techniques for Managing Test Anxiety and Stress
+8.333333333333332% complete. Generating Lesson: Importance of Testing
+16.666666666666664% complete. Generating Lesson: Types of Tests: 
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 2:06 AM
+Generating module: Fundamentals of Testing: Introduction to software testing, testing types, testing levels, testing techniques, and testing processes.
+12.5% complete. Generating Lesson: Effective Time Management During Tests
+25% complete. Generating Lesson: Unit Tests 
+Generating module: Test Design and Execution: Test planning, test scenario development, test case design, test execution, defect tracking, and reporting.
+0% complete. Generating Lesson: Test Planning 
+Generating course: test | with 2 modules
+Generating module: Introduction to Test-taking Strategies
+Estimated time to complete: 11.666666666666666 minutes | 2:07 AM
+0% complete. Generating Lesson: Understanding Different Types of Test Questions 
+Generating course: Microwaving Apples | with 2 modules
+Generating module: Introduction to Microwaving Apples
+Estimated time to complete: 11.666666666666666 minutes | 2:08 AM
+0% complete. Generating Lesson: The Science of Microwaving Apples
+6.25% complete. Generating Lesson: Types of Apples that Work Best for Microwaving
+12.5% complete. Generating Lesson: Prepping Apples for Microwaving
+Generating course: Microwaving Apples | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 2:09 AM
+Generating module: Introduction to Microwaving Apples
+0% complete. Generating Lesson: Advantages of Microwaving Apples
+18.75% complete. Generating Lesson: Safety Precautions for Microwaving
+10% complete. Generating Lesson: Understanding the Basic Process of Microwaving Apples
+Generating course: Microwaving Apples | with 2 modules
+Generating module: Understanding the microwave
+Estimated time to complete: 11.666666666666666 minutes | 2:10 AM
+20% complete. Generating Lesson: Safety Tips and Guidelines for Microwaving Apples
+0% complete. Generating Lesson: How a microwave oven works
+25% complete. Generating Lesson: Adjusting Cooking Time for Different Microwaves
+30.000000000000004% complete. Generating Lesson: Time and Temperature Settings for Microwaving Apples
+10% complete. Generating Lesson: Differences between microwaves and other cooking methods
+31.25% complete. Generating Lesson: Creative Ways to Serve Microwaved Apples
+20% complete. Generating Lesson: Safety tips for using a microwave
+40% complete. Generating Lesson: Techniques for Preparing Apples for Microwaving
+Generating course: Microwaving Apples | with 2 modules
+37.5% complete. Generating Lesson: Common Mistakes to Avoid while Microwaving
+30.000000000000004% complete. Generating Lesson: Common misconceptions about microwaves
+Estimated time to complete: 11.666666666666666 minutes | 2:12 AM
+Generating module: The Science of Microwaving Apples: Understanding Microwave Behavior, Heat Transfer, and Moisture Loss 
+Generating course: Microwaving Apples | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 2:13 AM
+Generating module: Understanding Microwaving Techniques for Apples
+0% complete. Generating Lesson: Introduction to microwaving apples
+8.333333333333332% complete. Generating Lesson: Selecting apples for microwave cooking
+16.666666666666664% complete. Generating Lesson: Proper preparation techniques for microwaving apples 
+25% complete. Generating Lesson: Different types of microwaving techniques for apples 
+33.33333333333333% complete. Generating Lesson: Tips and tricks for optimal results when microwaving apples 
+41.666666666666664% complete. Generating Lesson: How to properly serve and store microwaved apples 
+Generating module: Preparing Delicious Microwave Apple Recipes
+49.99999999999999% complete. Generating Lesson: Introduction to microwave apple recipes
+56.25% complete. Generating Lesson: Quick and easy microwave apple crisp
+62.5% complete. Generating Lesson: Simple microwave baked apples 
+68.75% complete. Generating Lesson: Microwave cinnamon apple chips
+75% complete. Generating Lesson: Healthy microwave apple sauce
+81.25% complete. Generating Lesson: Microwave apple and cinnamon oatmeal 
+87.5% complete. Generating Lesson: Microwave apple oatmeal bars 
+93.75% complete. Generating Lesson: Microwave apple cider 
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Microwaving Apples | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 2:25 AM
+Generating module: The Science of Microwaving Apples
+0% complete. Generating Lesson: The Basics of Microwave Cooking
+6.25% complete. Generating Lesson: Chemical and Physical Changes in Apples during Microwave Cooking
+12.5% complete. Generating Lesson: Understanding Microwave Oven Settings 
+18.75% complete. Generating Lesson: How to Choose Proper Apples for Microwaving
+25% complete. Generating Lesson: Common Mistakes to Avoid While Microwaving Apples
+31.25% complete. Generating Lesson: Techniques for Achieving Best Results 
+37.5% complete. Generating Lesson: Exploring the Nutritional Value of Microwaved Apples
+43.75% complete. Generating Lesson: Comparing Microwaving Apples to Other Cooking Methods
+Generating module: Creative Recipes for Microwaved Apples
+50% complete. Generating Lesson: Introduction to Creative Microwaved Apple Recipes
+58.333333333333336% complete. Generating Lesson: Apple Cinnamon Oatmeal in a Mug 
+66.66666666666667% complete. Generating Lesson: Microwave Baked Apples with a Vanilla Yogurt Topping
+75.00000000000001% complete. Generating Lesson: Easy Caramel Apple Dip with Microwaved Apples 
+83.33333333333334% complete. Generating Lesson: Microwaved Apple Chips as a Healthy Snack Option 
+91.66666666666669% complete. Generating Lesson: Apple Crumble in a Mug with Vanilla Ice Cream on Top
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Microwaving Apples | with 2 modules
+Generating module: Understanding the basics of microwaving apples
+Estimated time to complete: 11.666666666666666 minutes | 2:37 AM
+0% complete. Generating Lesson: How microwaves work
+6.25% complete. Generating Lesson: Choosing the right type of apple
+12.5% complete. Generating Lesson: Preparing the apple for microwaving
+18.75% complete. Generating Lesson: Using a microwave-safe dish
+25% complete. Generating Lesson: Setting the time and temperature correctly
+31.25% complete. Generating Lesson: Safety precautions when microwaving apples
+37.5% complete. Generating Lesson: Checking for doneness
+43.75% complete. Generating Lesson: Serving and storing microwaved apples
+Generating module: Creative and healthy recipes using microwaved apples
+50% complete. Generating Lesson: Quick and easy microwaved apple sauce
+58.333333333333336% complete. Generating Lesson: Microwaved apple crisps
+66.66666666666667% complete. Generating Lesson: Microwaved baked apples
+75.00000000000001% complete. Generating Lesson: Microwaved apple and oatmeal breakfast bowl
+83.33333333333334% complete. Generating Lesson: Microwaved apple and cinnamon oat bars
+91.66666666666669% complete. Generating Lesson: Microwaved apple and cheddar stuffed sweet potato
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Microwaving Apples | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 2:48 AM
+Generating module: Basics of Microwaving Apples
+0% complete. Generating Lesson: The Science of Microwaving Apples
+7.142857142857142% complete. Generating Lesson: Safety Tips for Microwaving Apples
+14.285714285714285% complete. Generating Lesson: Equipment Needed for Microwaving Apples
+28.57142857142857% complete. Generating Lesson: Cooking Times for Microwaving Apples
+21.428571428571427% complete. Generating Lesson: Preparing Apples for the Microwave
+35.71428571428571% complete. Generating Lesson: Checking for Doneness 
+42.85714285714285% complete. Generating Lesson: Flavors to Add to Microwaved Apples
+Generating module: Advanced Microwaving Techniques for Apples
+49.999999999999986% complete. Generating Lesson: Microwave Baked Apples
+56.249999999999986% complete. Generating Lesson: Microwave Apple Crumble
+62.499999999999986% complete. Generating Lesson: Microwave Applesauce
+68.74999999999999% complete. Generating Lesson: Microwave Caramel Apples
+81.24999999999999% complete. Generating Lesson: Microwave Apple Pie Filling
+74.99999999999999% complete. Generating Lesson: Microwave Apple Chips
+87.49999999999999% complete. Generating Lesson: Microwave Apple Cider 
+93.74999999999999% complete. Generating Lesson: Microwave Apple Butter.
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: Microwaving Apples | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 2:50 AM
+Generating module: The Science of Microwaving Apples
+0% complete. Generating Lesson: How microwaves work
+18.75% complete. Generating Lesson: Effects of microwaving on different apple varieties
+12.5% complete. Generating Lesson: Analysis of the composition of apples
+6.25% complete. Generating Lesson: Interaction of microwaves with food
+25% complete. Generating Lesson: Understanding how microwaving changes apple texture and flavor
+37.5% complete. Generating Lesson: Safety precautions and risks in microwaving apples
+31.25% complete. Generating Lesson: Importance of microwaving time and power settings
+Generating module: Creative Ways to Use Microwaved Apples
+43.75% complete. Generating Lesson: Other foods that are suitable for microwaving
+50% complete. Generating Lesson: Making microwaved apple chips 
+56.25% complete. Generating Lesson: Baked apples with cinnamon 
+62.5% complete. Generating Lesson: Microwaved apple oatmeal 
+68.75% complete. Generating Lesson: Microwaved apple compote 
+75% complete. Generating Lesson: Stuffed microwave apples 
+81.25% complete. Generating Lesson: Microwaved apple sauce 
+93.75% complete. Generating Lesson: Microwave apple crisp
+87.5% complete. Generating Lesson: Apple pie in a mug 
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: test | with 2 modules
+Generating module: Introduction to testing: types of tests, testing methodologies, testing techniques, and the importance of testing.
+Estimated time to complete: 11.666666666666666 minutes | 2:54 AM
+0% complete. Generating Lesson: What is software testing and why do we need it?
+12.5% complete. Generating Lesson: Testing methodologies
+6.25% complete. Generating Lesson: Types of software testing
+18.75% complete. Generating Lesson: Manual testing techniques
+31.25% complete. Generating Lesson: The testing process
+25% complete. Generating Lesson: Automated testing techniques
+43.75% complete. Generating Lesson: Importance of software testing in software development
+Generating module: Test automation: creating and implementing test cases, test scripts in different languages, using automation testing tools, and best practices in test automation.
+37.5% complete. Generating Lesson: Test planning and analysis
+50% complete. Generating Lesson: Introduction to Test Automation
+56.25% complete. Generating Lesson: Designing Test Cases and Defining Test Scope
+62.5% complete. Generating Lesson: Creating Test Scripts using Different Programming Languages
+75% complete. Generating Lesson: Best Practices for Automation Testing
+68.75% complete. Generating Lesson: Automation Testing Tools and Frameworks
+87.5% complete. Generating Lesson: Limitations and Challenges of Automation Testing
+81.25% complete. Generating Lesson: Test Execution and Reporting
+93.75% complete. Generating Lesson: Integration of Automation Testing with other Testing Methodologies
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 2:55 AM
+Generating module: Introduction to Tests: Types, Purpose, and Characteristics
+0% complete. Generating Lesson: Overview of Tests: Definition and Functions
+6.25% complete. Generating Lesson: Types of Tests: Achievement, Aptitude, and Intelligence
+18.75% complete. Generating Lesson: Characteristics of Tests: Validity, Reliability, and Objectivity
+12.5% complete. Generating Lesson: Test Purpose: Educational, Employment, and Clinical
+31.25% complete. Generating Lesson: Norm-Referenced vs Criterion-Referenced Tests
+25% complete. Generating Lesson: Test Construction: Item Writing and Test Blueprinting
+37.5% complete. Generating Lesson: Common Test Formats: Multiple-Choice, Essay, and Performance-Based
+Generating module: Administration, Scoring, and Interpretation of Tests.
+43.75% complete. Generating Lesson: Ethical and Legal Issues in Testing
+50% complete. Generating Lesson: Test Administration Procedures
+56.25% complete. Generating Lesson: Test Scoring Methods: Hand Scoring, Computer Scoring, and Automated Scoring
+62.5% complete. Generating Lesson: Raw Scores, Scaled Scores, and Percentile Ranks
+68.75% complete. Generating Lesson: Test Norms and Interpretation: Mean, Median, and Standard Deviation
+81.25% complete. Generating Lesson: Test Score Reliability and Its Types
+75% complete. Generating Lesson: Item Analysis: Difficulty and Discrimination
+93.75% complete. Generating Lesson: Test Reports and Interpretation of Test Results
+100.0% complete. Finishing up...
+87.5% complete. Generating Lesson: Different Types of Test Validity
+Course generated successfully.
+Generating course: test2 | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 2:56 AM
+Generating module: Understanding the Test-taking Process
+0% complete. Generating Lesson: The Purpose of Testing
+8.333333333333332% complete. Generating Lesson: Types of Tests and Their Formats
+16.666666666666664% complete. Generating Lesson: Test-Taking Strategies and Tips
+25% complete. Generating Lesson: Overcoming Test Anxiety
+33.33333333333333% complete. Generating Lesson: Understanding the Scoring Process
+Generating module: Strategies for Effective Test Preparation and Performance
+41.666666666666664% complete. Generating Lesson: Analyzing Test Results and Improving Performance
+49.99999999999999% complete. Generating Lesson: Time Management and Planning
+58.33333333333333% complete. Generating Lesson: Study Techniques and Note-taking
+66.66666666666666% complete. Generating Lesson: Active Learning Strategies
+83.33333333333334% complete. Generating Lesson: Critical Thinking Skills
+91.66666666666667% complete. Generating Lesson: Test Day Strategies and Tips
+75% complete. Generating Lesson: Memory and Retention Techniques
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: rash | with 2 modules
+Generating course: banana | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 2:57 AM
+Generating module: Introduction to Common Rashes
+0% complete. Generating Lesson: Overview of skin anatomy and functions
+8.333333333333332% complete. Generating Lesson: Common causes of rashes
+16.666666666666664% complete. Generating Lesson: Types of rashes - viral, bacterial, fungal and allergic
+33.33333333333333% complete. Generating Lesson: Prevention of rashes - hygiene, diet, and lifestyle
+25% complete. Generating Lesson: Symptoms of rashes - appearance, texture and discomfort
+Generating module: Diagnosis and Treatment of Rashes
+41.666666666666664% complete. Generating Lesson: Home remedies for minor rashes
+Estimated time to complete: 11.666666666666666 minutes | 2:57 AM
+Generating module: Introduction to bananas: History, cultivation, and popular uses
+49.99999999999999% complete. Generating Lesson: Overview of diagnostic procedures for rashes
+56.25% complete. Generating Lesson: Different types of treatment options for rashes
+62.5% complete. Generating Lesson: When to seek medical attention for rashes
+68.75% complete. Generating Lesson: Prescription medications for rashes
+75% complete. Generating Lesson: Topical treatments for rashes
+81.25% complete. Generating Lesson: Natural remedies for rashes 
+87.5% complete. Generating Lesson: Addressing complications and preventing future occurrences
+100.0% complete. Finishing up...
+93.75% complete. Generating Lesson: Maintaining skin health to prevent rashes
+Course generated successfully.
+0% complete. Generating Lesson: The origins of bananas and their introduction to different parts of the world
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 3:03 AM
+Generating module: module1
+0% complete. Generating Lesson: lesson1
+Generating course: test | with 2 modules
+25% complete. Generating Lesson: lesson2
+Estimated time to complete: 11.666666666666666 minutes | 3:04 AM
+0% complete. Generating Lesson: lesson1
+Generating module: module2
+Generating module: module1
+50% complete. Generating Lesson: lesson1
+Course generated successfully.
+100.0% complete. Finishing up...
+75% complete. Generating Lesson: lesson2
+Generating course: test | with 2 modules
+Estimated time to complete: 11.666666666666666 minutes | 3:05 AM
+0% complete. Generating Lesson: lesson1
+25% complete. Generating Lesson: lesson2
+Generating module: module1
+50% complete. Generating Lesson: lesson1
+100.0% complete. Finishing up...
+75% complete. Generating Lesson: lesson2
+Course generated successfully.
+Generating module: module2
+Generating course: tawwat | with 3 modules
+Estimated time to complete: 11.666666666666666 minutes | 3:08 AM
+25% complete. Generating Lesson: lesson2
+Generating module: module2
+0% complete. Generating Lesson: lesson1
+50% complete. Generating Lesson: lesson1
+Generating module: module1
+75% complete. Generating Lesson: lesson2
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: tawwat | with 3 modules
+Estimated time to complete: 11.666666666666666 minutes | 3:12 AM
+Generating module: module1
+25% complete. Generating Lesson: lesson2
+50% complete. Generating Lesson: lesson1
+0% complete. Generating Lesson: lesson1
+100.0% complete. Finishing up...
+75% complete. Generating Lesson: lesson2
+Generating module: module2
+Course generated successfully.
+Generating course: tawwat | with 3 modules
+Estimated time to complete: 11.666666666666666 minutes | 3:13 AM
+Generating module: module1
+25% complete. Generating Lesson: lesson2
+50% complete. Generating Lesson: lesson1
+0% complete. Generating Lesson: lesson1
+75% complete. Generating Lesson: lesson2
+Generating module: module2
+100.0% complete. Finishing up...
+Course generated successfully.
+Generating course: eggs | with 3 modules
+Estimated time to complete: 11.666666666666666 minutes | 3:13 AM
+Generating module: module1
+25% complete. Generating Lesson: lesson2
+0% complete. Generating Lesson: lesson1
+75% complete. Generating Lesson: lesson2
+100.0% complete. Finishing up...
+50% complete. Generating Lesson: lesson1
+Generating module: module2
+Course generated successfully.
+Generating course: fsd | with 2 modules
+Generating module: module1
+Estimated time to complete: 11.666666666666666 minutes | 3:14 AM
+0% complete. Generating Lesson: lesson1
+25% complete. Generating Lesson: lesson2
+75% complete. Generating Lesson: lesson2
+Generating module: module2
+50% complete. Generating Lesson: lesson1
+Course generated successfully.
+100.0% complete. Finishing up...
+Generating course: asas | with 123 modules
+Estimated time to complete: 11.666666666666666 minutes | 3:16 AM
+0% complete. Generating Lesson: lesson1
+25% complete. Generating Lesson: lesson2
+75% complete. Generating Lesson: lesson2
+50% complete. Generating Lesson: lesson1
+100.0% complete. Finishing up...
+Generating module: module1
+Course generated successfully.
+Generating module: module2
+Generating course: Microwaving Apples | with 2 modules
+Generating module: Understanding the Science Behind Microwaving Apples
+Estimated time to complete: 11.666666666666666 minutes | 3:18 AM
+0% complete. Generating Lesson: Introduction to Microwaving Apples
+6.25% complete. Generating Lesson: Electromagnetic Waves and the Microwave
+12.5% complete. Generating Lesson: Understanding Heat Transfer in Microwaving Apples 
+18.75% complete. Generating Lesson: Apples: Composition and Structure 
+25% complete. Generating Lesson: Microwaving Apples vs
+31.25% complete. Generating Lesson: Safety Concerns and Best Practices for Microwaving Apples
+37.5% complete. Generating Lesson: Common Mistakes to Avoid While Microwaving Apples 
+43.75% complete. Generating Lesson: The Science Behind Microwaving Apples and Flavor Enhancement.
+Generating module: Exploring Creative Microwave Apple Recipes
+50% complete. Generating Lesson: Quick and Healthy Breakfast Recipes with Microwaved Apples
+60% complete. Generating Lesson: Sweet and Savory Snacks with Microwaved Apples
+70% complete. Generating Lesson: Microwave Desserts: Cakes, Puddings, and More with Apples
+80% complete. Generating Lesson: Savory and Spiced Microwaved Apples for Dinner and Lunch
+89.99999999999999% complete. Generating Lesson: Easy and Fun-to-Make Microwaved Apple Beverages
+100.0% complete. Finishing up...
+Course generated successfully.

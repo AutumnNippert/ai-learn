@@ -8,6 +8,8 @@ let serverConfig = fs.readFileSync("res/server_config.json");
 config = JSON.parse(config);
 serverConfig = JSON.parse(serverConfig);
 
+const noai = serverConfig.NO_AI;
+
 function get_new_id() {
 	const id = parseInt(fs.readFileSync("res/id.txt", "utf8"));
 	const newId = id + 1;
@@ -15,9 +17,12 @@ function get_new_id() {
 	return newId;
 }
 
-async function generateCourse(topic, moduleCount = 4) {
+async function* generateCourse(topic, moduleCount = 4) {
 	const id = get_new_id();
-	downloadImage(await generateImage(topic), `res/images/${id}.png`);
+	if (!noai) {
+		downloadImage(await generateImage(topic), `res/images/${id}.png`);
+	}
+	
 	const course = new Course(topic, 'none', id, 'https://liftlearning.com/wp-content/uploads/2020/09/default-image.png');
 	let lessonPlan = await generateCoursePlan(topic, moduleCount);
 	let moduleHeaders = [];
@@ -61,7 +66,13 @@ async function generateCourse(topic, moduleCount = 4) {
 		const lessonSize = 1.0 / (moduleHeaders.length * lessons.length);
 		for (const lesson of lessons) {
 			log(`${percentComplete * 100}% complete. Generating Lesson: ${lesson}`);
-			const info = await createLessonInfo(lessonPlan, lesson);
+			yield { lesson, percentComplete };
+			let info;
+			if (noai) {
+				info = "testInfo.";
+			} else {
+				info = await createLessonInfo(lessonPlan, lesson);
+			}
 			const subLesson = new Lesson(lesson, info);
 			module.addLesson(subLesson);
 			percentComplete += lessonSize;
@@ -76,11 +87,18 @@ async function generateCourse(topic, moduleCount = 4) {
 
 	const serverUrl = serverConfig.PROTOCOL + "://" + serverConfig.HOSTNAME + ":" + serverConfig.PORT + "/API";
 	course.image = serverUrl + "/images/" + course.id;
+	if (noai) {
+		course.image = "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png";
+	}
 	log("Course generated successfully.")
-	return course;
+	course.toFile(`${course.id}.json`);
+	return { course, percentComplete: 100 };
 }
 
 async function generateBriefDescription(topic, lessonPlan) {
+	if (noai) {
+		return "This is a test description.";
+	}
 	const prompt = "Create a short, one sentence description for this class:\n" + topic + "\n" + lessonPlan + ". Respond with only the description.";
 	let history = [{ role: "user", content: prompt }];
 	console.log(history);
@@ -89,6 +107,9 @@ async function generateBriefDescription(topic, lessonPlan) {
 }
 
 async function generateCoursePlan(topic, moduleCount) {
+	if (noai) {
+		return "1. module1\n2. module2";
+	}
 	const prompt = `Create a list of ${moduleCount} modules for a class on ${topic}. Respond with only the list of modules, numbered as '1. ', '2. ', etc...`;
 
 	// Generate a lesson plan
@@ -98,6 +119,9 @@ async function generateCoursePlan(topic, moduleCount) {
 }
 
 async function generateLessons(lessonPlan, moduleHeader) {
+	if (noai) {
+		return "1. lesson1\n2. lesson2";
+	}
 	// Develop a lesson
 	const prompt = `Create a list of sub lessons for a module on ${moduleHeader} that is around 3 to 8 sub lessons. Respond with only the list of sub lessons, numbered as '1. ', '2. ', and NOT '1.1' or the like.`;
 	const history = [];
@@ -108,6 +132,9 @@ async function generateLessons(lessonPlan, moduleHeader) {
 }
 
 async function createLessonInfo(lessonPlan, lessonHeader) {
+	if (noai) {
+		return "This is a test lesson info.";
+	}
 	// Create lesson info
 	const prompt = `Create lesson content about ${lessonHeader}. Respond with only the lesson content.`;
 	const history = [];
@@ -122,22 +149,25 @@ async function downloadImage(url, filepath) {
 	const https = require('https');
 	const file = fs.createWriteStream(filepath);
 	return new Promise((resolve, reject) => {
-	  https.get(url, (response) => {
-		if (response.statusCode !== 200) {
-		  reject(new Error(`Failed to download image. Status code: ${response.statusCode}`));
-		}
-		response.pipe(file);
-		file.on('finish', () => {
-		  file.close();
-		  resolve();
+		https.get(url, (response) => {
+			if (response.statusCode !== 200) {
+				reject(new Error(`Failed to download image. Status code: ${response.statusCode}`));
+			}
+			response.pipe(file);
+			file.on('finish', () => {
+				file.close();
+				resolve();
+			});
+		}).on('error', (error) => {
+			reject(new Error(`Failed to download image. Error: ${error.message}`));
 		});
-	  }).on('error', (error) => {
-		reject(new Error(`Failed to download image. Error: ${error.message}`));
-	  });
 	});
 }
 
 async function generateCourseImage(topic) {
+	if (noai) {
+		return "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png";
+	}
 	// Generate an image of the lesson plan
 	const imageUrl = await generateImage(topic);
 	return imageUrl;
