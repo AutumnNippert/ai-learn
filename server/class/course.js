@@ -1,3 +1,5 @@
+import fs from 'fs';
+
 class Lesson {
     constructor(title, info) {
         this.title = title;
@@ -39,7 +41,6 @@ class Course {
     }
 
     toFile(file_name) {
-        const fs = require('fs');
         const courseJson = JSON.stringify(this, null, 4, CourseEncoder);
         fs.writeFileSync("res/courses/" + file_name, courseJson);
 
@@ -49,7 +50,6 @@ class Course {
     }
 
     static fromFile(file_name) {
-        const fs = require('fs');
         const courseJson = fs.readFileSync("res/courses/" + file_name, 'utf8');
         const course = JSON.parse(courseJson);
         return course;
@@ -81,7 +81,6 @@ class CourseMeta {
 
     toFile() {
         // add to courses.json
-        const fs = require('fs');
         let courses = fs.readFileSync("res/courses.json", 'utf8');
         courses = JSON.parse(courses);
         courses = courses.courses;
@@ -92,7 +91,6 @@ class CourseMeta {
     }
 
     static getAll() {
-        const fs = require('fs');
         const courseJson = fs.readFileSync("res/courses.json", 'utf8');
         const courses = JSON.parse(courseJson);
         return courses;
@@ -104,9 +102,11 @@ class CourseMeta {
 }
 
 
+import { fileURLToPath } from 'url';
+const currentFile = fileURLToPath(import.meta.url);
+const executedFile = process.argv[1];
 
-// Tests
-if (require.main === module) {
+if (currentFile === executedFile) {
     const c = new Course("Software Development", "This is a course on software development");
     let l = new Lesson("Test Lesson", "Woah! Info");
     let m = new Module("Test Module");
@@ -121,4 +121,4 @@ if (require.main === module) {
     c.toFile("test.json");
 }
 
-module.exports = { Course, Module, Lesson, CourseMeta };
+export { Course, Module, Lesson, CourseMeta };

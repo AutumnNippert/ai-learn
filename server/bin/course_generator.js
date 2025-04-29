@@ -1,7 +1,12 @@
-const fs = require("fs");
-const { log } = require("./logger");
-const { generateResponse, generateImage } = require("./api_interaction");
-const { Course, Module, Lesson } = require("../class/course");
+// const fs = require("fs");
+// const { log } = require("./logger");
+// const { generateResponse, generateImage } = require("./api_interaction");
+// const { Course, Module, Lesson } = require("../class/course");
+
+import fs from "fs";
+import { generateResponse, generateImage } from "./api_interaction.js";
+import { Course, Module, Lesson } from "../class/course.js";
+import { log } from "./logger.js";
 
 let config = fs.readFileSync("res/content_config.json");
 let serverConfig = fs.readFileSync("res/server_config.json");
@@ -20,7 +25,7 @@ function get_new_id() {
 async function* generateCourse(topic, moduleCount = 4) {
 	const id = get_new_id();
 	if (!noai) {
-		downloadImage(await generateImage(topic), `res/images/${id}.png`);
+		// downloadImage(await generateImage(topic), `res/images/${id}.png`);
 	}
 	
 	const course = new Course(topic, 'none', id, 'https://liftlearning.com/wp-content/uploads/2020/09/default-image.png');
@@ -30,7 +35,7 @@ async function* generateCourse(topic, moduleCount = 4) {
 	// Get lesson headers (after the "#. " and before the "\n")
 	let lines = lessonPlan.split("\n");
 	lines.forEach((line) => {
-		m = line.split(". ")[1];
+		let m = line.split(". ")[1];
 		// if not null, push to lessons
 		if (m) {
 			moduleHeaders.push(m);
@@ -145,23 +150,9 @@ async function createLessonInfo(lessonPlan, lessonHeader) {
 	return lessonInfo;
 }
 
-async function downloadImage(url, filepath) {
-	const https = require('https');
-	const file = fs.createWriteStream(filepath);
-	return new Promise((resolve, reject) => {
-		https.get(url, (response) => {
-			if (response.statusCode !== 200) {
-				reject(new Error(`Failed to download image. Status code: ${response.statusCode}`));
-			}
-			response.pipe(file);
-			file.on('finish', () => {
-				file.close();
-				resolve();
-			});
-		}).on('error', (error) => {
-			reject(new Error(`Failed to download image. Error: ${error.message}`));
-		});
-	});
+import { writeFile } from 'fs/promises';
+export async function downloadImage(b64_json, filepath) {
+	await writeFile(filepath, b64_json);
 }
 
 async function generateCourseImage(topic) {
@@ -169,8 +160,7 @@ async function generateCourseImage(topic) {
 		return "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png";
 	}
 	// Generate an image of the lesson plan
-	const imageUrl = await generateImage(topic);
-	return imageUrl;
+	return await generateImage(topic);
 }
 
 function test(topic) {
@@ -178,5 +168,4 @@ function test(topic) {
 	course.writeToFile(`${course.id}.json`);
 }
 
-
-module.exports = { generateCourse, generateCourseImage };
+export { generateCourse, generateCourseImage };

@@ -1,4 +1,5 @@
-const fs = require('fs');
+// const fs = require('fs');
+import fs from 'fs';
 
 function writeToFile(file_name, text) {
     fs.writeFile(`log/${file_name}`, text, (err) => {
@@ -18,4 +19,4 @@ function log(text) {
     appendToFile("log.txt", text + "\n");
 }
 
-module.exports = { log };
+export { log };

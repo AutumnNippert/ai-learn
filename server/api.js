@@ -1,89 +1,78 @@
-const fs = require('fs');
-const express = require('express');
+// server.mjs
+
+import fs from 'fs/promises';
+import { existsSync } from 'fs';
+import express from 'express';
+import { Course, CourseMeta } from './class/course.js';
+import { generateCourse } from './bin/course_generator.js';
+import { log } from './bin/logger.js';
+
 const app = express();
 
-const { Course, CourseMeta } = require('./class/course');
-const { generateCourse } = require('./bin/course_generator');
-const { log } = require('./bin/logger');
+// Load config
+const configRaw = await fs.readFile("res/server_config.json", "utf8");
+const config = JSON.parse(configRaw);
 
-const config = JSON.parse(fs.readFileSync("res/server_config.json"));
-
+// Routes
 app.get('/', (req, res) => {
-    res.json({ message: `API Running on port ${port}` })
+    res.json({ message: `API Running on port ${config.PORT}` });
 });
 
 app.post('/API/add_course/:courseName/:moduleCount', async (req, res) => {
+    const courseTitle = req.params.courseName;
+    const moduleCount = parseInt(req.params.moduleCount, 10);
+
     try {
-        const courseTitle = req.params.courseName;
-        const moduleCount = parseInt(req.params.moduleCount, 10);
         log(`Generating course: ${courseTitle} | with ${moduleCount} modules`);
-        // write to file in res/progress/course.id.json in the format of: {course.id: percentComplete}
 
         const filePath = `res/progress.json`;
-        if (!fs.existsSync(filePath)) {
-            fs.writeFileSync(filePath, "");
+
+        if (!existsSync(filePath)) {
+            await fs.writeFile(filePath, JSON.stringify({ coursesInProgress: [] }, null, 4));
         }
 
-        // get data from the file
-        let data = { [courseTitle]: { lesson: null, progress: 0 } };
-        let coursesInProgress = fs.readFileSync(filePath, 'utf8');
-        if (coursesInProgress === "") {
-            coursesInProgress = JSON.stringify({ "coursesInProgress": [] }, null, 4);
-            fs.writeFileSync(filePath, coursesInProgress);
-        }
-        coursesInProgress = JSON.parse(coursesInProgress).coursesInProgress;
-        // overwrite if course already exists
-        coursesInProgress = coursesInProgress.filter((course) => {
-            return Object.keys(course)[0] !== courseTitle;
-        });
+        const updateProgress = async (lesson, percentComplete) => {
+            let coursesInProgressRaw = await fs.readFile(filePath, 'utf8');
+            let coursesInProgress = JSON.parse(coursesInProgressRaw).coursesInProgress;
 
-        coursesInProgress.push(data);
-        let newProgresses = JSON.stringify({ "coursesInProgress": coursesInProgress }, null, 4);
-        fs.writeFileSync(filePath, newProgresses);
+            // Remove existing entry if exists
+            coursesInProgress = coursesInProgress.filter(course => Object.keys(course)[0] !== courseTitle);
+
+            const data = { [courseTitle]: { lesson, progress: Math.round(percentComplete * 100) } };
+            coursesInProgress.push(data);
+
+            const newProgress = JSON.stringify({ coursesInProgress }, null, 4);
+            await fs.writeFile(filePath, newProgress);
+        };
 
         const courseGenerator = generateCourse(courseTitle, moduleCount);
+        const lessons = [];
 
-        let listOStuff = [];
-
-        for await (let { lesson, percentComplete } of courseGenerator) {
-            const pc = Math.round(percentComplete * 100);
-
-            data = { [courseTitle]: { lesson: lesson, progress: pc } };
-            coursesInProgress = fs.readFileSync(filePath, 'utf8');
-
-            coursesInProgress = JSON.parse(coursesInProgress).coursesInProgress;
-            coursesInProgress = coursesInProgress.filter((course) => {
-                return Object.keys(course)[0] !== courseTitle;
-            });
-            coursesInProgress.push(data);
-            newProgresses = JSON.stringify({ "coursesInProgress": coursesInProgress }, null, 4);
-            fs.writeFileSync(filePath, newProgresses);
-
-            listOStuff.push(lesson);
+        for await (const { lesson, percentComplete } of courseGenerator) {
+            await updateProgress(lesson, percentComplete);
+            lessons.push(lesson);
         }
-        // Remove the course from the progress file
-        console.log('Removing course from progress file');
-        coursesInProgress = fs.readFileSync(filePath, 'utf8');
-        coursesInProgress = JSON.parse(coursesInProgress).coursesInProgress;
-        coursesInProgress = coursesInProgress.filter((course) => {
-            return Object.keys(course)[0] !== courseTitle;
-        });
-        newProgresses = JSON.stringify({ "coursesInProgress": coursesInProgress }, null, 4);
-        fs.writeFileSync(filePath, newProgresses);
-        
+
+        // After generation, remove the course from progress
+        let coursesInProgressRaw = await fs.readFile(filePath, 'utf8');
+        let coursesInProgress = JSON.parse(coursesInProgressRaw).coursesInProgress;
+        coursesInProgress = coursesInProgress.filter(course => Object.keys(course)[0] !== courseTitle);
+        await fs.writeFile(filePath, JSON.stringify({ coursesInProgress }, null, 4));
+
+        res.json({ message: `Course '${courseTitle}' generated.` });
+
     } catch (error) {
-        console.log(error.message);
-        res.status(500).send('Error fetching course data');
+        console.error(error.message);
+        res.status(500).send('Error generating course');
     }
 });
 
 app.get('/API/get_course/:course_name', async (req, res) => {
-    console.log(`API/get_course/${req.params.course_id}`);
     try {
-        const course = Course.fromFile(`${req.params.course_name}.json`);
+        const course = await Course.fromFile(`${req.params.course_name}.json`);
         res.json(course);
     } catch (error) {
-        console.log(error.message);
+        console.error(error.message);
         if (error.code === 'ENOENT') {
             res.status(404).send('Course not found');
         } else {
@@ -92,55 +81,50 @@ app.get('/API/get_course/:course_name', async (req, res) => {
     }
 });
 
-app.get('/API/get_courses', (req, res) => {
-    console.log('API/get_courses');
+app.get('/API/get_courses', async (req, res) => {
     try {
-        const courses = CourseMeta.getAll();
+        const courses = await CourseMeta.getAll();
         res.json(courses);
     } catch (error) {
-        console.log(error.message);
+        console.error(error.message);
         res.status(500).send('Error fetching course data');
     }
 });
 
-app.get('/API/images/:image_id', (req, res) => {
-    console.log(`API/images/${req.params.image_id}`);
+app.get('/API/images/:image_id', async (req, res) => {
     try {
-        const image = fs.readFileSync(`res/images/${req.params.image_id}.png`);
+        const imageBuffer = await fs.readFile(`res/images/${req.params.image_id}.png`);
         res.writeHead(200, { 'Content-Type': 'image/png' });
-        res.end(image, 'binary');
+        res.end(imageBuffer);
     } catch (error) {
-        console.log(error.message);
+        console.error(error.message);
         if (error.code === 'ENOENT') {
             res.status(404).send('Image not found');
         } else {
             res.status(500).send('Error fetching image');
         }
     }
-});
+ });
 
-app.get('/API/progress/:course_name', (req, res) => {
-    console.log(`API/progress/${req.params.course_name}`);
+app.get('/API/progress/:course_name', async (req, res) => {
     try {
-        const progress = fs.readFileSync(`res/progress.json`);
-        // get progress from title
-        const json = JSON.parse(progress);
-        const cn = req.params.course_name;
-        const dict = json.coursesInProgress.filter((course) => {
-            return Object.keys(course)[0] === cn;
-        })[0];
-        res.json(dict);
-    } catch (error) {
-        console.log(error.message);
-        if (error.code === 'ENOENT') {
-            //res.status(404).send('Progress not found');
-            res.json({ [req.params.course_name]: { lesson: null, progress: 100 } });
+        const progressRaw = await fs.readFile(`res/progress.json`, 'utf8');
+        const { coursesInProgress } = JSON.parse(progressRaw);
+        const courseName = req.params.course_name;
+        const entry = coursesInProgress.find(course => Object.keys(course)[0] === courseName);
+
+        if (entry) {
+            res.json(entry);
         } else {
-            res.status(500).send('Error fetching progress');
+            res.json({ [courseName]: { lesson: null, progress: 100 } }); // Completed by default
         }
+    } catch (error) {
+        console.error(error.message);
+        res.status(500).send('Error fetching progress');
     }
 });
 
+// Start server
 app.listen(config.PORT, config.HOSTNAME, () => {
-    console.log(`API running at ${config.PROTOCOL}://${config.HOSTNAME}:${config.PORT}`)
+    console.log(`API running at ${config.PROTOCOL}://${config.HOSTNAME}:${config.PORT}`);
 });

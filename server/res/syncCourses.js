@@ -1,37 +1,43 @@
-// for each course in res/courses
-// create CourseMeta
-// Add ti courses.json
+import fs from 'fs/promises';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { CourseMeta } from '../class/course.js';
 
-const fs = require('fs');
-const path = require('path');
-const { Course, CourseMeta } = require('../class/course');
+// Setup __dirname equivalent
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-// get all courses from res/courses
-const courses = fs.readdirSync(path.join(__dirname, './courses'));
-let courseJsons = [];
-// for each course in courses (courses being an array of json files)
-courses.forEach(course => {
-    // get the json file
-    const courseJson = require(path.join(__dirname, `./courses/${course}`));
-    // create a CourseMeta object
-    let courseMeta = null;
-    if (courseJson.image) {
-        courseMeta = new CourseMeta(courseJson.title, courseJson.description, courseJson.id, courseJson.image);
-    } else {
-        courseMeta = new CourseMeta(courseJson.title, courseJson.description, courseJson.id, `https://liftlearning.com/wp-content/uploads/2020/09/default-image.png`);
-    }
-    // add the CourseMeta object to the array
-    courseJsons.push(courseMeta);
-});
+// Read all files from res/courses
+const coursesDir = path.join(__dirname, '../res/courses');
+const courseFiles = await fs.readdir(coursesDir);
 
-// sort by id, (highest is first)
-courseJsons.sort((a, b) => {
-    return b.id - a.id;
-});
+let courseMetaList = [];
 
-// make sure to put the courses in an array
-courseJsons = { "courses": courseJsons };
+for (const file of courseFiles) {
+    if (!file.endsWith('.json')) continue;
 
+    const filePath = path.join(coursesDir, file);
+    const content = await fs.readFile(filePath, 'utf8');
+    const courseJson = JSON.parse(content);
 
-// write the array to courses.json
-fs.writeFileSync(path.join(__dirname, './courses.json'), JSON.stringify(courseJsons, null, 4));
+    const meta = new CourseMeta(
+        courseJson.title,
+        courseJson.description,
+        courseJson.id,
+        courseJson.image || 'https://liftlearning.com/wp-content/uploads/2020/09/default-image.png'
+    );
+
+    courseMetaList.push(meta);
+}
+
+// Sort descending by course ID
+courseMetaList.sort((a, b) => b.id - a.id);
+
+// Wrap in object
+const output = { courses: courseMetaList };
+
+// Write to res/courses.json
+const outputPath = path.join(__dirname, '../res/courses.json');
+await fs.writeFile(outputPath, JSON.stringify(output, null, 4));
+
+console.log(`Wrote ${courseMetaList.length} courses to courses.json`);

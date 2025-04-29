@@ -1,7 +1,9 @@
-const fs = require('fs');
-const axios = require('axios');
-const express = require('express');
-
+// const fs = require('fs');
+// const axios = require('axios');
+// const express = require('express');
+import fs from 'fs';
+import axios from 'axios';
+import express from 'express';
 
 const app = express();
 
